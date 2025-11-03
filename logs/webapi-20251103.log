@@ -85,3 +85,1139 @@
 2025-11-03 14:09:18.480 +05:30  INF  Request starting HTTP/1.1 GET http://localhost:5033/swagger/v1/swagger.json - null null
 2025-11-03 14:09:18.592 +05:30  WRN  Failed to determine the https port for redirect.
 2025-11-03 14:09:18.727 +05:30  INF  Request finished HTTP/1.1 GET http://localhost:5033/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 247.2872ms
+2025-11-03 17:26:22.431 +05:30  INF  User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-11-03 17:26:23.383 +05:30  INF  Now listening on: http://localhost:5033
+2025-11-03 17:26:23.563 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2025-11-03 17:26:23.563 +05:30  INF  Hosting environment: Development
+2025-11-03 17:26:23.563 +05:30  INF  Content root path: C:\Users\User\OneDrive\Desktop\BulidFlow Project\BuildflowBackend\Buildflow.Api
+2025-11-03 17:26:41.407 +05:30  INF  Request starting HTTP/1.1 GET http://localhost:5033/_framework/aspnetcore-browser-refresh.js - null null
+2025-11-03 17:26:41.407 +05:30  INF  Request starting HTTP/1.1 GET http://localhost:5033/_vs/browserLink - null null
+2025-11-03 17:26:41.495 +05:30  INF  Request finished HTTP/1.1 GET http://localhost:5033/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript; charset=utf-8 130.2556ms
+2025-11-03 17:26:42.567 +05:30  INF  Request finished HTTP/1.1 GET http://localhost:5033/_vs/browserLink - 200 null text/javascript; charset=UTF-8 1204.3926ms
+2025-11-03 17:26:42.785 +05:30  INF  Request starting HTTP/1.1 GET http://localhost:5033/swagger/v1/swagger.json - null null
+2025-11-03 17:26:43.134 +05:30  WRN  Failed to determine the https port for redirect.
+2025-11-03 17:26:43.386 +05:30  INF  Request finished HTTP/1.1 GET http://localhost:5033/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 602.3308ms
+2025-11-03 17:33:54.770 +05:30  INF  Request starting HTTP/1.1 POST http://localhost:5033/api/Login/login - application/json 58
+2025-11-03 17:33:54.934 +05:30  INF  CORS policy execution successful.
+2025-11-03 17:33:55.396 +05:30  INF  Executing endpoint 'Buildflow.Api.Controllers.Master.LoginController.Login (Buildflow.Api)'
+2025-11-03 17:33:55.712 +05:30  INF  Route matched with {action = "Login", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Buildflow.Utility.DTO.LoginRequest) on controller Buildflow.Api.Controllers.Master.LoginController (Buildflow.Api).
+2025-11-03 17:34:05.642 +05:30  INF  Executed DbCommand (278ms) [Parameters=[@__email_0='?', @__password_1='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT e.emp_id, e.address, e.alternative_phone, e.city, e.country, e.created_at, e.created_by, e.date_of_birth, e.email, e.employee_code, e.first_name, e.gender, e.hire_date, e.image_url, e.is_active, e.is_allocated, e.last_name, e.middle_name, e.password, e.phone, e.postal_code, e.state, e.termination_date, e.updated_at, e.updated_by
+FROM employee.employee_details AS e
+WHERE e.email = @__email_0 AND e.password = @__password_1
+LIMIT 1
+2025-11-03 17:34:07.101 +05:30  INF  Executed DbCommand (79ms) [Parameters=[@p0='?', @p1='?' (DbType = DateTime2), @p2='?' (DbType = Boolean), @p3='?'], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO employee.refreshtoken (email, expirydate, isrevoked, token)
+VALUES (@p0, @p1, @p2, @p3)
+RETURNING id;
+2025-11-03 17:34:07.185 +05:30  INF  Executing OkObjectResult, writing value of type '<>f__AnonymousType1`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-03 17:34:07.210 +05:30  INF  Executed action Buildflow.Api.Controllers.Master.LoginController.Login (Buildflow.Api) in 11490.071ms
+2025-11-03 17:34:07.211 +05:30  INF  Executed endpoint 'Buildflow.Api.Controllers.Master.LoginController.Login (Buildflow.Api)'
+2025-11-03 17:34:07.226 +05:30  INF  Request finished HTTP/1.1 POST http://localhost:5033/api/Login/login - 200 null application/json; charset=utf-8 12471.77ms
+2025-11-03 17:36:11.059 +05:30  INF  Request starting HTTP/1.1 GET http://localhost:5033/api/Project/getAllProjects - null null
+2025-11-03 17:36:11.253 +05:30  INF  Executing endpoint 'Buildflow.Api.Controllers.Project.ProjectController.GetAllProjects (Buildflow.Api)'
+2025-11-03 17:36:11.267 +05:30  INF  Route matched with {action = "GetAllProjects", controller = "Project"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllProjects() on controller Buildflow.Api.Controllers.Project.ProjectController (Buildflow.Api).
+2025-11-03 17:36:12.555 +05:30  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Buildflow.Utility.DTO.ProjectDto, Buildflow.Utility, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-11-03 17:36:12.601 +05:30  INF  Executed action Buildflow.Api.Controllers.Project.ProjectController.GetAllProjects (Buildflow.Api) in 1333.0036ms
+2025-11-03 17:36:12.601 +05:30  INF  Executed endpoint 'Buildflow.Api.Controllers.Project.ProjectController.GetAllProjects (Buildflow.Api)'
+2025-11-03 17:36:12.602 +05:30  INF  Request finished HTTP/1.1 GET http://localhost:5033/api/Project/getAllProjects - 200 null application/json; charset=utf-8 1548.5527ms
+2025-11-03 17:36:36.324 +05:30  INF  Request starting HTTP/1.1 GET http://localhost:5033/api/Inventory/project-team/74 - null null
+2025-11-03 17:36:36.410 +05:30  INF  Executing endpoint 'Buildflow.Api.Controllers.Inventory.InventoryController.GetProjectTeamMembers (Buildflow.Api)'
+2025-11-03 17:36:36.429 +05:30  INF  Route matched with {action = "GetProjectTeamMembers", controller = "Inventory"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProjectTeamMembers(Int32) on controller Buildflow.Api.Controllers.Inventory.InventoryController (Buildflow.Api).
+2025-11-03 17:36:36.540 +05:30  INF  Executed DbCommand (21ms) [Parameters=[@__projectId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT p.project_team_id, p.apm_id, p.aqs_id, p.assignment_end_date, p.assignment_start_date, p.created_at, p.created_by, p.designer_id, p.engg_id, p.lead_engg_id, p.pm_id, p.project_id, p.qs_id, p.site_engg_id, p.site_supervisor_id, p.subcontractor_id, p.updated_at, p.updated_by, p.vendor_id
+FROM project.project_team AS p
+WHERE p.project_id = @__projectId_0
+LIMIT 1
+2025-11-03 17:36:37.045 +05:30  INF  Executed DbCommand (34ms) [Parameters=[@__allEmployeeIds_0='?' (DbType = Object)], CommandType='"Text"', CommandTimeout='30']
+SELECT e.emp_id, e.address, e.alternative_phone, e.city, e.country, e.created_at, e.created_by, e.date_of_birth, e.email, e.employee_code, e.first_name, e.gender, e.hire_date, e.image_url, e.is_active, e.is_allocated, e.last_name, e.middle_name, e.password, e.phone, e.postal_code, e.state, e.termination_date, e.updated_at, e.updated_by
+FROM employee.employee_details AS e
+WHERE e.emp_id = ANY (@__allEmployeeIds_0)
+2025-11-03 17:36:37.049 +05:30  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Buildflow.Infrastructure.Entities.EmployeeDetail, Buildflow.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-11-03 17:36:37.257 +05:30  INF  Executed action Buildflow.Api.Controllers.Inventory.InventoryController.GetProjectTeamMembers (Buildflow.Api) in 826.8287ms
+2025-11-03 17:36:37.257 +05:30  INF  Executed endpoint 'Buildflow.Api.Controllers.Inventory.InventoryController.GetProjectTeamMembers (Buildflow.Api)'
+2025-11-03 17:36:37.259 +05:30  INF  Request finished HTTP/1.1 GET http://localhost:5033/api/Inventory/project-team/74 - 200 null application/json; charset=utf-8 934.2523ms
+2025-11-03 17:39:00.114 +05:30  INF  Request starting HTTP/1.1 GET http://localhost:5033/api/Vendor/Get-Vendor/1 - null null
+2025-11-03 17:39:00.121 +05:30  INF  Executing endpoint 'Buildflow.Api.Controllers.Vendor.VendorController.GetVendor (Buildflow.Api)'
+2025-11-03 17:39:00.180 +05:30  INF  Route matched with {action = "GetVendor", controller = "Vendor"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetVendor(Int32) on controller Buildflow.Api.Controllers.Vendor.VendorController (Buildflow.Api).
+2025-11-03 17:39:00.498 +05:30  INF  Executing NotFoundObjectResult, writing value of type 'System.String'.
+2025-11-03 17:39:00.499 +05:30  INF  Executed action Buildflow.Api.Controllers.Vendor.VendorController.GetVendor (Buildflow.Api) in 318.8808ms
+2025-11-03 17:39:00.500 +05:30  INF  Executed endpoint 'Buildflow.Api.Controllers.Vendor.VendorController.GetVendor (Buildflow.Api)'
+2025-11-03 17:39:00.500 +05:30  INF  Request finished HTTP/1.1 GET http://localhost:5033/api/Vendor/Get-Vendor/1 - 404 null text/plain; charset=utf-8 385.9697ms
+2025-11-03 17:39:07.297 +05:30  INF  Request starting HTTP/1.1 GET http://localhost:5033/api/Vendor/Get-Vendor/01 - null null
+2025-11-03 17:39:07.302 +05:30  INF  Executing endpoint 'Buildflow.Api.Controllers.Vendor.VendorController.GetVendor (Buildflow.Api)'
+2025-11-03 17:39:07.302 +05:30  INF  Route matched with {action = "GetVendor", controller = "Vendor"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetVendor(Int32) on controller Buildflow.Api.Controllers.Vendor.VendorController (Buildflow.Api).
+2025-11-03 17:39:07.468 +05:30  INF  Executing NotFoundObjectResult, writing value of type 'System.String'.
+2025-11-03 17:39:07.469 +05:30  INF  Executed action Buildflow.Api.Controllers.Vendor.VendorController.GetVendor (Buildflow.Api) in 166.6855ms
+2025-11-03 17:39:07.470 +05:30  INF  Executed endpoint 'Buildflow.Api.Controllers.Vendor.VendorController.GetVendor (Buildflow.Api)'
+2025-11-03 17:39:07.472 +05:30  INF  Request finished HTTP/1.1 GET http://localhost:5033/api/Vendor/Get-Vendor/01 - 404 null text/plain; charset=utf-8 174.4934ms
+2025-11-03 17:39:57.238 +05:30  INF  Request starting HTTP/1.1 POST http://localhost:5033/api/Inventory/stock-inward - application/json 240
+2025-11-03 17:39:57.273 +05:30  INF  CORS policy execution successful.
+2025-11-03 17:39:57.274 +05:30  INF  Executing endpoint 'Buildflow.Api.Controllers.Inventory.InventoryController.CreateStockInward (Buildflow.Api)'
+2025-11-03 17:39:57.283 +05:30  INF  Route matched with {action = "CreateStockInward", controller = "Inventory"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateStockInward(Buildflow.Utility.DTO.StockInwardDto) on controller Buildflow.Api.Controllers.Inventory.InventoryController (Buildflow.Api).
+2025-11-03 17:39:57.478 +05:30  ERR  Failed executing DbCommand (53ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?', @p2='?', @p3='?' (DbType = Int32), @p4='?' (DbType = Decimal), @p5='?' (DbType = Int32), @p6='?', @p7='?', @p8='?', @p9='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "StockInwards" ("DateReceived", "GRN", "ItemName", "ProjectId", "QuantityReceived", "ReceivedById", "Remarks", "Status", "Unit", "VendorId")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9)
+RETURNING "StockInwardId";
+2025-11-03 17:39:57.598 +05:30  ERR  An exception occurred in the database while saving changes for context type 'Buildflow.Infrastructure.DatabaseContext.BuildflowAppContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 42P01: relation "StockInwards" does not exist
+
+POSITION: 13
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+  Exception data:
+    Severity: ERROR
+    SqlState: 42P01
+    MessageText: relation "StockInwards" does not exist
+    Position: 13
+    File: parse_relation.c
+    Line: 1452
+    Routine: parserOpenTable
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 42P01: relation "StockInwards" does not exist
+
+POSITION: 13
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+  Exception data:
+    Severity: ERROR
+    SqlState: 42P01
+    MessageText: relation "StockInwards" does not exist
+    Position: 13
+    File: parse_relation.c
+    Line: 1452
+    Routine: parserOpenTable
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+
+2025-11-03 17:39:59.106 +05:30  INF  Executed action Buildflow.Api.Controllers.Inventory.InventoryController.CreateStockInward (Buildflow.Api) in 1823.4102ms
+2025-11-03 17:39:59.109 +05:30  INF  Executed endpoint 'Buildflow.Api.Controllers.Inventory.InventoryController.CreateStockInward (Buildflow.Api)'
+2025-11-03 17:39:59.520 +05:30  ERR  An error occurred: An error occurred while saving the entity changes. See the inner exception for details.
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Buildflow.Library.Repository.InventoryRepository.CreateStockInwardAsync(StockInward stockInward) in C:\Users\User\OneDrive\Desktop\BulidFlow Project\BuildflowBackend\Buildflow.Library\Repository\InventoryRepository.cs:line 68
+   at Buildflow.Service.Service.Inventory.InventoryService.CreateStockInwardAsync(StockInwardDto dto) in C:\Users\User\OneDrive\Desktop\BulidFlow Project\BuildflowBackend\Buildflow.Service\Service\Inventory\InventoryService.cs:line 50
+   at Buildflow.Api.Controllers.Inventory.InventoryController.CreateStockInward(StockInwardDto dto) in C:\Users\User\OneDrive\Desktop\BulidFlow Project\BuildflowBackend\Buildflow.Api\Controllers\Inventory\InventoryController.cs:line 38
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Buildflow.Api.Middlewares.ExceptionMiddleware.InvokeAsync(HttpContext httpContext) in C:\Users\User\OneDrive\Desktop\BulidFlow Project\BuildflowBackend\Buildflow.Api\Middlewares\ExceptionMiddleware.cs:line 60
+2025-11-03 17:39:59.525 +05:30  ERR  Inner Exception: 42P01: relation "StockInwards" does not exist
+
+POSITION: 13
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+2025-11-03 17:39:59.526 +05:30  INF  Request finished HTTP/1.1 POST http://localhost:5033/api/Inventory/stock-inward - 500 null null 2288.7996ms
+2025-11-03 17:40:44.990 +05:30  INF  Request starting HTTP/1.1 GET http://localhost:5033/api/Employee/Get-Employee - null null
+2025-11-03 17:40:44.997 +05:30  INF  Executing endpoint 'Buildflow.Api.Controllers.Employee.EmployeeController.GetEmployees (Buildflow.Api)'
+2025-11-03 17:40:45.008 +05:30  INF  Route matched with {action = "GetEmployees", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[Buildflow.Utility.DTO.GetEmployeeDto]]] GetEmployees() on controller Buildflow.Api.Controllers.Employee.EmployeeController (Buildflow.Api).
+2025-11-03 17:40:45.333 +05:30  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Buildflow.Utility.DTO.GetEmployeeDto, Buildflow.Utility, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-11-03 17:40:45.400 +05:30  INF  Executed action Buildflow.Api.Controllers.Employee.EmployeeController.GetEmployees (Buildflow.Api) in 391.9387ms
+2025-11-03 17:40:45.401 +05:30  INF  Executed endpoint 'Buildflow.Api.Controllers.Employee.EmployeeController.GetEmployees (Buildflow.Api)'
+2025-11-03 17:40:45.402 +05:30  INF  Request finished HTTP/1.1 GET http://localhost:5033/api/Employee/Get-Employee - 200 null application/json; charset=utf-8 417.6845ms
+2025-11-03 17:41:15.978 +05:30  INF  Request starting HTTP/1.1 POST http://localhost:5033/api/Inventory/stock-inward - application/json 241
+2025-11-03 17:41:15.978 +05:30  INF  CORS policy execution successful.
+2025-11-03 17:41:15.979 +05:30  INF  Executing endpoint 'Buildflow.Api.Controllers.Inventory.InventoryController.CreateStockInward (Buildflow.Api)'
+2025-11-03 17:41:15.979 +05:30  INF  Route matched with {action = "CreateStockInward", controller = "Inventory"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateStockInward(Buildflow.Utility.DTO.StockInwardDto) on controller Buildflow.Api.Controllers.Inventory.InventoryController (Buildflow.Api).
+2025-11-03 17:41:16.042 +05:30  ERR  Failed executing DbCommand (55ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?', @p2='?', @p3='?' (DbType = Int32), @p4='?' (DbType = Decimal), @p5='?' (DbType = Int32), @p6='?', @p7='?', @p8='?', @p9='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "StockInwards" ("DateReceived", "GRN", "ItemName", "ProjectId", "QuantityReceived", "ReceivedById", "Remarks", "Status", "Unit", "VendorId")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9)
+RETURNING "StockInwardId";
+2025-11-03 17:41:16.052 +05:30  ERR  An exception occurred in the database while saving changes for context type 'Buildflow.Infrastructure.DatabaseContext.BuildflowAppContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 42P01: relation "StockInwards" does not exist
+
+POSITION: 13
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+  Exception data:
+    Severity: ERROR
+    SqlState: 42P01
+    MessageText: relation "StockInwards" does not exist
+    Position: 13
+    File: parse_relation.c
+    Line: 1452
+    Routine: parserOpenTable
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 42P01: relation "StockInwards" does not exist
+
+POSITION: 13
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+  Exception data:
+    Severity: ERROR
+    SqlState: 42P01
+    MessageText: relation "StockInwards" does not exist
+    Position: 13
+    File: parse_relation.c
+    Line: 1452
+    Routine: parserOpenTable
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+
+2025-11-03 17:41:16.427 +05:30  INF  Executed action Buildflow.Api.Controllers.Inventory.InventoryController.CreateStockInward (Buildflow.Api) in 448.3164ms
+2025-11-03 17:41:16.428 +05:30  INF  Executed endpoint 'Buildflow.Api.Controllers.Inventory.InventoryController.CreateStockInward (Buildflow.Api)'
+2025-11-03 17:41:16.673 +05:30  ERR  An error occurred: An error occurred while saving the entity changes. See the inner exception for details.
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Buildflow.Library.Repository.InventoryRepository.CreateStockInwardAsync(StockInward stockInward) in C:\Users\User\OneDrive\Desktop\BulidFlow Project\BuildflowBackend\Buildflow.Library\Repository\InventoryRepository.cs:line 68
+   at Buildflow.Service.Service.Inventory.InventoryService.CreateStockInwardAsync(StockInwardDto dto) in C:\Users\User\OneDrive\Desktop\BulidFlow Project\BuildflowBackend\Buildflow.Service\Service\Inventory\InventoryService.cs:line 50
+   at Buildflow.Api.Controllers.Inventory.InventoryController.CreateStockInward(StockInwardDto dto) in C:\Users\User\OneDrive\Desktop\BulidFlow Project\BuildflowBackend\Buildflow.Api\Controllers\Inventory\InventoryController.cs:line 38
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Buildflow.Api.Middlewares.ExceptionMiddleware.InvokeAsync(HttpContext httpContext) in C:\Users\User\OneDrive\Desktop\BulidFlow Project\BuildflowBackend\Buildflow.Api\Middlewares\ExceptionMiddleware.cs:line 60
+2025-11-03 17:41:16.677 +05:30  ERR  Inner Exception: 42P01: relation "StockInwards" does not exist
+
+POSITION: 13
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+2025-11-03 17:41:16.678 +05:30  INF  Request finished HTTP/1.1 POST http://localhost:5033/api/Inventory/stock-inward - 500 null null 702.4313ms
+2025-11-03 17:41:57.952 +05:30  INF  Request starting HTTP/1.1 POST http://localhost:5033/api/Login/login - application/json 77
+2025-11-03 17:41:57.961 +05:30  INF  CORS policy execution successful.
+2025-11-03 17:41:57.962 +05:30  INF  Executing endpoint 'Buildflow.Api.Controllers.Master.LoginController.Login (Buildflow.Api)'
+2025-11-03 17:41:57.962 +05:30  INF  Route matched with {action = "Login", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Buildflow.Utility.DTO.LoginRequest) on controller Buildflow.Api.Controllers.Master.LoginController (Buildflow.Api).
+2025-11-03 17:41:58.042 +05:30  INF  Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-11-03 17:41:58.090 +05:30  INF  Executed action Buildflow.Api.Controllers.Master.LoginController.Login (Buildflow.Api) in 128.1643ms
+2025-11-03 17:41:58.090 +05:30  INF  Executed endpoint 'Buildflow.Api.Controllers.Master.LoginController.Login (Buildflow.Api)'
+2025-11-03 17:41:58.090 +05:30  INF  Request finished HTTP/1.1 POST http://localhost:5033/api/Login/login - 400 null application/problem+json; charset=utf-8 141.5026ms
+2025-11-03 17:42:20.953 +05:30  INF  Request starting HTTP/1.1 POST http://localhost:5033/api/Login/login - application/json 81
+2025-11-03 17:42:20.958 +05:30  INF  CORS policy execution successful.
+2025-11-03 17:42:20.958 +05:30  INF  Executing endpoint 'Buildflow.Api.Controllers.Master.LoginController.Login (Buildflow.Api)'
+2025-11-03 17:42:20.958 +05:30  INF  Route matched with {action = "Login", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Buildflow.Utility.DTO.LoginRequest) on controller Buildflow.Api.Controllers.Master.LoginController (Buildflow.Api).
+2025-11-03 17:42:20.995 +05:30  INF  Executed DbCommand (15ms) [Parameters=[@__email_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT v.vendor_id, v.alternative_mobile, v.city, v.country, v.created_at, v.created_by, v.credit_limit, v.delivery_terms, v.email, v.is_active, v.mobile, v.organization_name, v.password, v.payment_terms, v.postal_code, v.preferred_payment_method, v.state, v.street, v.tax_id, v.updated_at, v.updated_by, v.vendor_code, v.vendor_name, v.website
+FROM vendor.vendor AS v
+WHERE v.email = @__email_0
+LIMIT 1
+2025-11-03 17:42:21.158 +05:30  INF  Executed DbCommand (16ms) [Parameters=[@p0='?', @p1='?' (DbType = DateTime2), @p2='?' (DbType = Boolean), @p3='?'], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO employee.refreshtoken (email, expirydate, isrevoked, token)
+VALUES (@p0, @p1, @p2, @p3)
+RETURNING id;
+2025-11-03 17:42:21.159 +05:30  INF  Executing OkObjectResult, writing value of type '<>f__AnonymousType1`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-03 17:42:21.159 +05:30  INF  Executed action Buildflow.Api.Controllers.Master.LoginController.Login (Buildflow.Api) in 201.0512ms
+2025-11-03 17:42:21.160 +05:30  INF  Executed endpoint 'Buildflow.Api.Controllers.Master.LoginController.Login (Buildflow.Api)'
+2025-11-03 17:42:21.161 +05:30  INF  Request finished HTTP/1.1 POST http://localhost:5033/api/Login/login - 200 null application/json; charset=utf-8 211.1331ms
+2025-11-03 17:43:10.837 +05:30  INF  Request starting HTTP/1.1 GET http://localhost:5033/api/Login/LoginUser - null null
+2025-11-03 17:43:10.843 +05:30  INF  Executing endpoint 'Buildflow.Api.Controllers.Master.LoginController.GetCurrentUser (Buildflow.Api)'
+2025-11-03 17:43:10.849 +05:30  INF  Route matched with {action = "GetCurrentUser", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCurrentUser() on controller Buildflow.Api.Controllers.Master.LoginController (Buildflow.Api).
+2025-11-03 17:43:10.858 +05:30  INF  Executing UnauthorizedObjectResult, writing value of type 'System.String'.
+2025-11-03 17:43:10.859 +05:30  INF  Executed action Buildflow.Api.Controllers.Master.LoginController.GetCurrentUser (Buildflow.Api) in 9.165ms
+2025-11-03 17:43:10.859 +05:30  INF  Executed endpoint 'Buildflow.Api.Controllers.Master.LoginController.GetCurrentUser (Buildflow.Api)'
+2025-11-03 17:43:10.859 +05:30  INF  Request finished HTTP/1.1 GET http://localhost:5033/api/Login/LoginUser - 401 null text/plain; charset=utf-8 22.415ms
+2025-11-03 17:43:37.426 +05:30  INF  Request starting HTTP/1.1 GET http://localhost:5033/api/Login/LoginUserDetail - null null
+2025-11-03 17:43:37.428 +05:30  INF  Executing endpoint 'Buildflow.Api.Controllers.Master.LoginController.LoginUserDetail (Buildflow.Api)'
+2025-11-03 17:43:37.436 +05:30  INF  Route matched with {action = "LoginUserDetail", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] LoginUserDetail() on controller Buildflow.Api.Controllers.Master.LoginController (Buildflow.Api).
+2025-11-03 17:43:37.729 +05:30  INF  Executing OkObjectResult, writing value of type 'Buildflow.Utility.DTO.LoginVendorFullDetailDto'.
+2025-11-03 17:43:37.741 +05:30  INF  Executed action Buildflow.Api.Controllers.Master.LoginController.LoginUserDetail (Buildflow.Api) in 305.1797ms
+2025-11-03 17:43:37.741 +05:30  INF  Executed endpoint 'Buildflow.Api.Controllers.Master.LoginController.LoginUserDetail (Buildflow.Api)'
+2025-11-03 17:43:37.741 +05:30  INF  Request finished HTTP/1.1 GET http://localhost:5033/api/Login/LoginUserDetail - 200 null application/json; charset=utf-8 315.0503ms
+2025-11-03 17:44:09.840 +05:30  INF  Request starting HTTP/1.1 POST http://localhost:5033/api/Login/login - application/json 61
+2025-11-03 17:44:09.847 +05:30  INF  CORS policy execution successful.
+2025-11-03 17:44:09.853 +05:30  INF  Executing endpoint 'Buildflow.Api.Controllers.Master.LoginController.Login (Buildflow.Api)'
+2025-11-03 17:44:09.853 +05:30  INF  Route matched with {action = "Login", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Buildflow.Utility.DTO.LoginRequest) on controller Buildflow.Api.Controllers.Master.LoginController (Buildflow.Api).
+2025-11-03 17:44:09.859 +05:30  INF  Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-11-03 17:44:09.859 +05:30  INF  Executed action Buildflow.Api.Controllers.Master.LoginController.Login (Buildflow.Api) in 6.3719ms
+2025-11-03 17:44:09.859 +05:30  INF  Executed endpoint 'Buildflow.Api.Controllers.Master.LoginController.Login (Buildflow.Api)'
+2025-11-03 17:44:09.860 +05:30  INF  Request finished HTTP/1.1 POST http://localhost:5033/api/Login/login - 400 null application/problem+json; charset=utf-8 19.3938ms
+2025-11-03 17:45:12.085 +05:30  INF  Request starting HTTP/1.1 POST http://localhost:5033/api/Login/login - application/json 57
+2025-11-03 17:45:12.092 +05:30  INF  CORS policy execution successful.
+2025-11-03 17:45:12.094 +05:30  INF  Executing endpoint 'Buildflow.Api.Controllers.Master.LoginController.Login (Buildflow.Api)'
+2025-11-03 17:45:12.094 +05:30  INF  Route matched with {action = "Login", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Buildflow.Utility.DTO.LoginRequest) on controller Buildflow.Api.Controllers.Master.LoginController (Buildflow.Api).
+2025-11-03 17:45:12.100 +05:30  INF  Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-11-03 17:45:12.100 +05:30  INF  Executed action Buildflow.Api.Controllers.Master.LoginController.Login (Buildflow.Api) in 6.3444ms
+2025-11-03 17:45:12.100 +05:30  INF  Executed endpoint 'Buildflow.Api.Controllers.Master.LoginController.Login (Buildflow.Api)'
+2025-11-03 17:45:12.101 +05:30  INF  Request finished HTTP/1.1 POST http://localhost:5033/api/Login/login - 400 null application/problem+json; charset=utf-8 16.213ms
+2025-11-03 17:45:23.767 +05:30  INF  Request starting HTTP/1.1 POST http://localhost:5033/api/Login/login - application/json 63
+2025-11-03 17:45:23.767 +05:30  INF  CORS policy execution successful.
+2025-11-03 17:45:23.768 +05:30  INF  Executing endpoint 'Buildflow.Api.Controllers.Master.LoginController.Login (Buildflow.Api)'
+2025-11-03 17:45:23.768 +05:30  INF  Route matched with {action = "Login", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Buildflow.Utility.DTO.LoginRequest) on controller Buildflow.Api.Controllers.Master.LoginController (Buildflow.Api).
+2025-11-03 17:45:23.772 +05:30  INF  Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-11-03 17:45:23.772 +05:30  INF  Executed action Buildflow.Api.Controllers.Master.LoginController.Login (Buildflow.Api) in 3.5128ms
+2025-11-03 17:45:23.772 +05:30  INF  Executed endpoint 'Buildflow.Api.Controllers.Master.LoginController.Login (Buildflow.Api)'
+2025-11-03 17:45:23.772 +05:30  INF  Request finished HTTP/1.1 POST http://localhost:5033/api/Login/login - 400 null application/problem+json; charset=utf-8 5.2861ms
+2025-11-03 17:45:35.793 +05:30  INF  Request starting HTTP/1.1 POST http://localhost:5033/api/Login/login - application/json 56
+2025-11-03 17:45:35.793 +05:30  INF  CORS policy execution successful.
+2025-11-03 17:45:35.794 +05:30  INF  Executing endpoint 'Buildflow.Api.Controllers.Master.LoginController.Login (Buildflow.Api)'
+2025-11-03 17:45:35.794 +05:30  INF  Route matched with {action = "Login", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Buildflow.Utility.DTO.LoginRequest) on controller Buildflow.Api.Controllers.Master.LoginController (Buildflow.Api).
+2025-11-03 17:45:35.797 +05:30  INF  Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-11-03 17:45:35.797 +05:30  INF  Executed action Buildflow.Api.Controllers.Master.LoginController.Login (Buildflow.Api) in 2.9338ms
+2025-11-03 17:45:35.797 +05:30  INF  Executed endpoint 'Buildflow.Api.Controllers.Master.LoginController.Login (Buildflow.Api)'
+2025-11-03 17:45:35.797 +05:30  INF  Request finished HTTP/1.1 POST http://localhost:5033/api/Login/login - 400 null application/problem+json; charset=utf-8 4.6768ms
+2025-11-03 17:46:07.105 +05:30  INF  Request starting HTTP/1.1 POST http://localhost:5033/api/Login/login - application/json 56
+2025-11-03 17:46:07.105 +05:30  INF  CORS policy execution successful.
+2025-11-03 17:46:07.106 +05:30  INF  Executing endpoint 'Buildflow.Api.Controllers.Master.LoginController.Login (Buildflow.Api)'
+2025-11-03 17:46:07.106 +05:30  INF  Route matched with {action = "Login", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Buildflow.Utility.DTO.LoginRequest) on controller Buildflow.Api.Controllers.Master.LoginController (Buildflow.Api).
+2025-11-03 17:46:07.424 +05:30  INF  Executed DbCommand (28ms) [Parameters=[@__email_0='?', @__password_1='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT e.emp_id, e.address, e.alternative_phone, e.city, e.country, e.created_at, e.created_by, e.date_of_birth, e.email, e.employee_code, e.first_name, e.gender, e.hire_date, e.image_url, e.is_active, e.is_allocated, e.last_name, e.middle_name, e.password, e.phone, e.postal_code, e.state, e.termination_date, e.updated_at, e.updated_by
+FROM employee.employee_details AS e
+WHERE e.email = @__email_0 AND e.password = @__password_1
+LIMIT 1
+2025-11-03 17:46:07.444 +05:30  INF  Executed DbCommand (13ms) [Parameters=[@p0='?', @p1='?' (DbType = DateTime2), @p2='?' (DbType = Boolean), @p3='?'], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO employee.refreshtoken (email, expirydate, isrevoked, token)
+VALUES (@p0, @p1, @p2, @p3)
+RETURNING id;
+2025-11-03 17:46:07.445 +05:30  INF  Executing OkObjectResult, writing value of type '<>f__AnonymousType1`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-03 17:46:07.446 +05:30  INF  Executed action Buildflow.Api.Controllers.Master.LoginController.Login (Buildflow.Api) in 340.1571ms
+2025-11-03 17:46:07.447 +05:30  INF  Executed endpoint 'Buildflow.Api.Controllers.Master.LoginController.Login (Buildflow.Api)'
+2025-11-03 17:46:07.448 +05:30  INF  Request finished HTTP/1.1 POST http://localhost:5033/api/Login/login - 200 null application/json; charset=utf-8 343.6272ms
+2025-11-03 17:47:44.079 +05:30  INF  Request starting HTTP/1.1 POST http://localhost:5033/api/Project/upsertProject - application/json 229
+2025-11-03 17:47:44.212 +05:30  INF  CORS policy execution successful.
+2025-11-03 17:47:44.216 +05:30  INF  Executing endpoint 'Buildflow.Api.Controllers.Project.ProjectController.AddOrUpdateProject (Buildflow.Api)'
+2025-11-03 17:47:44.224 +05:30  INF  Route matched with {action = "AddOrUpdateProject", controller = "Project"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddOrUpdateProject(Buildflow.Utility.DTO.ProjectInput) on controller Buildflow.Api.Controllers.Project.ProjectController (Buildflow.Api).
+2025-11-03 17:47:44.351 +05:30  INF  Executed DbCommand (15ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT p.project_id, p.client_name, p.created_at, p.created_by, p.is_active, p.project_actual_cost, p.project_code, p.project_description, p.project_end_date, p.project_location, p.project_name, p.project_priority, p.project_sector_id, p.project_start_date, p.project_status, p.project_total_budget, p.project_type_id, p.updated_at, p.updated_by
+FROM project.project AS p
+WHERE p.project_id = @__p_0
+LIMIT 1
+2025-11-03 17:47:44.354 +05:30  INF  Executing OkObjectResult, writing value of type 'Buildflow.Utility.DTO.BaseResponse'.
+2025-11-03 17:47:44.357 +05:30  INF  Executed action Buildflow.Api.Controllers.Project.ProjectController.AddOrUpdateProject (Buildflow.Api) in 132.3768ms
+2025-11-03 17:47:44.357 +05:30  INF  Executed endpoint 'Buildflow.Api.Controllers.Project.ProjectController.AddOrUpdateProject (Buildflow.Api)'
+2025-11-03 17:47:44.357 +05:30  INF  Request finished HTTP/1.1 POST http://localhost:5033/api/Project/upsertProject - 200 null application/json; charset=utf-8 278.7768ms
+2025-11-03 17:48:56.316 +05:30  INF  Request starting HTTP/1.1 POST http://localhost:5033/api/Project/upsertProjectTeam - application/json 323
+2025-11-03 17:48:56.321 +05:30  INF  CORS policy execution successful.
+2025-11-03 17:48:56.322 +05:30  INF  Executing endpoint 'Buildflow.Api.Controllers.Project.ProjectController.UpsertProjectTeam (Buildflow.Api)'
+2025-11-03 17:48:56.328 +05:30  INF  Route matched with {action = "UpsertProjectTeam", controller = "Project"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpsertProjectTeam(Buildflow.Utility.DTO.ProjectTeamUpsertDto) on controller Buildflow.Api.Controllers.Project.ProjectController (Buildflow.Api).
+2025-11-03 17:48:56.423 +05:30  INF  Executing BadRequestObjectResult, writing value of type '<>f__AnonymousType6`2[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-03 17:48:56.428 +05:30  INF  Executed action Buildflow.Api.Controllers.Project.ProjectController.UpsertProjectTeam (Buildflow.Api) in 100.6424ms
+2025-11-03 17:48:56.428 +05:30  INF  Executed endpoint 'Buildflow.Api.Controllers.Project.ProjectController.UpsertProjectTeam (Buildflow.Api)'
+2025-11-03 17:48:56.429 +05:30  INF  Request finished HTTP/1.1 POST http://localhost:5033/api/Project/upsertProjectTeam - 400 null application/json; charset=utf-8 117.6368ms
+2025-11-03 17:49:43.339 +05:30  INF  Request starting HTTP/1.1 POST http://localhost:5033/api/Project/upsertProjectTeam - application/json 323
+2025-11-03 17:49:43.343 +05:30  INF  CORS policy execution successful.
+2025-11-03 17:49:43.345 +05:30  INF  Executing endpoint 'Buildflow.Api.Controllers.Project.ProjectController.UpsertProjectTeam (Buildflow.Api)'
+2025-11-03 17:49:43.345 +05:30  INF  Route matched with {action = "UpsertProjectTeam", controller = "Project"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpsertProjectTeam(Buildflow.Utility.DTO.ProjectTeamUpsertDto) on controller Buildflow.Api.Controllers.Project.ProjectController (Buildflow.Api).
+2025-11-03 17:49:43.464 +05:30  INF  Executing BadRequestObjectResult, writing value of type '<>f__AnonymousType6`2[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-03 17:49:43.465 +05:30  INF  Executed action Buildflow.Api.Controllers.Project.ProjectController.UpsertProjectTeam (Buildflow.Api) in 105.6275ms
+2025-11-03 17:49:43.465 +05:30  INF  Executed endpoint 'Buildflow.Api.Controllers.Project.ProjectController.UpsertProjectTeam (Buildflow.Api)'
+2025-11-03 17:49:43.465 +05:30  INF  Request finished HTTP/1.1 POST http://localhost:5033/api/Project/upsertProjectTeam - 400 null application/json; charset=utf-8 125.8059ms
+2025-11-03 17:49:52.563 +05:30  INF  Request starting HTTP/1.1 POST http://localhost:5033/api/Project/upsertProjectTeam - application/json 323
+2025-11-03 17:49:52.564 +05:30  INF  CORS policy execution successful.
+2025-11-03 17:49:52.564 +05:30  INF  Executing endpoint 'Buildflow.Api.Controllers.Project.ProjectController.UpsertProjectTeam (Buildflow.Api)'
+2025-11-03 17:49:52.565 +05:30  INF  Route matched with {action = "UpsertProjectTeam", controller = "Project"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpsertProjectTeam(Buildflow.Utility.DTO.ProjectTeamUpsertDto) on controller Buildflow.Api.Controllers.Project.ProjectController (Buildflow.Api).
+2025-11-03 17:49:52.586 +05:30  INF  Executing BadRequestObjectResult, writing value of type '<>f__AnonymousType6`2[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-03 17:49:52.586 +05:30  INF  Executed action Buildflow.Api.Controllers.Project.ProjectController.UpsertProjectTeam (Buildflow.Api) in 21.8005ms
+2025-11-03 17:49:52.587 +05:30  INF  Executed endpoint 'Buildflow.Api.Controllers.Project.ProjectController.UpsertProjectTeam (Buildflow.Api)'
+2025-11-03 17:49:52.587 +05:30  INF  Request finished HTTP/1.1 POST http://localhost:5033/api/Project/upsertProjectTeam - 400 null application/json; charset=utf-8 23.8963ms
+2025-11-03 17:50:29.586 +05:30  INF  Request starting HTTP/1.1 GET http://localhost:5033/api/Login/getEmployeesByRoles - null null
+2025-11-03 17:50:29.655 +05:30  INF  Executing endpoint 'Buildflow.Api.Controllers.Master.LoginController.GetEmployeesByRoles (Buildflow.Api)'
+2025-11-03 17:50:29.664 +05:30  INF  Route matched with {action = "GetEmployeesByRoles", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetEmployeesByRoles() on controller Buildflow.Api.Controllers.Master.LoginController (Buildflow.Api).
+2025-11-03 17:50:29.895 +05:30  INF  Executed DbCommand (20ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT e.emp_role_id, e.assigned_date, e.created_at, e.created_by, e.emp_id, e.end_date, e.role_id, e.updated_at, e.updated_by, r.role_id, r.created_at, r.created_by, r.is_system_role, r.role_description, r.role_name, r.rolecode, r.updated_at, r.updated_by, e0.emp_id, e0.address, e0.alternative_phone, e0.city, e0.country, e0.created_at, e0.created_by, e0.date_of_birth, e0.email, e0.employee_code, e0.first_name, e0.gender, e0.hire_date, e0.image_url, e0.is_active, e0.is_allocated, e0.last_name, e0.middle_name, e0.password, e0.phone, e0.postal_code, e0.state, e0.termination_date, e0.updated_at, e0.updated_by
+FROM employee.employee_role AS e
+INNER JOIN master.role AS r ON e.role_id = r.role_id
+INNER JOIN employee.employee_details AS e0 ON e.emp_id = e0.emp_id
+2025-11-03 17:50:30.117 +05:30  INF  Executing OkObjectResult, writing value of type 'Buildflow.Utility.DTO.EmployeeDataList'.
+2025-11-03 17:50:30.123 +05:30  INF  Executed action Buildflow.Api.Controllers.Master.LoginController.GetEmployeesByRoles (Buildflow.Api) in 457.936ms
+2025-11-03 17:50:30.123 +05:30  INF  Executed endpoint 'Buildflow.Api.Controllers.Master.LoginController.GetEmployeesByRoles (Buildflow.Api)'
+2025-11-03 17:50:30.123 +05:30  INF  Request finished HTTP/1.1 GET http://localhost:5033/api/Login/getEmployeesByRoles - 200 null application/json; charset=utf-8 536.5159ms
+2025-11-03 17:51:09.846 +05:30  INF  Request starting HTTP/1.1 GET http://localhost:5033/api/Login/getEmployeesByDepartment/1 - null null
+2025-11-03 17:51:09.851 +05:30  INF  Executing endpoint 'Buildflow.Api.Controllers.Master.LoginController.GetEmployeesByDept (Buildflow.Api)'
+2025-11-03 17:51:09.861 +05:30  INF  Route matched with {action = "GetEmployeesByDept", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetEmployeesByDept(Int32) on controller Buildflow.Api.Controllers.Master.LoginController (Buildflow.Api).
+2025-11-03 17:51:10.076 +05:30  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Buildflow.Utility.DTO.EmployeeByDeptDto, Buildflow.Utility, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-11-03 17:51:10.078 +05:30  INF  Executed action Buildflow.Api.Controllers.Master.LoginController.GetEmployeesByDept (Buildflow.Api) in 216.4526ms
+2025-11-03 17:51:10.079 +05:30  INF  Executed endpoint 'Buildflow.Api.Controllers.Master.LoginController.GetEmployeesByDept (Buildflow.Api)'
+2025-11-03 17:51:10.079 +05:30  INF  Request finished HTTP/1.1 GET http://localhost:5033/api/Login/getEmployeesByDepartment/1 - 200 null application/json; charset=utf-8 237.9974ms
+2025-11-03 17:51:44.535 +05:30  INF  Request starting HTTP/1.1 GET http://localhost:5033/api/Login/getEmployeesByRoles - null null
+2025-11-03 17:51:44.542 +05:30  INF  Executing endpoint 'Buildflow.Api.Controllers.Master.LoginController.GetEmployeesByRoles (Buildflow.Api)'
+2025-11-03 17:51:44.542 +05:30  INF  Route matched with {action = "GetEmployeesByRoles", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetEmployeesByRoles() on controller Buildflow.Api.Controllers.Master.LoginController (Buildflow.Api).
+2025-11-03 17:51:44.596 +05:30  INF  Executed DbCommand (16ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT e.emp_role_id, e.assigned_date, e.created_at, e.created_by, e.emp_id, e.end_date, e.role_id, e.updated_at, e.updated_by, r.role_id, r.created_at, r.created_by, r.is_system_role, r.role_description, r.role_name, r.rolecode, r.updated_at, r.updated_by, e0.emp_id, e0.address, e0.alternative_phone, e0.city, e0.country, e0.created_at, e0.created_by, e0.date_of_birth, e0.email, e0.employee_code, e0.first_name, e0.gender, e0.hire_date, e0.image_url, e0.is_active, e0.is_allocated, e0.last_name, e0.middle_name, e0.password, e0.phone, e0.postal_code, e0.state, e0.termination_date, e0.updated_at, e0.updated_by
+FROM employee.employee_role AS e
+INNER JOIN master.role AS r ON e.role_id = r.role_id
+INNER JOIN employee.employee_details AS e0 ON e.emp_id = e0.emp_id
+2025-11-03 17:51:44.599 +05:30  INF  Executing OkObjectResult, writing value of type 'Buildflow.Utility.DTO.EmployeeDataList'.
+2025-11-03 17:51:44.599 +05:30  INF  Executed action Buildflow.Api.Controllers.Master.LoginController.GetEmployeesByRoles (Buildflow.Api) in 56.9143ms
+2025-11-03 17:51:44.599 +05:30  INF  Executed endpoint 'Buildflow.Api.Controllers.Master.LoginController.GetEmployeesByRoles (Buildflow.Api)'
+2025-11-03 17:51:44.599 +05:30  INF  Request finished HTTP/1.1 GET http://localhost:5033/api/Login/getEmployeesByRoles - 200 null application/json; charset=utf-8 64.4027ms
+2025-11-03 17:51:52.808 +05:30  INF  Request starting HTTP/1.1 GET http://localhost:5033/api/Login/board-details/1?roleId=15 - null null
+2025-11-03 17:51:52.809 +05:30  INF  Executing endpoint 'Buildflow.Api.Controllers.Master.LoginController.GetBoardDetails (Buildflow.Api)'
+2025-11-03 17:51:52.815 +05:30  INF  Route matched with {action = "GetBoardDetails", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetBoardDetails(Int32, System.Nullable`1[System.Int32]) on controller Buildflow.Api.Controllers.Master.LoginController (Buildflow.Api).
+2025-11-03 17:51:52.984 +05:30  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Buildflow.Utility.DTO.BoardData, Buildflow.Utility, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-11-03 17:51:53.018 +05:30  INF  Executed action Buildflow.Api.Controllers.Master.LoginController.GetBoardDetails (Buildflow.Api) in 202.5339ms
+2025-11-03 17:51:53.019 +05:30  INF  Executed endpoint 'Buildflow.Api.Controllers.Master.LoginController.GetBoardDetails (Buildflow.Api)'
+2025-11-03 17:51:53.020 +05:30  INF  Request finished HTTP/1.1 GET http://localhost:5033/api/Login/board-details/1?roleId=15 - 200 null application/json; charset=utf-8 211.3681ms
+2025-11-03 17:52:29.707 +05:30  INF  Request starting HTTP/1.1 POST http://localhost:5033/api/Project/upsertProjectTeam - application/json 323
+2025-11-03 17:52:29.712 +05:30  INF  CORS policy execution successful.
+2025-11-03 17:52:29.712 +05:30  INF  Executing endpoint 'Buildflow.Api.Controllers.Project.ProjectController.UpsertProjectTeam (Buildflow.Api)'
+2025-11-03 17:52:29.712 +05:30  INF  Route matched with {action = "UpsertProjectTeam", controller = "Project"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpsertProjectTeam(Buildflow.Utility.DTO.ProjectTeamUpsertDto) on controller Buildflow.Api.Controllers.Project.ProjectController (Buildflow.Api).
+2025-11-03 17:52:29.772 +05:30  INF  Executing BadRequestObjectResult, writing value of type '<>f__AnonymousType6`2[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-03 17:52:29.773 +05:30  INF  Executed action Buildflow.Api.Controllers.Project.ProjectController.UpsertProjectTeam (Buildflow.Api) in 60.1196ms
+2025-11-03 17:52:29.773 +05:30  INF  Executed endpoint 'Buildflow.Api.Controllers.Project.ProjectController.UpsertProjectTeam (Buildflow.Api)'
+2025-11-03 17:52:29.777 +05:30  INF  Request finished HTTP/1.1 POST http://localhost:5033/api/Project/upsertProjectTeam - 400 null application/json; charset=utf-8 105.9174ms
+2025-11-03 17:53:27.370 +05:30  INF  Request starting HTTP/1.1 POST http://localhost:5033/api/Inventory/stock-inward - application/json 242
+2025-11-03 17:53:27.380 +05:30  INF  CORS policy execution successful.
+2025-11-03 17:53:27.385 +05:30  INF  Executing endpoint 'Buildflow.Api.Controllers.Inventory.InventoryController.CreateStockInward (Buildflow.Api)'
+2025-11-03 17:53:27.386 +05:30  INF  Route matched with {action = "CreateStockInward", controller = "Inventory"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateStockInward(Buildflow.Utility.DTO.StockInwardDto) on controller Buildflow.Api.Controllers.Inventory.InventoryController (Buildflow.Api).
+2025-11-03 17:53:27.437 +05:30  INF  Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-11-03 17:53:27.437 +05:30  INF  Executed action Buildflow.Api.Controllers.Inventory.InventoryController.CreateStockInward (Buildflow.Api) in 51.5688ms
+2025-11-03 17:53:27.437 +05:30  INF  Executed endpoint 'Buildflow.Api.Controllers.Inventory.InventoryController.CreateStockInward (Buildflow.Api)'
+2025-11-03 17:53:27.437 +05:30  INF  Request finished HTTP/1.1 POST http://localhost:5033/api/Inventory/stock-inward - 400 null application/problem+json; charset=utf-8 67.1933ms
+2025-11-03 17:53:49.202 +05:30  INF  Request starting HTTP/1.1 POST http://localhost:5033/api/Inventory/stock-inward - application/json 240
+2025-11-03 17:53:49.202 +05:30  INF  CORS policy execution successful.
+2025-11-03 17:53:49.202 +05:30  INF  Executing endpoint 'Buildflow.Api.Controllers.Inventory.InventoryController.CreateStockInward (Buildflow.Api)'
+2025-11-03 17:53:49.203 +05:30  INF  Route matched with {action = "CreateStockInward", controller = "Inventory"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateStockInward(Buildflow.Utility.DTO.StockInwardDto) on controller Buildflow.Api.Controllers.Inventory.InventoryController (Buildflow.Api).
+2025-11-03 17:53:49.375 +05:30  ERR  Failed executing DbCommand (29ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?', @p2='?', @p3='?' (DbType = Int32), @p4='?' (DbType = Decimal), @p5='?' (DbType = Int32), @p6='?', @p7='?', @p8='?', @p9='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "StockInwards" ("DateReceived", "GRN", "ItemName", "ProjectId", "QuantityReceived", "ReceivedById", "Remarks", "Status", "Unit", "VendorId")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9)
+RETURNING "StockInwardId";
+2025-11-03 17:53:49.388 +05:30  ERR  An exception occurred in the database while saving changes for context type 'Buildflow.Infrastructure.DatabaseContext.BuildflowAppContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 42P01: relation "StockInwards" does not exist
+
+POSITION: 13
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+  Exception data:
+    Severity: ERROR
+    SqlState: 42P01
+    MessageText: relation "StockInwards" does not exist
+    Position: 13
+    File: parse_relation.c
+    Line: 1452
+    Routine: parserOpenTable
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 42P01: relation "StockInwards" does not exist
+
+POSITION: 13
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+  Exception data:
+    Severity: ERROR
+    SqlState: 42P01
+    MessageText: relation "StockInwards" does not exist
+    Position: 13
+    File: parse_relation.c
+    Line: 1452
+    Routine: parserOpenTable
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+
+2025-11-03 17:53:49.815 +05:30  INF  Executed action Buildflow.Api.Controllers.Inventory.InventoryController.CreateStockInward (Buildflow.Api) in 612.6915ms
+2025-11-03 17:53:49.816 +05:30  INF  Executed endpoint 'Buildflow.Api.Controllers.Inventory.InventoryController.CreateStockInward (Buildflow.Api)'
+2025-11-03 17:53:50.143 +05:30  ERR  An error occurred: An error occurred while saving the entity changes. See the inner exception for details.
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Buildflow.Library.Repository.InventoryRepository.CreateStockInwardAsync(StockInward stockInward) in C:\Users\User\OneDrive\Desktop\BulidFlow Project\BuildflowBackend\Buildflow.Library\Repository\InventoryRepository.cs:line 68
+   at Buildflow.Service.Service.Inventory.InventoryService.CreateStockInwardAsync(StockInwardDto dto) in C:\Users\User\OneDrive\Desktop\BulidFlow Project\BuildflowBackend\Buildflow.Service\Service\Inventory\InventoryService.cs:line 50
+   at Buildflow.Api.Controllers.Inventory.InventoryController.CreateStockInward(StockInwardDto dto) in C:\Users\User\OneDrive\Desktop\BulidFlow Project\BuildflowBackend\Buildflow.Api\Controllers\Inventory\InventoryController.cs:line 38
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Buildflow.Api.Middlewares.ExceptionMiddleware.InvokeAsync(HttpContext httpContext) in C:\Users\User\OneDrive\Desktop\BulidFlow Project\BuildflowBackend\Buildflow.Api\Middlewares\ExceptionMiddleware.cs:line 60
+2025-11-03 17:53:50.145 +05:30  ERR  Inner Exception: 42P01: relation "StockInwards" does not exist
+
+POSITION: 13
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+2025-11-03 17:53:50.146 +05:30  INF  Request finished HTTP/1.1 POST http://localhost:5033/api/Inventory/stock-inward - 500 null null 944.3207ms
+2025-11-03 17:55:16.916 +05:30  INF  Request starting HTTP/1.1 POST http://localhost:5033/api/Inventory/stock-outward - application/json 240
+2025-11-03 17:55:16.917 +05:30  INF  CORS policy execution successful.
+2025-11-03 17:55:16.918 +05:30  INF  Executing endpoint 'Buildflow.Api.Controllers.Inventory.InventoryController.CreateStockOutward (Buildflow.Api)'
+2025-11-03 17:55:16.929 +05:30  INF  Route matched with {action = "CreateStockOutward", controller = "Inventory"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateStockOutward(Buildflow.Utility.DTO.StockOutwardDto) on controller Buildflow.Api.Controllers.Inventory.InventoryController (Buildflow.Api).
+2025-11-03 17:55:17.091 +05:30  ERR  Failed executing DbCommand (26ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?', @p2='?' (DbType = Decimal), @p3='?' (DbType = Int32), @p4='?', @p5='?' (DbType = Int32), @p6='?', @p7='?' (DbType = Int32), @p8='?', @p9='?'], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "StockOutwards" ("DateIssued", "IssueNo", "IssuedQuantity", "IssuedToId", "ItemName", "ProjectId", "Remarks", "RequestedById", "Status", "Unit")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9)
+RETURNING "StockOutwardId";
+2025-11-03 17:55:17.097 +05:30  ERR  An exception occurred in the database while saving changes for context type 'Buildflow.Infrastructure.DatabaseContext.BuildflowAppContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 42P01: relation "StockOutwards" does not exist
+
+POSITION: 13
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+  Exception data:
+    Severity: ERROR
+    SqlState: 42P01
+    MessageText: relation "StockOutwards" does not exist
+    Position: 13
+    File: parse_relation.c
+    Line: 1452
+    Routine: parserOpenTable
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 42P01: relation "StockOutwards" does not exist
+
+POSITION: 13
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+  Exception data:
+    Severity: ERROR
+    SqlState: 42P01
+    MessageText: relation "StockOutwards" does not exist
+    Position: 13
+    File: parse_relation.c
+    Line: 1452
+    Routine: parserOpenTable
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+
+2025-11-03 17:55:17.545 +05:30  INF  Executed action Buildflow.Api.Controllers.Inventory.InventoryController.CreateStockOutward (Buildflow.Api) in 615.8857ms
+2025-11-03 17:55:17.546 +05:30  INF  Executed endpoint 'Buildflow.Api.Controllers.Inventory.InventoryController.CreateStockOutward (Buildflow.Api)'
+2025-11-03 17:55:17.819 +05:30  ERR  An error occurred: An error occurred while saving the entity changes. See the inner exception for details.
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Buildflow.Library.Repository.InventoryRepository.CreateStockOutwardAsync(StockOutward stockOutward) in C:\Users\User\OneDrive\Desktop\BulidFlow Project\BuildflowBackend\Buildflow.Library\Repository\InventoryRepository.cs:line 75
+   at Buildflow.Service.Service.Inventory.InventoryService.CreateStockOutwardAsync(StockOutwardDto dto) in C:\Users\User\OneDrive\Desktop\BulidFlow Project\BuildflowBackend\Buildflow.Service\Service\Inventory\InventoryService.cs:line 69
+   at Buildflow.Api.Controllers.Inventory.InventoryController.CreateStockOutward(StockOutwardDto dto) in C:\Users\User\OneDrive\Desktop\BulidFlow Project\BuildflowBackend\Buildflow.Api\Controllers\Inventory\InventoryController.cs:line 46
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Buildflow.Api.Middlewares.ExceptionMiddleware.InvokeAsync(HttpContext httpContext) in C:\Users\User\OneDrive\Desktop\BulidFlow Project\BuildflowBackend\Buildflow.Api\Middlewares\ExceptionMiddleware.cs:line 60
+2025-11-03 17:55:17.821 +05:30  ERR  Inner Exception: 42P01: relation "StockOutwards" does not exist
+
+POSITION: 13
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+2025-11-03 17:55:17.821 +05:30  INF  Request finished HTTP/1.1 POST http://localhost:5033/api/Inventory/stock-outward - 500 null null 906.1196ms
+2025-11-03 17:55:41.063 +05:30  INF  Request starting HTTP/1.1 GET http://localhost:5033/api/Employee/Get-Employee - null null
+2025-11-03 17:55:41.073 +05:30  INF  Executing endpoint 'Buildflow.Api.Controllers.Employee.EmployeeController.GetEmployees (Buildflow.Api)'
+2025-11-03 17:55:41.073 +05:30  INF  Route matched with {action = "GetEmployees", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[Buildflow.Utility.DTO.GetEmployeeDto]]] GetEmployees() on controller Buildflow.Api.Controllers.Employee.EmployeeController (Buildflow.Api).
+2025-11-03 17:55:41.099 +05:30  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Buildflow.Utility.DTO.GetEmployeeDto, Buildflow.Utility, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-11-03 17:55:41.103 +05:30  INF  Executed action Buildflow.Api.Controllers.Employee.EmployeeController.GetEmployees (Buildflow.Api) in 29.3632ms
+2025-11-03 17:55:41.103 +05:30  INF  Executed endpoint 'Buildflow.Api.Controllers.Employee.EmployeeController.GetEmployees (Buildflow.Api)'
+2025-11-03 17:55:41.111 +05:30  INF  Request finished HTTP/1.1 GET http://localhost:5033/api/Employee/Get-Employee - 200 null application/json; charset=utf-8 46.9947ms
+2025-11-03 17:59:44.366 +05:30  INF  User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-11-03 17:59:45.436 +05:30  INF  Now listening on: http://localhost:5033
+2025-11-03 17:59:45.745 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2025-11-03 17:59:45.745 +05:30  INF  Hosting environment: Development
+2025-11-03 17:59:45.745 +05:30  INF  Content root path: C:\Users\User\OneDrive\Desktop\BulidFlow Project\BuildflowBackend\Buildflow.Api
+2025-11-03 17:59:49.282 +05:30  INF  Request starting HTTP/1.1 GET http://localhost:5033/_framework/aspnetcore-browser-refresh.js - null null
+2025-11-03 17:59:49.282 +05:30  INF  Request starting HTTP/1.1 GET http://localhost:5033/_vs/browserLink - null null
+2025-11-03 17:59:49.331 +05:30  INF  Request finished HTTP/1.1 GET http://localhost:5033/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript; charset=utf-8 63.0803ms
+2025-11-03 17:59:49.513 +05:30  INF  Request finished HTTP/1.1 GET http://localhost:5033/_vs/browserLink - 200 null text/javascript; charset=UTF-8 247.4378ms
+2025-11-03 17:59:49.684 +05:30  INF  Request starting HTTP/1.1 GET http://localhost:5033/swagger/v1/swagger.json - null null
+2025-11-03 17:59:49.806 +05:30  WRN  Failed to determine the https port for redirect.
+2025-11-03 17:59:49.946 +05:30  INF  Request finished HTTP/1.1 GET http://localhost:5033/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 263.0586ms
+2025-11-03 18:00:01.790 +05:30  INF  Request starting HTTP/1.1 GET http://localhost:5033/api/Employee/Get-Employee - null null
+2025-11-03 18:00:02.068 +05:30  INF  Executing endpoint 'Buildflow.Api.Controllers.Employee.EmployeeController.GetEmployees (Buildflow.Api)'
+2025-11-03 18:00:02.126 +05:30  INF  Route matched with {action = "GetEmployees", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[Buildflow.Utility.DTO.GetEmployeeDto]]] GetEmployees() on controller Buildflow.Api.Controllers.Employee.EmployeeController (Buildflow.Api).
+2025-11-03 18:00:02.147 +05:30  INF  Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-11-03 18:00:02.148 +05:30  INF  Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+2025-11-03 18:00:02.152 +05:30  INF  Executing ChallengeResult with authentication schemes ([]).
+2025-11-03 18:00:02.162 +05:30  INF  AuthenticationScheme: Bearer was challenged.
+2025-11-03 18:00:02.171 +05:30  INF  Executed action Buildflow.Api.Controllers.Employee.EmployeeController.GetEmployees (Buildflow.Api) in 33.0688ms
+2025-11-03 18:00:02.171 +05:30  INF  Executed endpoint 'Buildflow.Api.Controllers.Employee.EmployeeController.GetEmployees (Buildflow.Api)'
+2025-11-03 18:00:02.172 +05:30  INF  Request finished HTTP/1.1 GET http://localhost:5033/api/Employee/Get-Employee - 401 0 null 382.3567ms
+2025-11-03 18:00:44.791 +05:30  INF  Request starting HTTP/1.1 POST http://localhost:5033/api/Login/login - application/json 55
+2025-11-03 18:00:44.797 +05:30  INF  CORS policy execution successful.
+2025-11-03 18:00:44.805 +05:30  INF  Executing endpoint 'Buildflow.Api.Controllers.Master.LoginController.Login (Buildflow.Api)'
+2025-11-03 18:00:44.838 +05:30  INF  Route matched with {action = "Login", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Buildflow.Utility.DTO.LoginRequest) on controller Buildflow.Api.Controllers.Master.LoginController (Buildflow.Api).
+2025-11-03 18:00:51.774 +05:30  INF  Executed DbCommand (299ms) [Parameters=[@__email_0='?', @__password_1='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT e.emp_id, e.address, e.alternative_phone, e.city, e.country, e.created_at, e.created_by, e.date_of_birth, e.email, e.employee_code, e.first_name, e.gender, e.hire_date, e.image_url, e.is_active, e.is_allocated, e.last_name, e.middle_name, e.password, e.phone, e.postal_code, e.state, e.termination_date, e.updated_at, e.updated_by
+FROM employee.employee_details AS e
+WHERE e.email = @__email_0 AND e.password = @__password_1
+LIMIT 1
+2025-11-03 18:00:51.839 +05:30  INF  Executing UnauthorizedObjectResult, writing value of type 'System.String'.
+2025-11-03 18:00:51.842 +05:30  INF  Executed action Buildflow.Api.Controllers.Master.LoginController.Login (Buildflow.Api) in 7004.5878ms
+2025-11-03 18:00:51.844 +05:30  INF  Executed endpoint 'Buildflow.Api.Controllers.Master.LoginController.Login (Buildflow.Api)'
+2025-11-03 18:00:51.857 +05:30  INF  Request finished HTTP/1.1 POST http://localhost:5033/api/Login/login - 401 null text/plain; charset=utf-8 7066.0984ms
+2025-11-03 18:01:14.528 +05:30  INF  Request starting HTTP/1.1 POST http://localhost:5033/api/Login/login - application/json 55
+2025-11-03 18:01:14.533 +05:30  INF  CORS policy execution successful.
+2025-11-03 18:01:14.534 +05:30  INF  Executing endpoint 'Buildflow.Api.Controllers.Master.LoginController.Login (Buildflow.Api)'
+2025-11-03 18:01:14.534 +05:30  INF  Route matched with {action = "Login", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Buildflow.Utility.DTO.LoginRequest) on controller Buildflow.Api.Controllers.Master.LoginController (Buildflow.Api).
+2025-11-03 18:01:14.710 +05:30  INF  Executed DbCommand (16ms) [Parameters=[@__email_0='?', @__password_1='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT e.emp_id, e.address, e.alternative_phone, e.city, e.country, e.created_at, e.created_by, e.date_of_birth, e.email, e.employee_code, e.first_name, e.gender, e.hire_date, e.image_url, e.is_active, e.is_allocated, e.last_name, e.middle_name, e.password, e.phone, e.postal_code, e.state, e.termination_date, e.updated_at, e.updated_by
+FROM employee.employee_details AS e
+WHERE e.email = @__email_0 AND e.password = @__password_1
+LIMIT 1
+2025-11-03 18:01:15.746 +05:30  INF  Executed DbCommand (25ms) [Parameters=[@p0='?', @p1='?' (DbType = DateTime2), @p2='?' (DbType = Boolean), @p3='?'], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO employee.refreshtoken (email, expirydate, isrevoked, token)
+VALUES (@p0, @p1, @p2, @p3)
+RETURNING id;
+2025-11-03 18:01:15.799 +05:30  INF  Executing OkObjectResult, writing value of type '<>f__AnonymousType1`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-03 18:01:15.808 +05:30  INF  Executed action Buildflow.Api.Controllers.Master.LoginController.Login (Buildflow.Api) in 1273.2874ms
+2025-11-03 18:01:15.808 +05:30  INF  Executed endpoint 'Buildflow.Api.Controllers.Master.LoginController.Login (Buildflow.Api)'
+2025-11-03 18:01:15.809 +05:30  INF  Request finished HTTP/1.1 POST http://localhost:5033/api/Login/login - 200 null application/json; charset=utf-8 1281.1198ms
+2025-11-03 18:01:36.754 +05:30  INF  Request starting HTTP/1.1 GET http://localhost:5033/api/Employee/Get-Employee - null null
+2025-11-03 18:01:36.956 +05:30  INF  Executing endpoint 'Buildflow.Api.Controllers.Employee.EmployeeController.GetEmployees (Buildflow.Api)'
+2025-11-03 18:01:36.957 +05:30  INF  Route matched with {action = "GetEmployees", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[Buildflow.Utility.DTO.GetEmployeeDto]]] GetEmployees() on controller Buildflow.Api.Controllers.Employee.EmployeeController (Buildflow.Api).
+2025-11-03 18:01:37.064 +05:30  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Buildflow.Utility.DTO.GetEmployeeDto, Buildflow.Utility, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-11-03 18:01:37.097 +05:30  INF  Executed action Buildflow.Api.Controllers.Employee.EmployeeController.GetEmployees (Buildflow.Api) in 140.6579ms
+2025-11-03 18:01:37.098 +05:30  INF  Executed endpoint 'Buildflow.Api.Controllers.Employee.EmployeeController.GetEmployees (Buildflow.Api)'
+2025-11-03 18:01:37.098 +05:30  INF  Request finished HTTP/1.1 GET http://localhost:5033/api/Employee/Get-Employee - 200 null application/json; charset=utf-8 349.067ms
+2025-11-03 18:02:10.715 +05:30  INF  Request starting HTTP/1.1 GET http://localhost:5033/api/Project/getAllProjects - null null
+2025-11-03 18:02:10.730 +05:30  INF  Executing endpoint 'Buildflow.Api.Controllers.Project.ProjectController.GetAllProjects (Buildflow.Api)'
+2025-11-03 18:02:10.744 +05:30  INF  Route matched with {action = "GetAllProjects", controller = "Project"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllProjects() on controller Buildflow.Api.Controllers.Project.ProjectController (Buildflow.Api).
+2025-11-03 18:02:10.958 +05:30  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Buildflow.Utility.DTO.ProjectDto, Buildflow.Utility, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-11-03 18:02:10.991 +05:30  INF  Executed action Buildflow.Api.Controllers.Project.ProjectController.GetAllProjects (Buildflow.Api) in 246.7381ms
+2025-11-03 18:02:10.991 +05:30  INF  Executed endpoint 'Buildflow.Api.Controllers.Project.ProjectController.GetAllProjects (Buildflow.Api)'
+2025-11-03 18:02:10.991 +05:30  INF  Request finished HTTP/1.1 GET http://localhost:5033/api/Project/getAllProjects - 200 null application/json; charset=utf-8 276.5356ms
+2025-11-03 18:07:21.270 +05:30  INF  Executed DbCommand (117ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+2025-11-03 18:07:21.401 +05:30  INF  Executed DbCommand (37ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-11-03 18:07:21.541 +05:30  INF  Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+2025-11-03 18:07:21.666 +05:30  INF  Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+2025-11-03 18:07:21.672 +05:30  INF  Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-11-03 18:07:21.694 +05:30  INF  Applying migration '20251103123639_InitialCreate'.
+2025-11-03 18:07:22.236 +05:30  INF  Executed DbCommand (23ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM pg_namespace WHERE nspname = 'report') THEN
+        CREATE SCHEMA report;
+    END IF;
+END $EF$;
+2025-11-03 18:07:22.244 +05:30  INF  Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM pg_namespace WHERE nspname = 'ticket') THEN
+        CREATE SCHEMA ticket;
+    END IF;
+END $EF$;
+2025-11-03 18:07:22.253 +05:30  INF  Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM pg_namespace WHERE nspname = 'board') THEN
+        CREATE SCHEMA board;
+    END IF;
+END $EF$;
+2025-11-03 18:07:22.264 +05:30  INF  Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM pg_namespace WHERE nspname = 'project') THEN
+        CREATE SCHEMA project;
+    END IF;
+END $EF$;
+2025-11-03 18:07:22.270 +05:30  INF  Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM pg_namespace WHERE nspname = 'master') THEN
+        CREATE SCHEMA master;
+    END IF;
+END $EF$;
+2025-11-03 18:07:22.277 +05:30  INF  Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM pg_namespace WHERE nspname = 'vendor') THEN
+        CREATE SCHEMA vendor;
+    END IF;
+END $EF$;
+2025-11-03 18:07:22.285 +05:30  INF  Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM pg_namespace WHERE nspname = 'employee') THEN
+        CREATE SCHEMA employee;
+    END IF;
+END $EF$;
+2025-11-03 18:07:22.294 +05:30  INF  Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM pg_namespace WHERE nspname = 'notification') THEN
+        CREATE SCHEMA notification;
+    END IF;
+END $EF$;
+2025-11-03 18:07:22.300 +05:30  INF  Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM pg_namespace WHERE nspname = 'subcontractor') THEN
+        CREATE SCHEMA subcontractor;
+    END IF;
+END $EF$;
+2025-11-03 18:07:22.398 +05:30  ERR  Failed executing DbCommand (97ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE master.department (
+    dept_id integer GENERATED BY DEFAULT AS IDENTITY,
+    dept_name character varying(100) NOT NULL,
+    dept_description text,
+    dept_code character varying(20),
+    parent_dept_id integer,
+    created_at timestamp with time zone DEFAULT (CURRENT_TIMESTAMP),
+    updated_at timestamp with time zone DEFAULT (CURRENT_TIMESTAMP),
+    created_by integer,
+    updated_by integer,
+    CONSTRAINT department_pkey PRIMARY KEY (dept_id),
+    CONSTRAINT department_parent_dept_id_fkey FOREIGN KEY (parent_dept_id) REFERENCES master.department (dept_id)
+);
+2025-11-03 18:11:53.711 +05:30  INF  Executed DbCommand (95ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+2025-11-03 18:11:53.800 +05:30  INF  Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-11-03 18:11:53.921 +05:30  INF  Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+2025-11-03 18:11:54.056 +05:30  INF  Executed DbCommand (18ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+2025-11-03 18:11:54.063 +05:30  INF  Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-11-03 18:11:54.083 +05:30  INF  Applying migration '20251103124119_InitialCreate'.
+2025-11-03 18:11:54.531 +05:30  INF  Executed DbCommand (14ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM pg_namespace WHERE nspname = 'report') THEN
+        CREATE SCHEMA report;
+    END IF;
+END $EF$;
+2025-11-03 18:11:54.538 +05:30  INF  Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM pg_namespace WHERE nspname = 'ticket') THEN
+        CREATE SCHEMA ticket;
+    END IF;
+END $EF$;
+2025-11-03 18:11:54.545 +05:30  INF  Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM pg_namespace WHERE nspname = 'board') THEN
+        CREATE SCHEMA board;
+    END IF;
+END $EF$;
+2025-11-03 18:11:54.552 +05:30  INF  Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM pg_namespace WHERE nspname = 'project') THEN
+        CREATE SCHEMA project;
+    END IF;
+END $EF$;
+2025-11-03 18:11:54.559 +05:30  INF  Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM pg_namespace WHERE nspname = 'master') THEN
+        CREATE SCHEMA master;
+    END IF;
+END $EF$;
+2025-11-03 18:11:54.566 +05:30  INF  Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM pg_namespace WHERE nspname = 'vendor') THEN
+        CREATE SCHEMA vendor;
+    END IF;
+END $EF$;
+2025-11-03 18:11:54.573 +05:30  INF  Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM pg_namespace WHERE nspname = 'employee') THEN
+        CREATE SCHEMA employee;
+    END IF;
+END $EF$;
+2025-11-03 18:11:54.579 +05:30  INF  Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM pg_namespace WHERE nspname = 'notification') THEN
+        CREATE SCHEMA notification;
+    END IF;
+END $EF$;
+2025-11-03 18:11:54.597 +05:30  INF  Executed DbCommand (17ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM pg_namespace WHERE nspname = 'subcontractor') THEN
+        CREATE SCHEMA subcontractor;
+    END IF;
+END $EF$;
+2025-11-03 18:11:54.629 +05:30  ERR  Failed executing DbCommand (30ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE master.department (
+    dept_id integer GENERATED BY DEFAULT AS IDENTITY,
+    dept_name character varying(100) NOT NULL,
+    dept_description text,
+    dept_code character varying(20),
+    parent_dept_id integer,
+    created_at timestamp with time zone DEFAULT (CURRENT_TIMESTAMP),
+    updated_at timestamp with time zone DEFAULT (CURRENT_TIMESTAMP),
+    created_by integer,
+    updated_by integer,
+    CONSTRAINT department_pkey PRIMARY KEY (dept_id),
+    CONSTRAINT department_parent_dept_id_fkey FOREIGN KEY (parent_dept_id) REFERENCES master.department (dept_id)
+);
+2025-11-03 18:13:33.736 +05:30  INF  User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-11-03 18:13:34.266 +05:30  INF  Now listening on: http://localhost:5033
+2025-11-03 18:13:34.415 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2025-11-03 18:13:34.416 +05:30  INF  Hosting environment: Development
+2025-11-03 18:13:34.416 +05:30  INF  Content root path: C:\Users\User\OneDrive\Desktop\BulidFlow Project\BuildflowBackend\Buildflow.Api
+2025-11-03 18:13:36.251 +05:30  INF  Request starting HTTP/1.1 GET http://localhost:5033/swagger - null null
+2025-11-03 18:13:37.154 +05:30  WRN  Failed to determine the https port for redirect.
+2025-11-03 18:13:37.273 +05:30  INF  Request finished HTTP/1.1 GET http://localhost:5033/swagger - 301 0 null 1027.0776ms
+2025-11-03 18:13:37.571 +05:30  INF  Request starting HTTP/1.1 GET http://localhost:5033/swagger/index.html - null null
+2025-11-03 18:13:38.001 +05:30  INF  Request finished HTTP/1.1 GET http://localhost:5033/swagger/index.html - 200 null text/html;charset=utf-8 430.3783ms
+2025-11-03 18:13:38.276 +05:30  INF  Request starting HTTP/1.1 GET http://localhost:5033/swagger/swagger-ui.css - null null
+2025-11-03 18:13:38.335 +05:30  INF  Request starting HTTP/1.1 GET http://localhost:5033/swagger/index.css - null null
+2025-11-03 18:13:38.357 +05:30  INF  Request starting HTTP/1.1 GET http://localhost:5033/swagger/swagger-ui-bundle.js - null null
+2025-11-03 18:13:38.359 +05:30  INF  Request starting HTTP/1.1 GET http://localhost:5033/swagger/swagger-ui-standalone-preset.js - null null
+2025-11-03 18:13:38.386 +05:30  INF  Request starting HTTP/1.1 GET http://localhost:5033/swagger/index.js - null null
+2025-11-03 18:13:38.389 +05:30  INF  Sending file. Request path: '/index.css'. Physical path: 'N/A'
+2025-11-03 18:13:38.390 +05:30  INF  Request finished HTTP/1.1 GET http://localhost:5033/swagger/index.css - 200 202 text/css 54.4343ms
+2025-11-03 18:13:38.391 +05:30  INF  Request starting HTTP/1.1 GET http://localhost:5033/_framework/aspnetcore-browser-refresh.js - null null
+2025-11-03 18:13:38.393 +05:30  INF  Request finished HTTP/1.1 GET http://localhost:5033/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript; charset=utf-8 2.7171ms
+2025-11-03 18:13:38.405 +05:30  INF  Request finished HTTP/1.1 GET http://localhost:5033/swagger/index.js - 200 null application/javascript;charset=utf-8 19.4146ms
+2025-11-03 18:13:38.406 +05:30  INF  Request starting HTTP/1.1 GET http://localhost:5033/_vs/browserLink - null null
+2025-11-03 18:13:38.570 +05:30  INF  Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2025-11-03 18:13:38.574 +05:30  INF  Request finished HTTP/1.1 GET http://localhost:5033/swagger/swagger-ui.css - 200 154949 text/css 297.4001ms
+2025-11-03 18:13:38.684 +05:30  INF  Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2025-11-03 18:13:38.685 +05:30  INF  Request finished HTTP/1.1 GET http://localhost:5033/swagger/swagger-ui-standalone-preset.js - 200 229223 text/javascript 325.3533ms
+2025-11-03 18:13:39.136 +05:30  INF  Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2025-11-03 18:13:39.137 +05:30  INF  Request finished HTTP/1.1 GET http://localhost:5033/swagger/swagger-ui-bundle.js - 200 1466908 text/javascript 779.9815ms
+2025-11-03 18:13:39.183 +05:30  INF  Request finished HTTP/1.1 GET http://localhost:5033/_vs/browserLink - 200 null text/javascript; charset=UTF-8 776.305ms
+2025-11-03 18:13:39.571 +05:30  INF  Request starting HTTP/1.1 GET http://localhost:5033/swagger/v1/swagger.json - null null
+2025-11-03 18:13:39.661 +05:30  INF  Request starting HTTP/1.1 GET http://localhost:5033/swagger/favicon-32x32.png - null null
+2025-11-03 18:13:39.665 +05:30  INF  Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2025-11-03 18:13:39.665 +05:30  INF  Request finished HTTP/1.1 GET http://localhost:5033/swagger/favicon-32x32.png - 200 628 image/png 3.6559ms
+2025-11-03 18:13:39.827 +05:30  INF  Request finished HTTP/1.1 GET http://localhost:5033/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 256.6305ms
+2025-11-03 18:13:56.229 +05:30  INF  Request starting HTTP/1.1 GET http://localhost:5033/api/Project/getAllProjects - null null
+2025-11-03 18:13:56.541 +05:30  INF  Executing endpoint 'Buildflow.Api.Controllers.Project.ProjectController.GetAllProjects (Buildflow.Api)'
+2025-11-03 18:13:56.595 +05:30  INF  Route matched with {action = "GetAllProjects", controller = "Project"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllProjects() on controller Buildflow.Api.Controllers.Project.ProjectController (Buildflow.Api).
+2025-11-03 18:13:56.610 +05:30  INF  Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-11-03 18:13:56.611 +05:30  INF  Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+2025-11-03 18:13:56.615 +05:30  INF  Executing ChallengeResult with authentication schemes ([]).
+2025-11-03 18:13:56.622 +05:30  INF  AuthenticationScheme: Bearer was challenged.
+2025-11-03 18:13:56.628 +05:30  INF  Executed action Buildflow.Api.Controllers.Project.ProjectController.GetAllProjects (Buildflow.Api) in 26.53ms
+2025-11-03 18:13:56.628 +05:30  INF  Executed endpoint 'Buildflow.Api.Controllers.Project.ProjectController.GetAllProjects (Buildflow.Api)'
+2025-11-03 18:13:56.629 +05:30  INF  Request finished HTTP/1.1 GET http://localhost:5033/api/Project/getAllProjects - 401 0 null 400.0667ms
+2025-11-03 18:14:43.907 +05:30  INF  Request starting HTTP/1.1 POST http://localhost:5033/api/Login/login - application/json 55
+2025-11-03 18:14:43.913 +05:30  INF  CORS policy execution successful.
+2025-11-03 18:14:43.921 +05:30  INF  Executing endpoint 'Buildflow.Api.Controllers.Master.LoginController.Login (Buildflow.Api)'
+2025-11-03 18:14:43.946 +05:30  INF  Route matched with {action = "Login", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Buildflow.Utility.DTO.LoginRequest) on controller Buildflow.Api.Controllers.Master.LoginController (Buildflow.Api).
+2025-11-03 18:14:50.497 +05:30  INF  Executed DbCommand (230ms) [Parameters=[@__email_0='?', @__password_1='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT e.emp_id, e.address, e.alternative_phone, e.city, e.country, e.created_at, e.created_by, e.date_of_birth, e.email, e.employee_code, e.first_name, e.gender, e.hire_date, e.image_url, e.is_active, e.is_allocated, e.last_name, e.middle_name, e.password, e.phone, e.postal_code, e.state, e.termination_date, e.updated_at, e.updated_by
+FROM employee.employee_details AS e
+WHERE e.email = @__email_0 AND e.password = @__password_1
+LIMIT 1
+2025-11-03 18:14:51.579 +05:30  INF  Executed DbCommand (21ms) [Parameters=[@p0='?', @p1='?' (DbType = DateTime2), @p2='?' (DbType = Boolean), @p3='?'], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO employee.refreshtoken (email, expirydate, isrevoked, token)
+VALUES (@p0, @p1, @p2, @p3)
+RETURNING id;
+2025-11-03 18:14:51.666 +05:30  INF  Executing OkObjectResult, writing value of type '<>f__AnonymousType1`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-03 18:14:51.678 +05:30  INF  Executed action Buildflow.Api.Controllers.Master.LoginController.Login (Buildflow.Api) in 7730.895ms
+2025-11-03 18:14:51.679 +05:30  INF  Executed endpoint 'Buildflow.Api.Controllers.Master.LoginController.Login (Buildflow.Api)'
+2025-11-03 18:14:51.693 +05:30  INF  Request finished HTTP/1.1 POST http://localhost:5033/api/Login/login - 200 null application/json; charset=utf-8 7786.9678ms
+2025-11-03 18:16:08.734 +05:30  INF  Request starting HTTP/1.1 POST http://localhost:5033/api/Project/upsertProject - application/json 236
+2025-11-03 18:16:08.746 +05:30  INF  CORS policy execution successful.
+2025-11-03 18:16:08.912 +05:30  INF  Executing endpoint 'Buildflow.Api.Controllers.Project.ProjectController.AddOrUpdateProject (Buildflow.Api)'
+2025-11-03 18:16:08.920 +05:30  INF  Route matched with {action = "AddOrUpdateProject", controller = "Project"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddOrUpdateProject(Buildflow.Utility.DTO.ProjectInput) on controller Buildflow.Api.Controllers.Project.ProjectController (Buildflow.Api).
+2025-11-03 18:16:09.330 +05:30  INF  Executed DbCommand (23ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT p.project_id, p.client_name, p.created_at, p.created_by, p.is_active, p.project_actual_cost, p.project_code, p.project_description, p.project_end_date, p.project_location, p.project_name, p.project_priority, p.project_sector_id, p.project_start_date, p.project_status, p.project_total_budget, p.project_type_id, p.updated_at, p.updated_by
+FROM project.project AS p
+WHERE p.project_id = @__p_0
+LIMIT 1
+2025-11-03 18:16:09.334 +05:30  INF  Executing OkObjectResult, writing value of type 'Buildflow.Utility.DTO.BaseResponse'.
+2025-11-03 18:16:09.350 +05:30  INF  Executed action Buildflow.Api.Controllers.Project.ProjectController.AddOrUpdateProject (Buildflow.Api) in 429.2556ms
+2025-11-03 18:16:09.350 +05:30  INF  Executed endpoint 'Buildflow.Api.Controllers.Project.ProjectController.AddOrUpdateProject (Buildflow.Api)'
+2025-11-03 18:16:09.351 +05:30  INF  Request finished HTTP/1.1 POST http://localhost:5033/api/Project/upsertProject - 200 null application/json; charset=utf-8 617.4072ms
+2025-11-03 18:16:58.341 +05:30  INF  Request starting HTTP/1.1 POST http://localhost:5033/api/Project/upsertProjectTeam - application/json 330
+2025-11-03 18:16:58.344 +05:30  INF  CORS policy execution successful.
+2025-11-03 18:16:58.351 +05:30  INF  Executing endpoint 'Buildflow.Api.Controllers.Project.ProjectController.UpsertProjectTeam (Buildflow.Api)'
+2025-11-03 18:16:58.363 +05:30  INF  Route matched with {action = "UpsertProjectTeam", controller = "Project"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpsertProjectTeam(Buildflow.Utility.DTO.ProjectTeamUpsertDto) on controller Buildflow.Api.Controllers.Project.ProjectController (Buildflow.Api).
+2025-11-03 18:16:58.707 +05:30  INF  Executing BadRequestObjectResult, writing value of type '<>f__AnonymousType6`2[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-03 18:16:58.713 +05:30  INF  Executed action Buildflow.Api.Controllers.Project.ProjectController.UpsertProjectTeam (Buildflow.Api) in 350.6336ms
+2025-11-03 18:16:58.714 +05:30  INF  Executed endpoint 'Buildflow.Api.Controllers.Project.ProjectController.UpsertProjectTeam (Buildflow.Api)'
+2025-11-03 18:16:58.714 +05:30  INF  Request finished HTTP/1.1 POST http://localhost:5033/api/Project/upsertProjectTeam - 400 null application/json; charset=utf-8 379.9029ms
+2025-11-03 18:17:23.462 +05:30  INF  Request starting HTTP/1.1 POST http://localhost:5033/api/Project/upsertProjectTeam - application/json 331
+2025-11-03 18:17:23.462 +05:30  INF  CORS policy execution successful.
+2025-11-03 18:17:23.463 +05:30  INF  Executing endpoint 'Buildflow.Api.Controllers.Project.ProjectController.UpsertProjectTeam (Buildflow.Api)'
+2025-11-03 18:17:23.474 +05:30  INF  Route matched with {action = "UpsertProjectTeam", controller = "Project"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpsertProjectTeam(Buildflow.Utility.DTO.ProjectTeamUpsertDto) on controller Buildflow.Api.Controllers.Project.ProjectController (Buildflow.Api).
+2025-11-03 18:17:23.652 +05:30  INF  Executing BadRequestObjectResult, writing value of type '<>f__AnonymousType6`2[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-03 18:17:23.654 +05:30  INF  Executed action Buildflow.Api.Controllers.Project.ProjectController.UpsertProjectTeam (Buildflow.Api) in 179.9107ms
+2025-11-03 18:17:23.655 +05:30  INF  Executed endpoint 'Buildflow.Api.Controllers.Project.ProjectController.UpsertProjectTeam (Buildflow.Api)'
+2025-11-03 18:17:23.655 +05:30  INF  Request finished HTTP/1.1 POST http://localhost:5033/api/Project/upsertProjectTeam - 400 null application/json; charset=utf-8 193.3183ms
+2025-11-03 18:17:50.333 +05:30  INF  Request starting HTTP/1.1 GET http://localhost:5033/api/Login/getVendorsAndSubcontractors - null null
+2025-11-03 18:17:50.352 +05:30  INF  Executing endpoint 'Buildflow.Api.Controllers.Master.LoginController.GetVendorsAndSubcontractors (Buildflow.Api)'
+2025-11-03 18:17:50.363 +05:30  INF  Route matched with {action = "GetVendorsAndSubcontractors", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetVendorsAndSubcontractors() on controller Buildflow.Api.Controllers.Master.LoginController (Buildflow.Api).
+2025-11-03 18:17:50.480 +05:30  INF  Executed DbCommand (44ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT v.vendor_id AS "Id", v.vendor_name AS "VendorName"
+FROM vendor.vendor AS v
+2025-11-03 18:17:50.530 +05:30  INF  Executed DbCommand (32ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT s.subcontractor_id AS "Id", s.subcontractor_name AS "SubcontractorName"
+FROM subcontractor.subcontractor AS s
+2025-11-03 18:17:50.534 +05:30  INF  Executing OkObjectResult, writing value of type 'Buildflow.Utility.DTO.VendorAndSubcontractor'.
+2025-11-03 18:17:50.548 +05:30  INF  Executed action Buildflow.Api.Controllers.Master.LoginController.GetVendorsAndSubcontractors (Buildflow.Api) in 184.1839ms
+2025-11-03 18:17:50.548 +05:30  INF  Executed endpoint 'Buildflow.Api.Controllers.Master.LoginController.GetVendorsAndSubcontractors (Buildflow.Api)'
+2025-11-03 18:17:50.549 +05:30  INF  Request finished HTTP/1.1 GET http://localhost:5033/api/Login/getVendorsAndSubcontractors - 200 null application/json; charset=utf-8 216.2391ms
+2025-11-03 18:18:08.753 +05:30  INF  Request starting HTTP/1.1 POST http://localhost:5033/api/Project/upsertProjectTeam - application/json 331
+2025-11-03 18:18:08.754 +05:30  INF  CORS policy execution successful.
+2025-11-03 18:18:08.754 +05:30  INF  Executing endpoint 'Buildflow.Api.Controllers.Project.ProjectController.UpsertProjectTeam (Buildflow.Api)'
+2025-11-03 18:18:08.754 +05:30  INF  Route matched with {action = "UpsertProjectTeam", controller = "Project"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpsertProjectTeam(Buildflow.Utility.DTO.ProjectTeamUpsertDto) on controller Buildflow.Api.Controllers.Project.ProjectController (Buildflow.Api).
+2025-11-03 18:18:08.821 +05:30  INF  Executing BadRequestObjectResult, writing value of type '<>f__AnonymousType6`2[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-03 18:18:08.823 +05:30  INF  Executed action Buildflow.Api.Controllers.Project.ProjectController.UpsertProjectTeam (Buildflow.Api) in 68.2526ms
+2025-11-03 18:18:08.823 +05:30  INF  Executed endpoint 'Buildflow.Api.Controllers.Project.ProjectController.UpsertProjectTeam (Buildflow.Api)'
+2025-11-03 18:18:08.823 +05:30  INF  Request finished HTTP/1.1 POST http://localhost:5033/api/Project/upsertProjectTeam - 400 null application/json; charset=utf-8 69.7158ms
+2025-11-03 18:21:49.483 +05:30  INF  Request starting HTTP/1.1 POST http://localhost:5033/api/Project/upsertProjectBudget - application/json 195
+2025-11-03 18:21:49.493 +05:30  INF  CORS policy execution successful.
+2025-11-03 18:21:49.508 +05:30  INF  Executing endpoint 'Buildflow.Api.Controllers.Project.ProjectController.AddBudget (Buildflow.Api)'
+2025-11-03 18:21:49.547 +05:30  INF  Route matched with {action = "AddBudget", controller = "Project"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] AddBudget(Buildflow.Utility.DTO.ProjectBudgetInputDto) on controller Buildflow.Api.Controllers.Project.ProjectController (Buildflow.Api).
+2025-11-03 18:21:52.643 +05:30  ERR  Error inserting project budget details: 3D000: database "buildflow_devlop_db" does not exist
+2025-11-03 18:21:52.645 +05:30  INF  Executing OkObjectResult, writing value of type 'Buildflow.Utility.DTO.BaseResponse'.
+2025-11-03 18:21:52.663 +05:30  INF  Executed action Buildflow.Api.Controllers.Project.ProjectController.AddBudget (Buildflow.Api) in 3115.0669ms
+2025-11-03 18:21:52.663 +05:30  INF  Executed endpoint 'Buildflow.Api.Controllers.Project.ProjectController.AddBudget (Buildflow.Api)'
+2025-11-03 18:21:52.664 +05:30  INF  Request finished HTTP/1.1 POST http://localhost:5033/api/Project/upsertProjectBudget - 200 null application/json; charset=utf-8 3186.253ms
+2025-11-03 18:22:03.209 +05:30  INF  Request starting HTTP/1.1 POST http://localhost:5033/api/Project/upsertProjectTeam - application/json 331
+2025-11-03 18:22:03.209 +05:30  INF  CORS policy execution successful.
+2025-11-03 18:22:03.211 +05:30  INF  Executing endpoint 'Buildflow.Api.Controllers.Project.ProjectController.UpsertProjectTeam (Buildflow.Api)'
+2025-11-03 18:22:03.211 +05:30  INF  Route matched with {action = "UpsertProjectTeam", controller = "Project"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpsertProjectTeam(Buildflow.Utility.DTO.ProjectTeamUpsertDto) on controller Buildflow.Api.Controllers.Project.ProjectController (Buildflow.Api).
+2025-11-03 18:22:03.459 +05:30  INF  Executing BadRequestObjectResult, writing value of type '<>f__AnonymousType6`2[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-03 18:22:03.462 +05:30  INF  Executed action Buildflow.Api.Controllers.Project.ProjectController.UpsertProjectTeam (Buildflow.Api) in 250.4343ms
+2025-11-03 18:22:03.462 +05:30  INF  Executed endpoint 'Buildflow.Api.Controllers.Project.ProjectController.UpsertProjectTeam (Buildflow.Api)'
+2025-11-03 18:22:03.463 +05:30  INF  Request finished HTTP/1.1 POST http://localhost:5033/api/Project/upsertProjectTeam - 400 null application/json; charset=utf-8 254.5428ms
+2025-11-03 18:23:35.840 +05:30  INF  Request starting HTTP/1.1 POST http://localhost:5033/api/Project/upsertProjectTeam - application/json 331
+2025-11-03 18:23:35.844 +05:30  INF  CORS policy execution successful.
+2025-11-03 18:23:35.845 +05:30  INF  Executing endpoint 'Buildflow.Api.Controllers.Project.ProjectController.UpsertProjectTeam (Buildflow.Api)'
+2025-11-03 18:23:35.845 +05:30  INF  Route matched with {action = "UpsertProjectTeam", controller = "Project"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpsertProjectTeam(Buildflow.Utility.DTO.ProjectTeamUpsertDto) on controller Buildflow.Api.Controllers.Project.ProjectController (Buildflow.Api).
+2025-11-03 18:23:35.902 +05:30  INF  Executing BadRequestObjectResult, writing value of type '<>f__AnonymousType6`2[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-03 18:23:35.902 +05:30  INF  Executed action Buildflow.Api.Controllers.Project.ProjectController.UpsertProjectTeam (Buildflow.Api) in 56.8898ms
+2025-11-03 18:23:35.902 +05:30  INF  Executed endpoint 'Buildflow.Api.Controllers.Project.ProjectController.UpsertProjectTeam (Buildflow.Api)'
+2025-11-03 18:23:35.903 +05:30  INF  Request finished HTTP/1.1 POST http://localhost:5033/api/Project/upsertProjectTeam - 400 null application/json; charset=utf-8 64.6083ms
