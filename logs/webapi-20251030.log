@@ -1,0 +1,99 @@
+2025-10-30 10:30:11.637 +05:30  INF  User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-10-30 10:30:12.379 +05:30  INF  Now listening on: http://localhost:5033
+2025-10-30 10:30:12.581 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2025-10-30 10:30:12.582 +05:30  INF  Hosting environment: Development
+2025-10-30 10:30:12.582 +05:30  INF  Content root path: C:\Users\User\OneDrive\Desktop\BulidFlow Project\BuildflowBackend\Buildflow.Api
+2025-10-30 10:30:18.512 +05:30  INF  Request starting HTTP/1.1 GET http://localhost:5033/_vs/browserLink - null null
+2025-10-30 10:30:18.565 +05:30  INF  Request starting HTTP/1.1 GET http://localhost:5033/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-30 10:30:18.673 +05:30  INF  Request finished HTTP/1.1 GET http://localhost:5033/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript; charset=utf-8 196.6301ms
+2025-10-30 10:30:19.199 +05:30  INF  Request finished HTTP/1.1 GET http://localhost:5033/_vs/browserLink - 200 null text/javascript; charset=UTF-8 723.6297ms
+2025-10-30 10:30:19.464 +05:30  INF  Request starting HTTP/1.1 GET http://localhost:5033/swagger/v1/swagger.json - null null
+2025-10-30 10:30:19.589 +05:30  WRN  Failed to determine the https port for redirect.
+2025-10-30 10:30:19.764 +05:30  INF  Request finished HTTP/1.1 GET http://localhost:5033/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 300.3494ms
+2025-10-30 10:48:11.754 +05:30  INF  User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-10-30 10:48:12.618 +05:30  INF  Now listening on: http://localhost:5033
+2025-10-30 10:48:12.826 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2025-10-30 10:48:12.827 +05:30  INF  Hosting environment: Development
+2025-10-30 10:48:12.827 +05:30  INF  Content root path: C:\Users\User\OneDrive\Desktop\BulidFlow Project\BuildflowBackend\Buildflow.Api
+2025-10-30 10:48:17.711 +05:30  INF  Request starting HTTP/1.1 GET http://localhost:5033/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-30 10:48:17.713 +05:30  INF  Request starting HTTP/1.1 GET http://localhost:5033/_vs/browserLink - null null
+2025-10-30 10:48:17.774 +05:30  INF  Request finished HTTP/1.1 GET http://localhost:5033/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript; charset=utf-8 73.8912ms
+2025-10-30 10:48:19.293 +05:30  INF  Request finished HTTP/1.1 GET http://localhost:5033/_vs/browserLink - 200 null text/javascript; charset=UTF-8 1598.4874ms
+2025-10-30 10:48:19.433 +05:30  INF  Request starting HTTP/1.1 GET http://localhost:5033/swagger/v1/swagger.json - null null
+2025-10-30 10:48:19.541 +05:30  WRN  Failed to determine the https port for redirect.
+2025-10-30 10:48:19.652 +05:30  INF  Request finished HTTP/1.1 GET http://localhost:5033/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 218.8822ms
+2025-10-30 12:13:28.417 +05:30  INF  User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-10-30 12:13:32.615 +05:30  INF  Now listening on: http://localhost:5033
+2025-10-30 12:13:33.007 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2025-10-30 12:13:33.008 +05:30  INF  Hosting environment: Development
+2025-10-30 12:13:33.008 +05:30  INF  Content root path: C:\Users\User\OneDrive\Desktop\BulidFlow Project\BuildflowBackend\Buildflow.Api
+2025-10-30 12:13:35.311 +05:30  INF  Request starting HTTP/1.1 GET http://localhost:5033/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-30 12:13:35.311 +05:30  INF  Request starting HTTP/1.1 GET http://localhost:5033/_vs/browserLink - null null
+2025-10-30 12:13:35.436 +05:30  INF  Request finished HTTP/1.1 GET http://localhost:5033/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript; charset=utf-8 138.1115ms
+2025-10-30 12:13:35.711 +05:30  INF  Request finished HTTP/1.1 GET http://localhost:5033/_vs/browserLink - 200 null text/javascript; charset=UTF-8 412.1501ms
+2025-10-30 12:13:35.835 +05:30  INF  Request starting HTTP/1.1 GET http://localhost:5033/swagger/v1/swagger.json - null null
+2025-10-30 12:13:35.964 +05:30  WRN  Failed to determine the https port for redirect.
+2025-10-30 12:13:36.193 +05:30  INF  Request finished HTTP/1.1 GET http://localhost:5033/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 357.8624ms
+2025-10-30 17:35:38.182 +05:30  INF  User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-10-30 17:35:38.813 +05:30  INF  Now listening on: http://localhost:5033
+2025-10-30 17:35:38.988 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2025-10-30 17:35:38.988 +05:30  INF  Hosting environment: Development
+2025-10-30 17:35:38.988 +05:30  INF  Content root path: C:\Users\User\OneDrive\Desktop\BulidFlow Project\BuildflowBackend\Buildflow.Api
+2025-10-30 17:35:43.127 +05:30  INF  Request starting HTTP/1.1 GET http://localhost:5033/_vs/browserLink - null null
+2025-10-30 17:35:43.127 +05:30  INF  Request starting HTTP/1.1 GET http://localhost:5033/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-30 17:35:43.531 +05:30  INF  Request finished HTTP/1.1 GET http://localhost:5033/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript; charset=utf-8 548.6849ms
+2025-10-30 17:35:44.036 +05:30  INF  Request finished HTTP/1.1 GET http://localhost:5033/_vs/browserLink - 200 null text/javascript; charset=UTF-8 1059.5828ms
+2025-10-30 17:35:44.217 +05:30  INF  Request starting HTTP/1.1 GET http://localhost:5033/swagger/v1/swagger.json - null null
+2025-10-30 17:35:44.394 +05:30  WRN  Failed to determine the https port for redirect.
+2025-10-30 17:35:44.501 +05:30  INF  Request finished HTTP/1.1 GET http://localhost:5033/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 283.7605ms
+2025-10-30 17:41:08.373 +05:30  INF  Request starting HTTP/1.1 GET http://localhost:5033/api/Login/LoginUserDetail - null null
+2025-10-30 17:41:08.710 +05:30  INF  Executing endpoint 'Buildflow.Api.Controllers.Master.LoginController.LoginUserDetail (Buildflow.Api)'
+2025-10-30 17:41:08.788 +05:30  INF  Route matched with {action = "LoginUserDetail", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] LoginUserDetail() on controller Buildflow.Api.Controllers.Master.LoginController (Buildflow.Api).
+2025-10-30 17:41:08.805 +05:30  INF  Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-10-30 17:41:08.806 +05:30  INF  Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+2025-10-30 17:41:08.809 +05:30  INF  Executing ChallengeResult with authentication schemes ([]).
+2025-10-30 17:41:08.818 +05:30  INF  AuthenticationScheme: Bearer was challenged.
+2025-10-30 17:41:08.827 +05:30  INF  Executed action Buildflow.Api.Controllers.Master.LoginController.LoginUserDetail (Buildflow.Api) in 29.2979ms
+2025-10-30 17:41:08.828 +05:30  INF  Executed endpoint 'Buildflow.Api.Controllers.Master.LoginController.LoginUserDetail (Buildflow.Api)'
+2025-10-30 17:41:08.828 +05:30  INF  Request finished HTTP/1.1 GET http://localhost:5033/api/Login/LoginUserDetail - 401 0 null 480.441ms
+2025-10-30 17:43:59.249 +05:30  INF  User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-10-30 17:44:00.069 +05:30  INF  Now listening on: http://localhost:5033
+2025-10-30 17:44:00.477 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2025-10-30 17:44:00.477 +05:30  INF  Hosting environment: Development
+2025-10-30 17:44:00.477 +05:30  INF  Content root path: C:\Users\User\OneDrive\Desktop\BulidFlow Project\BuildflowBackend\Buildflow.Api
+2025-10-30 17:44:02.649 +05:30  INF  Request starting HTTP/1.1 GET http://localhost:5033/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-30 17:44:02.649 +05:30  INF  Request starting HTTP/1.1 GET http://localhost:5033/_vs/browserLink - null null
+2025-10-30 17:44:02.710 +05:30  INF  Request finished HTTP/1.1 GET http://localhost:5033/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript; charset=utf-8 73.2614ms
+2025-10-30 17:44:03.187 +05:30  INF  Request finished HTTP/1.1 GET http://localhost:5033/_vs/browserLink - 200 null text/javascript; charset=UTF-8 554.7763ms
+2025-10-30 17:44:03.341 +05:30  INF  Request starting HTTP/1.1 GET http://localhost:5033/swagger/v1/swagger.json - null null
+2025-10-30 17:44:03.491 +05:30  WRN  Failed to determine the https port for redirect.
+2025-10-30 17:44:03.592 +05:30  INF  Request finished HTTP/1.1 GET http://localhost:5033/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 251.4632ms
+2025-10-30 17:44:39.526 +05:30  INF  Request starting HTTP/1.1 POST http://localhost:5033/api/Login/login - application/json 75
+2025-10-30 17:44:39.553 +05:30  INF  CORS policy execution successful.
+2025-10-30 17:44:39.799 +05:30  INF  Executing endpoint 'Buildflow.Api.Controllers.Master.LoginController.Login (Buildflow.Api)'
+2025-10-30 17:44:39.919 +05:30  INF  Route matched with {action = "Login", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Buildflow.Utility.DTO.LoginRequest) on controller Buildflow.Api.Controllers.Master.LoginController (Buildflow.Api).
+2025-10-30 17:44:48.521 +05:30  INF  Executed DbCommand (237ms) [Parameters=[@__email_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT v.vendor_id, v.alternative_mobile, v.city, v.country, v.created_at, v.created_by, v.credit_limit, v.delivery_terms, v.email, v.is_active, v.mobile, v.organization_name, v.password, v.payment_terms, v.postal_code, v.preferred_payment_method, v.state, v.street, v.tax_id, v.updated_at, v.updated_by, v.vendor_code, v.vendor_name, v.website
+FROM vendor.vendor AS v
+WHERE v.email = @__email_0
+LIMIT 1
+2025-10-30 17:44:48.582 +05:30  INF  Executing UnauthorizedObjectResult, writing value of type 'System.String'.
+2025-10-30 17:44:48.594 +05:30  INF  Executed action Buildflow.Api.Controllers.Master.LoginController.Login (Buildflow.Api) in 8667.5027ms
+2025-10-30 17:44:48.595 +05:30  INF  Executed endpoint 'Buildflow.Api.Controllers.Master.LoginController.Login (Buildflow.Api)'
+2025-10-30 17:44:48.612 +05:30  INF  Request finished HTTP/1.1 POST http://localhost:5033/api/Login/login - 401 null text/plain; charset=utf-8 9086.017ms
+2025-10-30 17:46:27.036 +05:30  INF  User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-10-30 17:46:27.713 +05:30  INF  Now listening on: http://localhost:5033
+2025-10-30 17:46:28.400 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2025-10-30 17:46:28.400 +05:30  INF  Hosting environment: Development
+2025-10-30 17:46:28.400 +05:30  INF  Content root path: C:\Users\User\OneDrive\Desktop\BulidFlow Project\BuildflowBackend\Buildflow.Api
+2025-10-30 17:46:30.808 +05:30  INF  Request starting HTTP/1.1 GET http://localhost:5033/_vs/browserLink - null null
+2025-10-30 17:46:30.808 +05:30  INF  Request starting HTTP/1.1 GET http://localhost:5033/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-30 17:46:30.949 +05:30  INF  Request finished HTTP/1.1 GET http://localhost:5033/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript; charset=utf-8 156.6252ms
+2025-10-30 17:46:31.275 +05:30  INF  Request finished HTTP/1.1 GET http://localhost:5033/_vs/browserLink - 200 null text/javascript; charset=UTF-8 483.7751ms
+2025-10-30 17:46:31.406 +05:30  INF  Request starting HTTP/1.1 GET http://localhost:5033/swagger/v1/swagger.json - null null
+2025-10-30 17:46:31.646 +05:30  WRN  Failed to determine the https port for redirect.
+2025-10-30 17:46:32.250 +05:30  INF  Request finished HTTP/1.1 GET http://localhost:5033/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 844.1521ms
+2025-10-30 17:46:54.963 +05:30  INF  Request starting HTTP/1.1 GET http://localhost:5033/.well-known/appspecific/com.chrome.devtools.json - null null
+2025-10-30 17:46:55.277 +05:30  INF  Request finished HTTP/1.1 GET http://localhost:5033/.well-known/appspecific/com.chrome.devtools.json - 404 0 null 314.7736ms
+2025-10-30 17:46:55.283 +05:30  INF  Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5033/.well-known/appspecific/com.chrome.devtools.json, Response status code: 404

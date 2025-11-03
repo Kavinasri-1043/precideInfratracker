@@ -1,0 +1,1122 @@
+2025-04-11 11:50:54.745 +05:30  FTL  Application startup exceptionSystem.InvalidOperationException: Unable to resolve service for type 'Microsoft.Extensions.Logging.ILogger' while attempting to activate 'Buildflow.Api.Middlewares.ExceptionMiddleware'.
+   at Microsoft.Extensions.Internal.ActivatorUtilities.ConstructorMatcher.CreateInstance(IServiceProvider provider)
+   at Microsoft.Extensions.Internal.ActivatorUtilities.CreateInstance(IServiceProvider provider, Type instanceType, Object[] parameters)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.ReflectionMiddlewareBinder.CreateMiddleware(RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+
+2025-04-11 11:50:54.780 +05:30  ERR  Hosting failed to startSystem.InvalidOperationException: Unable to resolve service for type 'Microsoft.Extensions.Logging.ILogger' while attempting to activate 'Buildflow.Api.Middlewares.ExceptionMiddleware'.
+   at Microsoft.Extensions.Internal.ActivatorUtilities.ConstructorMatcher.CreateInstance(IServiceProvider provider)
+   at Microsoft.Extensions.Internal.ActivatorUtilities.CreateInstance(IServiceProvider provider, Type instanceType, Object[] parameters)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.ReflectionMiddlewareBinder.CreateMiddleware(RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+
+2025-04-11 11:53:43.724 +05:30  INF  Now listening on: https://localhost:7199
+2025-04-11 11:53:43.742 +05:30  INF  Now listening on: http://localhost:5033
+2025-04-11 11:53:43.825 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2025-04-11 11:53:43.825 +05:30  INF  Hosting environment: Development
+2025-04-11 11:53:43.825 +05:30  INF  Content root path: C:\Users\muthu\source\repos\Buildflow.Api\Buildflow.Api
+2025-04-11 11:53:44.841 +05:30  INF  Request starting HTTP/2 GET https://localhost:7199/weatherforecast - null null
+2025-04-11 11:53:45.131 +05:30  ERR  An unhandled exception has occurred while executing the request.System.InvalidOperationException: Unable to resolve service for type 'Swashbuckle.AspNetCore.Swagger.ISwaggerProvider' while attempting to Invoke middleware 'Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware'.
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.GetService(IServiceProvider sp, Type type, Type middleware)
+   at lambda_method1(Closure, Object, HttpContext, IServiceProvider)
+   at Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+
+2025-04-11 11:53:45.299 +05:30  INF  Request finished HTTP/2 GET https://localhost:7199/weatherforecast - 500 null text/html; charset=utf-8 469.3237ms
+2025-04-11 11:53:45.312 +05:30  INF  Request starting HTTP/2 GET https://localhost:7199/_vs/browserLink - null null
+2025-04-11 11:53:45.313 +05:30  INF  Request starting HTTP/2 GET https://localhost:7199/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-11 11:53:45.319 +05:30  INF  Request finished HTTP/2 GET https://localhost:7199/_framework/aspnetcore-browser-refresh.js - 200 13762 application/javascript; charset=utf-8 5.7822ms
+2025-04-11 11:53:45.736 +05:30  INF  Request finished HTTP/2 GET https://localhost:7199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 424.0496ms
+2025-04-11 11:53:45.779 +05:30  INF  Request starting HTTP/2 GET https://localhost:7199/favicon.ico - null null
+2025-04-11 11:53:45.781 +05:30  ERR  An unhandled exception has occurred while executing the request.System.InvalidOperationException: Unable to resolve service for type 'Swashbuckle.AspNetCore.Swagger.ISwaggerProvider' while attempting to Invoke middleware 'Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware'.
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.GetService(IServiceProvider sp, Type type, Type middleware)
+   at lambda_method1(Closure, Object, HttpContext, IServiceProvider)
+   at Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+
+2025-04-11 11:53:45.783 +05:30  INF  Request finished HTTP/2 GET https://localhost:7199/favicon.ico - 500 null text/plain; charset=utf-8 4.3412ms
+2025-04-11 11:55:21.132 +05:30  INF  Now listening on: https://localhost:7199
+2025-04-11 11:55:21.154 +05:30  INF  Now listening on: http://localhost:5033
+2025-04-11 11:55:21.189 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2025-04-11 11:55:21.189 +05:30  INF  Hosting environment: Development
+2025-04-11 11:55:21.189 +05:30  INF  Content root path: C:\Users\muthu\source\repos\Buildflow.Api\Buildflow.Api
+2025-04-11 11:55:22.207 +05:30  INF  Request starting HTTP/2 GET https://localhost:7199/weatherforecast - null null
+2025-04-11 11:55:22.521 +05:30  INF  Executing endpoint 'Buildflow.Api.Controllers.WeatherForecastController.Get (Buildflow.Api)'
+2025-04-11 11:55:22.553 +05:30  INF  Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[Buildflow.Api.WeatherForecast] Get() on controller Buildflow.Api.Controllers.WeatherForecastController (Buildflow.Api).
+2025-04-11 11:55:22.571 +05:30  INF  Executing ObjectResult, writing value of type 'Buildflow.Api.WeatherForecast[]'.
+2025-04-11 11:55:22.611 +05:30  INF  Executed action Buildflow.Api.Controllers.WeatherForecastController.Get (Buildflow.Api) in 50.2907ms
+2025-04-11 11:55:22.615 +05:30  INF  Executed endpoint 'Buildflow.Api.Controllers.WeatherForecastController.Get (Buildflow.Api)'
+2025-04-11 11:55:22.623 +05:30  INF  HTTP GET /weatherforecast responded 200 in 103.9043 ms
+2025-04-11 11:55:22.635 +05:30  INF  Request finished HTTP/2 GET https://localhost:7199/weatherforecast - 200 null application/json; charset=utf-8 456.6226ms
+2025-04-11 11:55:22.687 +05:30  INF  Request starting HTTP/2 GET https://localhost:7199/favicon.ico - null null
+2025-04-11 11:55:22.693 +05:30  INF  HTTP GET /favicon.ico responded 404 in 0.7548 ms
+2025-04-11 11:55:22.700 +05:30  INF  Request finished HTTP/2 GET https://localhost:7199/favicon.ico - 404 0 null 12.4843ms
+2025-04-11 11:55:22.703 +05:30  INF  Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7199/favicon.ico, Response status code: 404
+2025-04-11 11:55:30.475 +05:30  INF  Request starting HTTP/2 GET https://localhost:7199/swagger - null null
+2025-04-11 11:55:30.489 +05:30  INF  Request finished HTTP/2 GET https://localhost:7199/swagger - 301 0 null 14.1725ms
+2025-04-11 11:55:30.500 +05:30  INF  Request starting HTTP/2 GET https://localhost:7199/swagger/index.html - null null
+2025-04-11 11:55:30.607 +05:30  INF  Request finished HTTP/2 GET https://localhost:7199/swagger/index.html - 200 null text/html;charset=utf-8 107.8454ms
+2025-04-11 11:55:30.616 +05:30  INF  Request starting HTTP/2 GET https://localhost:7199/swagger/swagger-ui.css - null null
+2025-04-11 11:55:30.618 +05:30  INF  Request starting HTTP/2 GET https://localhost:7199/swagger/index.css - null null
+2025-04-11 11:55:30.623 +05:30  INF  Request starting HTTP/2 GET https://localhost:7199/swagger/index.js - null null
+2025-04-11 11:55:30.631 +05:30  INF  Request starting HTTP/2 GET https://localhost:7199/swagger/swagger-ui-standalone-preset.js - null null
+2025-04-11 11:55:30.631 +05:30  INF  Request finished HTTP/2 GET https://localhost:7199/swagger/index.js - 200 null application/javascript;charset=utf-8 8.7175ms
+2025-04-11 11:55:30.649 +05:30  INF  Request starting HTTP/2 GET https://localhost:7199/swagger/swagger-ui-bundle.js - null null
+2025-04-11 11:55:30.652 +05:30  INF  Request starting HTTP/2 GET https://localhost:7199/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-11 11:55:30.688 +05:30  INF  Sending file. Request path: '/index.css'. Physical path: 'N/A'
+2025-04-11 11:55:30.690 +05:30  INF  Request finished HTTP/2 GET https://localhost:7199/swagger/index.css - 200 202 text/css 70.0565ms
+2025-04-11 11:55:30.725 +05:30  INF  Request finished HTTP/2 GET https://localhost:7199/_framework/aspnetcore-browser-refresh.js - 200 13762 application/javascript; charset=utf-8 73.106ms
+2025-04-11 11:55:30.741 +05:30  INF  Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2025-04-11 11:55:30.741 +05:30  INF  Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2025-04-11 11:55:30.743 +05:30  INF  Request finished HTTP/2 GET https://localhost:7199/swagger/swagger-ui.css - 200 154949 text/css 128.2963ms
+2025-04-11 11:55:30.743 +05:30  INF  Request finished HTTP/2 GET https://localhost:7199/swagger/swagger-ui-standalone-preset.js - 200 229223 text/javascript 112.7367ms
+2025-04-11 11:55:30.757 +05:30  INF  Request starting HTTP/2 GET https://localhost:7199/_vs/browserLink - null null
+2025-04-11 11:55:30.835 +05:30  INF  Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2025-04-11 11:55:30.836 +05:30  INF  Request finished HTTP/2 GET https://localhost:7199/swagger/swagger-ui-bundle.js - 200 1466908 text/javascript 186.9508ms
+2025-04-11 11:55:30.876 +05:30  INF  Request finished HTTP/2 GET https://localhost:7199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 119.0252ms
+2025-04-11 11:55:30.989 +05:30  INF  Request starting HTTP/2 GET https://localhost:7199/swagger/v1/swagger.json - null null
+2025-04-11 11:55:31.017 +05:30  INF  Request starting HTTP/2 GET https://localhost:7199/swagger/favicon-32x32.png - null null
+2025-04-11 11:55:31.018 +05:30  INF  Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2025-04-11 11:55:31.018 +05:30  INF  Request finished HTTP/2 GET https://localhost:7199/swagger/favicon-32x32.png - 200 628 image/png 1.0392ms
+2025-04-11 11:55:31.121 +05:30  INF  Request finished HTTP/2 GET https://localhost:7199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 132.8821ms
+2025-04-11 12:03:10.761 +05:30  INF  Request starting HTTP/2 GET https://localhost:7199/WeatherForecast - null null
+2025-04-11 12:03:10.784 +05:30  INF  Executing endpoint 'Buildflow.Api.Controllers.WeatherForecastController.Get (Buildflow.Api)'
+2025-04-11 12:03:10.793 +05:30  INF  Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[Buildflow.Api.WeatherForecast] Get() on controller Buildflow.Api.Controllers.WeatherForecastController (Buildflow.Api).
+2025-04-11 12:03:10.803 +05:30  INF  Executing ObjectResult, writing value of type 'Buildflow.Api.WeatherForecast[]'.
+2025-04-11 12:03:10.808 +05:30  INF  Executed action Buildflow.Api.Controllers.WeatherForecastController.Get (Buildflow.Api) in 14.5247ms
+2025-04-11 12:03:10.808 +05:30  INF  Executed endpoint 'Buildflow.Api.Controllers.WeatherForecastController.Get (Buildflow.Api)'
+2025-04-11 12:03:10.809 +05:30  INF  HTTP GET /WeatherForecast responded 200 in 33.2295 ms
+2025-04-11 12:03:10.809 +05:30  INF  Request finished HTTP/2 GET https://localhost:7199/WeatherForecast - 200 null application/json; charset=utf-8 51.2529ms
+2025-04-11 12:03:41.024 +05:30  INF  Now listening on: https://localhost:7199
+2025-04-11 12:03:41.052 +05:30  INF  Now listening on: http://localhost:5033
+2025-04-11 12:03:41.081 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2025-04-11 12:03:41.081 +05:30  INF  Hosting environment: Development
+2025-04-11 12:03:41.081 +05:30  INF  Content root path: C:\Users\muthu\source\repos\Buildflow.Api\Buildflow.Api
+2025-04-11 12:03:42.256 +05:30  INF  Request starting HTTP/2 GET https://localhost:7199/_vs/browserLink - null null
+2025-04-11 12:03:42.256 +05:30  INF  Request starting HTTP/2 GET https://localhost:7199/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-11 12:03:42.350 +05:30  INF  Request finished HTTP/2 GET https://localhost:7199/_framework/aspnetcore-browser-refresh.js - 200 13762 application/javascript; charset=utf-8 103.6833ms
+2025-04-11 12:03:42.423 +05:30  INF  Request finished HTTP/2 GET https://localhost:7199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 181.2065ms
+2025-04-11 12:03:42.485 +05:30  INF  Request starting HTTP/2 GET https://localhost:7199/swagger/v1/swagger.json - null null
+2025-04-11 12:03:42.668 +05:30  INF  Request finished HTTP/2 GET https://localhost:7199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 182.9999ms
+2025-04-11 12:59:46.434 +05:30  INF  Now listening on: https://localhost:7199
+2025-04-11 12:59:46.457 +05:30  INF  Now listening on: http://localhost:5033
+2025-04-11 12:59:46.536 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2025-04-11 12:59:46.537 +05:30  INF  Hosting environment: Development
+2025-04-11 12:59:46.537 +05:30  INF  Content root path: C:\Users\muthu\source\repos\Buildflow.Api\Buildflow.Api
+2025-04-11 12:59:47.752 +05:30  INF  Request starting HTTP/2 GET https://localhost:7199/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-11 12:59:47.753 +05:30  INF  Request starting HTTP/2 GET https://localhost:7199/_vs/browserLink - null null
+2025-04-11 12:59:47.810 +05:30  INF  Request finished HTTP/2 GET https://localhost:7199/_framework/aspnetcore-browser-refresh.js - 200 13762 application/javascript; charset=utf-8 69.7921ms
+2025-04-11 12:59:47.985 +05:30  INF  Request finished HTTP/2 GET https://localhost:7199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 245.0917ms
+2025-04-11 12:59:48.089 +05:30  INF  Request starting HTTP/2 GET https://localhost:7199/swagger/v1/swagger.json - null null
+2025-04-11 12:59:48.415 +05:30  INF  Request finished HTTP/2 GET https://localhost:7199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 326.2764ms
+2025-04-11 13:02:34.412 +05:30  INF  Request starting HTTP/2 POST https://localhost:7199/api/Login/login - application/json 58
+2025-04-11 13:02:34.435 +05:30  INF  Executing endpoint 'Buildflow.Api.Controllers.Master.LoginController.Login (Buildflow.Api)'
+2025-04-11 13:02:36.374 +05:30  INF  Route matched with {action = "Login", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Microsoft.AspNetCore.Identity.Data.LoginRequest) on controller Buildflow.Api.Controllers.Master.LoginController (Buildflow.Api).
+2025-04-11 13:02:36.388 +05:30  INF  Executed action Buildflow.Api.Controllers.Master.LoginController.Login (Buildflow.Api) in 7.931ms
+2025-04-11 13:02:36.390 +05:30  INF  Executed endpoint 'Buildflow.Api.Controllers.Master.LoginController.Login (Buildflow.Api)'
+2025-04-11 13:02:36.398 +05:30  ERR  HTTP POST /api/Login/login responded 500 in 1971.2101 msSystem.InvalidOperationException: Unable to resolve service for type 'Buildflow.Library.Repository.Interfaces.IUnitOfWork' while attempting to activate 'Buildflow.Api.Controllers.Master.LoginController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method9(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+
+2025-04-11 13:02:36.740 +05:30  ERR  Error in Application : System.InvalidOperationException: Unable to resolve service for type 'Buildflow.Library.Repository.Interfaces.IUnitOfWork' while attempting to activate 'Buildflow.Api.Controllers.Master.LoginController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method9(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Buildflow.Api.Middlewares.ExceptionMiddleware.InvokeAsync(HttpContext httpContext) in C:\Users\muthu\source\repos\Buildflow.Api\Buildflow.Api\Middlewares\ExceptionMiddleware.cs:line 31
+2025-04-11 13:02:36.751 +05:30  INF  Request finished HTTP/2 POST https://localhost:7199/api/Login/login - 500 null application/json 2339.8994ms
+2025-04-11 13:02:56.283 +05:30  INF  Request starting HTTP/2 POST https://localhost:7199/api/Login/login - application/json 58
+2025-04-11 13:02:56.291 +05:30  INF  Executing endpoint 'Buildflow.Api.Controllers.Master.LoginController.Login (Buildflow.Api)'
+2025-04-11 13:02:56.291 +05:30  INF  Route matched with {action = "Login", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Microsoft.AspNetCore.Identity.Data.LoginRequest) on controller Buildflow.Api.Controllers.Master.LoginController (Buildflow.Api).
+2025-04-11 13:02:56.292 +05:30  INF  Executed action Buildflow.Api.Controllers.Master.LoginController.Login (Buildflow.Api) in 0.6953ms
+2025-04-11 13:02:56.292 +05:30  INF  Executed endpoint 'Buildflow.Api.Controllers.Master.LoginController.Login (Buildflow.Api)'
+2025-04-11 13:02:56.293 +05:30  ERR  HTTP POST /api/Login/login responded 500 in 2.8886 msSystem.InvalidOperationException: Unable to resolve service for type 'Buildflow.Library.Repository.Interfaces.IUnitOfWork' while attempting to activate 'Buildflow.Api.Controllers.Master.LoginController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method9(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+
+2025-04-11 13:02:56.319 +05:30  ERR  Error in Application : System.InvalidOperationException: Unable to resolve service for type 'Buildflow.Library.Repository.Interfaces.IUnitOfWork' while attempting to activate 'Buildflow.Api.Controllers.Master.LoginController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method9(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Buildflow.Api.Middlewares.ExceptionMiddleware.InvokeAsync(HttpContext httpContext) in C:\Users\muthu\source\repos\Buildflow.Api\Buildflow.Api\Middlewares\ExceptionMiddleware.cs:line 31
+2025-04-11 13:02:56.320 +05:30  INF  Request finished HTTP/2 POST https://localhost:7199/api/Login/login - 500 null application/json 42.4823ms
+2025-04-11 13:04:57.806 +05:30  INF  Now listening on: https://localhost:7199
+2025-04-11 13:04:57.836 +05:30  INF  Now listening on: http://localhost:5033
+2025-04-11 13:04:57.876 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2025-04-11 13:04:57.876 +05:30  INF  Hosting environment: Development
+2025-04-11 13:04:57.876 +05:30  INF  Content root path: C:\Users\muthu\source\repos\Buildflow.Api\Buildflow.Api
+2025-04-11 13:04:59.308 +05:30  INF  Request starting HTTP/2 GET https://localhost:7199/_vs/browserLink - null null
+2025-04-11 13:04:59.308 +05:30  INF  Request starting HTTP/2 GET https://localhost:7199/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-11 13:04:59.406 +05:30  INF  Request finished HTTP/2 GET https://localhost:7199/_framework/aspnetcore-browser-refresh.js - 200 13762 application/javascript; charset=utf-8 105.4444ms
+2025-04-11 13:05:02.310 +05:30  INF  Request finished HTTP/2 GET https://localhost:7199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 3011.4866ms
+2025-04-11 13:05:02.382 +05:30  INF  Request starting HTTP/2 GET https://localhost:7199/swagger/v1/swagger.json - null null
+2025-04-11 13:05:02.640 +05:30  INF  Request finished HTTP/2 GET https://localhost:7199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 258.7079ms
+2025-04-11 13:05:24.686 +05:30  INF  Request starting HTTP/2 POST https://localhost:7199/api/Login/login - application/json 58
+2025-04-11 13:05:24.709 +05:30  INF  Executing endpoint 'Buildflow.Api.Controllers.Master.LoginController.Login (Buildflow.Api)'
+2025-04-11 13:05:24.839 +05:30  INF  Route matched with {action = "Login", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Microsoft.AspNetCore.Identity.Data.LoginRequest) on controller Buildflow.Api.Controllers.Master.LoginController (Buildflow.Api).
+2025-04-11 13:05:24.855 +05:30  INF  Executed action Buildflow.Api.Controllers.Master.LoginController.Login (Buildflow.Api) in 9.1261ms
+2025-04-11 13:05:24.858 +05:30  INF  Executed endpoint 'Buildflow.Api.Controllers.Master.LoginController.Login (Buildflow.Api)'
+2025-04-11 13:05:24.865 +05:30  ERR  HTTP POST /api/Login/login responded 500 in 156.8534 msSystem.InvalidOperationException: Unable to resolve service for type 'Buildflow.Library.Repository.Interfaces.IUnitOfWork' while attempting to activate 'Buildflow.Api.Controllers.Master.LoginController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method9(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+
+2025-04-11 13:05:24.992 +05:30  ERR  Error in Application : System.InvalidOperationException: Unable to resolve service for type 'Buildflow.Library.Repository.Interfaces.IUnitOfWork' while attempting to activate 'Buildflow.Api.Controllers.Master.LoginController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method9(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Buildflow.Api.Middlewares.ExceptionMiddleware.InvokeAsync(HttpContext httpContext) in C:\Users\muthu\source\repos\Buildflow.Api\Buildflow.Api\Middlewares\ExceptionMiddleware.cs:line 31
+2025-04-11 13:05:25.000 +05:30  INF  Request finished HTTP/2 POST https://localhost:7199/api/Login/login - 500 null application/json 314.0028ms
+2025-04-11 13:11:46.927 +05:30  INF  User profile is available. Using 'C:\Users\muthu\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-04-11 13:11:47.211 +05:30  INF  Now listening on: https://localhost:7199
+2025-04-11 13:11:47.211 +05:30  INF  Now listening on: http://localhost:5033
+2025-04-11 13:11:47.246 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2025-04-11 13:11:47.246 +05:30  INF  Hosting environment: Development
+2025-04-11 13:11:47.246 +05:30  INF  Content root path: C:\Users\muthu\source\repos\Buildflow.Api\Buildflow.Api
+2025-04-11 13:11:48.559 +05:30  INF  Request starting HTTP/2 GET https://localhost:7199/_vs/browserLink - null null
+2025-04-11 13:11:48.559 +05:30  INF  Request starting HTTP/2 GET https://localhost:7199/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-11 13:11:48.641 +05:30  INF  Request finished HTTP/2 GET https://localhost:7199/_framework/aspnetcore-browser-refresh.js - 200 13762 application/javascript; charset=utf-8 73.6938ms
+2025-04-11 13:11:48.770 +05:30  INF  Request finished HTTP/2 GET https://localhost:7199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 224.6854ms
+2025-04-11 13:11:48.839 +05:30  INF  Request starting HTTP/2 GET https://localhost:7199/swagger/v1/swagger.json - null null
+2025-04-11 13:11:49.017 +05:30  INF  Request finished HTTP/2 GET https://localhost:7199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 178.6215ms
+2025-04-11 13:12:10.574 +05:30  INF  Request starting HTTP/2 POST https://localhost:7199/api/Login/login - application/json 59
+2025-04-11 13:12:10.840 +05:30  INF  Executing endpoint 'Buildflow.Api.Controllers.Master.LoginController.Login (Buildflow.Api)'
+2025-04-11 13:12:10.879 +05:30  INF  Route matched with {action = "Login", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Microsoft.AspNetCore.Identity.Data.LoginRequest) on controller Buildflow.Api.Controllers.Master.LoginController (Buildflow.Api).
+2025-04-11 13:12:11.915 +05:30  INF  Executed action Buildflow.Api.Controllers.Master.LoginController.Login (Buildflow.Api) in 1033.3895ms
+2025-04-11 13:12:11.917 +05:30  INF  Executed endpoint 'Buildflow.Api.Controllers.Master.LoginController.Login (Buildflow.Api)'
+2025-04-11 13:12:11.919 +05:30  ERR  HTTP POST /api/Login/login responded 500 in 1335.8830 msSystem.InvalidOperationException: Unable to resolve service for type 'AutoMapper.IMapper' while attempting to activate 'Buildflow.Api.Controllers.Master.LoginController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method9(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+
+2025-04-11 13:12:12.054 +05:30  ERR  Error in Application : System.InvalidOperationException: Unable to resolve service for type 'AutoMapper.IMapper' while attempting to activate 'Buildflow.Api.Controllers.Master.LoginController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method9(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Buildflow.Api.Middlewares.ExceptionMiddleware.InvokeAsync(HttpContext httpContext) in C:\Users\muthu\source\repos\Buildflow.Api\Buildflow.Api\Middlewares\ExceptionMiddleware.cs:line 31
+2025-04-11 13:12:12.067 +05:30  INF  Request finished HTTP/2 POST https://localhost:7199/api/Login/login - 500 null application/json 1493.2286ms
+2025-04-11 13:26:54.170 +05:30  INF  User profile is available. Using 'C:\Users\muthu\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-04-11 13:26:54.579 +05:30  INF  Now listening on: https://localhost:7199
+2025-04-11 13:26:54.579 +05:30  INF  Now listening on: http://localhost:5033
+2025-04-11 13:26:54.618 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2025-04-11 13:26:54.618 +05:30  INF  Hosting environment: Development
+2025-04-11 13:26:54.618 +05:30  INF  Content root path: C:\Users\muthu\source\repos\Buildflow.Api\Buildflow.Api
+2025-04-11 13:26:56.480 +05:30  INF  Request starting HTTP/2 GET https://localhost:7199/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-11 13:26:56.480 +05:30  INF  Request starting HTTP/2 GET https://localhost:7199/_vs/browserLink - null null
+2025-04-11 13:26:56.566 +05:30  INF  Request finished HTTP/2 GET https://localhost:7199/_framework/aspnetcore-browser-refresh.js - 200 13762 application/javascript; charset=utf-8 94.828ms
+2025-04-11 13:26:56.716 +05:30  INF  Request finished HTTP/2 GET https://localhost:7199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 247.0758ms
+2025-04-11 13:26:56.832 +05:30  INF  Request starting HTTP/2 GET https://localhost:7199/swagger/v1/swagger.json - null null
+2025-04-11 13:26:57.080 +05:30  INF  Request finished HTTP/2 GET https://localhost:7199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 249.7047ms
+2025-04-11 13:27:28.364 +05:30  INF  Request starting HTTP/2 POST https://localhost:7199/api/Login/login - application/json 57
+2025-04-11 13:27:28.637 +05:30  INF  Executing endpoint 'Buildflow.Api.Controllers.Master.LoginController.Login (Buildflow.Api)'
+2025-04-11 13:27:28.741 +05:30  INF  Route matched with {action = "Login", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Microsoft.AspNetCore.Identity.Data.LoginRequest) on controller Buildflow.Api.Controllers.Master.LoginController (Buildflow.Api).
+2025-04-11 13:27:32.278 +05:30  INF  Executed action Buildflow.Api.Controllers.Master.LoginController.Login (Buildflow.Api) in 3527.9908ms
+2025-04-11 13:27:32.282 +05:30  INF  Executed endpoint 'Buildflow.Api.Controllers.Master.LoginController.Login (Buildflow.Api)'
+2025-04-11 13:27:32.290 +05:30  ERR  HTTP POST /api/Login/login responded 500 in 3893.2023 msSystem.InvalidOperationException: Unable to resolve service for type 'AutoMapper.IMapper' while attempting to activate 'Buildflow.Api.Controllers.Master.LoginController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method9(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+
+2025-04-11 13:27:32.534 +05:30  ERR  Error in Application : System.InvalidOperationException: Unable to resolve service for type 'AutoMapper.IMapper' while attempting to activate 'Buildflow.Api.Controllers.Master.LoginController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method9(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Buildflow.Api.Middlewares.ExceptionMiddleware.InvokeAsync(HttpContext httpContext) in C:\Users\muthu\source\repos\Buildflow.Api\Buildflow.Api\Middlewares\ExceptionMiddleware.cs:line 31
+2025-04-11 13:27:32.556 +05:30  INF  Request finished HTTP/2 POST https://localhost:7199/api/Login/login - 500 null application/json 4193.8959ms
+2025-04-11 13:28:50.977 +05:30  INF  User profile is available. Using 'C:\Users\muthu\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-04-11 13:28:51.430 +05:30  INF  Now listening on: https://localhost:7199
+2025-04-11 13:28:51.430 +05:30  INF  Now listening on: http://localhost:5033
+2025-04-11 13:28:51.508 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2025-04-11 13:28:51.509 +05:30  INF  Hosting environment: Development
+2025-04-11 13:28:51.509 +05:30  INF  Content root path: C:\Users\muthu\source\repos\Buildflow.Api\Buildflow.Api
+2025-04-11 13:28:53.224 +05:30  INF  Request starting HTTP/2 GET https://localhost:7199/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-11 13:28:53.224 +05:30  INF  Request starting HTTP/2 GET https://localhost:7199/_vs/browserLink - null null
+2025-04-11 13:28:53.287 +05:30  INF  Request finished HTTP/2 GET https://localhost:7199/_framework/aspnetcore-browser-refresh.js - 200 13762 application/javascript; charset=utf-8 74.0328ms
+2025-04-11 13:28:53.424 +05:30  INF  Request finished HTTP/2 GET https://localhost:7199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 212.5165ms
+2025-04-11 13:28:53.505 +05:30  INF  Request starting HTTP/2 GET https://localhost:7199/swagger/v1/swagger.json - null null
+2025-04-11 13:28:53.809 +05:30  INF  Request finished HTTP/2 GET https://localhost:7199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 303.9249ms
+2025-04-11 13:29:24.329 +05:30  INF  Request starting HTTP/2 POST https://localhost:7199/api/Login/login - application/json 57
+2025-04-11 13:29:24.681 +05:30  INF  Executing endpoint 'Buildflow.Api.Controllers.Master.LoginController.Login (Buildflow.Api)'
+2025-04-11 13:29:24.769 +05:30  INF  Route matched with {action = "Login", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Microsoft.AspNetCore.Identity.Data.LoginRequest) on controller Buildflow.Api.Controllers.Master.LoginController (Buildflow.Api).
+2025-04-11 13:29:28.239 +05:30  INF  Executed action Buildflow.Api.Controllers.Master.LoginController.Login (Buildflow.Api) in 3458.1827ms
+2025-04-11 13:29:28.242 +05:30  INF  Executed endpoint 'Buildflow.Api.Controllers.Master.LoginController.Login (Buildflow.Api)'
+2025-04-11 13:29:28.247 +05:30  ERR  HTTP POST /api/Login/login responded 500 in 3884.2376 msSystem.InvalidOperationException: Unable to resolve service for type 'AutoMapper.IMapper' while attempting to activate 'Buildflow.Api.Controllers.Master.LoginController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method9(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+
+2025-04-11 13:29:28.505 +05:30  ERR  Error in Application : System.InvalidOperationException: Unable to resolve service for type 'AutoMapper.IMapper' while attempting to activate 'Buildflow.Api.Controllers.Master.LoginController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method9(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Buildflow.Api.Middlewares.ExceptionMiddleware.InvokeAsync(HttpContext httpContext) in C:\Users\muthu\source\repos\Buildflow.Api\Buildflow.Api\Middlewares\ExceptionMiddleware.cs:line 31
+2025-04-11 13:29:28.526 +05:30  INF  Request finished HTTP/2 POST https://localhost:7199/api/Login/login - 500 null application/json 4197.4405ms
+2025-04-11 13:36:46.338 +05:30  INF  User profile is available. Using 'C:\Users\muthu\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-04-11 13:36:46.715 +05:30  INF  Now listening on: https://localhost:7199
+2025-04-11 13:36:46.716 +05:30  INF  Now listening on: http://localhost:5033
+2025-04-11 13:36:46.772 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2025-04-11 13:36:46.772 +05:30  INF  Hosting environment: Development
+2025-04-11 13:36:46.772 +05:30  INF  Content root path: C:\Users\muthu\source\repos\Buildflow.Api\Buildflow.Api
+2025-04-11 13:36:47.606 +05:30  INF  Request starting HTTP/2 GET https://localhost:7199/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-11 13:36:47.605 +05:30  INF  Request starting HTTP/2 GET https://localhost:7199/_vs/browserLink - null null
+2025-04-11 13:36:47.694 +05:30  INF  Request finished HTTP/2 GET https://localhost:7199/_framework/aspnetcore-browser-refresh.js - 200 13762 application/javascript; charset=utf-8 103.6597ms
+2025-04-11 13:36:47.832 +05:30  INF  Request finished HTTP/2 GET https://localhost:7199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 242.8824ms
+2025-04-11 13:36:48.161 +05:30  INF  Request starting HTTP/2 GET https://localhost:7199/swagger/v1/swagger.json - null null
+2025-04-11 13:36:48.518 +05:30  INF  Request finished HTTP/2 GET https://localhost:7199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 357.0313ms
+2025-04-11 13:37:08.945 +05:30  INF  Request starting HTTP/2 POST https://localhost:7199/api/Login/login - application/json 58
+2025-04-11 13:37:09.177 +05:30  INF  Executing endpoint 'Buildflow.Api.Controllers.Master.LoginController.Login (Buildflow.Api)'
+2025-04-11 13:37:09.275 +05:30  INF  Route matched with {action = "Login", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Buildflow.Infrastructure.SP_Model.LoginRequest) on controller Buildflow.Api.Controllers.Master.LoginController (Buildflow.Api).
+2025-04-11 13:37:12.799 +05:30  INF  Executed action Buildflow.Api.Controllers.Master.LoginController.Login (Buildflow.Api) in 3510.6897ms
+2025-04-11 13:37:12.804 +05:30  INF  Executed endpoint 'Buildflow.Api.Controllers.Master.LoginController.Login (Buildflow.Api)'
+2025-04-11 13:37:12.814 +05:30  ERR  HTTP POST /api/Login/login responded 500 in 3844.2413 msSystem.InvalidOperationException: Unable to resolve service for type 'AutoMapper.IMapper' while attempting to activate 'Buildflow.Api.Controllers.Master.LoginController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method9(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+
+2025-04-11 13:37:13.015 +05:30  ERR  Error in Application : System.InvalidOperationException: Unable to resolve service for type 'AutoMapper.IMapper' while attempting to activate 'Buildflow.Api.Controllers.Master.LoginController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method9(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Buildflow.Api.Middlewares.ExceptionMiddleware.InvokeAsync(HttpContext httpContext) in C:\Users\muthu\source\repos\Buildflow.Api\Buildflow.Api\Middlewares\ExceptionMiddleware.cs:line 31
+2025-04-11 13:37:13.039 +05:30  INF  Request finished HTTP/2 POST https://localhost:7199/api/Login/login - 500 null application/json 4094.8233ms
+2025-04-11 13:37:29.816 +05:30  INF  Request starting HTTP/2 POST https://localhost:7199/api/Login/login - application/json 58
+2025-04-11 13:37:29.820 +05:30  INF  Executing endpoint 'Buildflow.Api.Controllers.Master.LoginController.Login (Buildflow.Api)'
+2025-04-11 13:37:29.821 +05:30  INF  Route matched with {action = "Login", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Buildflow.Infrastructure.SP_Model.LoginRequest) on controller Buildflow.Api.Controllers.Master.LoginController (Buildflow.Api).
+2025-04-11 13:37:29.875 +05:30  INF  Executed action Buildflow.Api.Controllers.Master.LoginController.Login (Buildflow.Api) in 53.5601ms
+2025-04-11 13:37:29.875 +05:30  INF  Executed endpoint 'Buildflow.Api.Controllers.Master.LoginController.Login (Buildflow.Api)'
+2025-04-11 13:37:29.876 +05:30  ERR  HTTP POST /api/Login/login responded 500 in 56.9719 msSystem.InvalidOperationException: Unable to resolve service for type 'AutoMapper.IMapper' while attempting to activate 'Buildflow.Api.Controllers.Master.LoginController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method9(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+
+2025-04-11 13:37:29.911 +05:30  ERR  Error in Application : System.InvalidOperationException: Unable to resolve service for type 'AutoMapper.IMapper' while attempting to activate 'Buildflow.Api.Controllers.Master.LoginController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method9(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Buildflow.Api.Middlewares.ExceptionMiddleware.InvokeAsync(HttpContext httpContext) in C:\Users\muthu\source\repos\Buildflow.Api\Buildflow.Api\Middlewares\ExceptionMiddleware.cs:line 31
+2025-04-11 13:37:29.912 +05:30  INF  Request finished HTTP/2 POST https://localhost:7199/api/Login/login - 500 null application/json 97.0169ms
+2025-04-11 13:38:21.511 +05:30  INF  Request starting HTTP/2 POST https://localhost:7199/api/Login/login - application/json 58
+2025-04-11 13:38:21.572 +05:30  INF  Executing endpoint 'Buildflow.Api.Controllers.Master.LoginController.Login (Buildflow.Api)'
+2025-04-11 13:38:21.581 +05:30  INF  Route matched with {action = "Login", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Buildflow.Infrastructure.SP_Model.LoginRequest) on controller Buildflow.Api.Controllers.Master.LoginController (Buildflow.Api).
+2025-04-11 13:38:21.672 +05:30  INF  Executed action Buildflow.Api.Controllers.Master.LoginController.Login (Buildflow.Api) in 90.742ms
+2025-04-11 13:38:21.674 +05:30  INF  Executed endpoint 'Buildflow.Api.Controllers.Master.LoginController.Login (Buildflow.Api)'
+2025-04-11 13:38:21.676 +05:30  ERR  HTTP POST /api/Login/login responded 500 in 143.6269 msSystem.InvalidOperationException: Unable to resolve service for type 'AutoMapper.IMapper' while attempting to activate 'Buildflow.Api.Controllers.Master.LoginController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method9(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+
+2025-04-11 13:38:21.759 +05:30  ERR  Error in Application : System.InvalidOperationException: Unable to resolve service for type 'AutoMapper.IMapper' while attempting to activate 'Buildflow.Api.Controllers.Master.LoginController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method9(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Buildflow.Api.Middlewares.ExceptionMiddleware.InvokeAsync(HttpContext httpContext) in C:\Users\muthu\source\repos\Buildflow.Api\Buildflow.Api\Middlewares\ExceptionMiddleware.cs:line 31
+2025-04-11 13:38:21.763 +05:30  INF  Request finished HTTP/2 POST https://localhost:7199/api/Login/login - 500 null application/json 265.1062ms
+2025-04-11 13:39:44.412 +05:30  INF  User profile is available. Using 'C:\Users\muthu\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-04-11 13:39:44.770 +05:30  INF  Now listening on: https://localhost:7199
+2025-04-11 13:39:44.770 +05:30  INF  Now listening on: http://localhost:5033
+2025-04-11 13:39:44.814 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2025-04-11 13:39:44.814 +05:30  INF  Hosting environment: Development
+2025-04-11 13:39:44.814 +05:30  INF  Content root path: C:\Users\muthu\source\repos\Buildflow.Api\Buildflow.Api
+2025-04-11 13:39:47.104 +05:30  INF  Request starting HTTP/2 GET https://localhost:7199/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-11 13:39:47.104 +05:30  INF  Request starting HTTP/2 GET https://localhost:7199/_vs/browserLink - null null
+2025-04-11 13:39:47.180 +05:30  INF  Request finished HTTP/2 GET https://localhost:7199/_framework/aspnetcore-browser-refresh.js - 200 13762 application/javascript; charset=utf-8 85.202ms
+2025-04-11 13:39:47.281 +05:30  INF  Request finished HTTP/2 GET https://localhost:7199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 188.3315ms
+2025-04-11 13:39:47.418 +05:30  INF  Request starting HTTP/2 GET https://localhost:7199/swagger/v1/swagger.json - null null
+2025-04-11 13:39:47.813 +05:30  INF  Request finished HTTP/2 GET https://localhost:7199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 396.5611ms
+2025-04-11 13:40:08.967 +05:30  INF  Request starting HTTP/2 POST https://localhost:7199/api/Login/login - application/json 58
+2025-04-11 13:40:09.289 +05:30  INF  CORS policy execution failed.
+2025-04-11 13:40:09.290 +05:30  INF  Request origin https://localhost:7199 does not have permission to access the resource.
+2025-04-11 13:40:09.297 +05:30  INF  Executing endpoint 'Buildflow.Api.Controllers.Master.LoginController.Login (Buildflow.Api)'
+2025-04-11 13:40:09.390 +05:30  INF  Route matched with {action = "Login", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Buildflow.Infrastructure.SP_Model.LoginRequest) on controller Buildflow.Api.Controllers.Master.LoginController (Buildflow.Api).
+2025-04-11 13:40:12.913 +05:30  INF  Executed action Buildflow.Api.Controllers.Master.LoginController.Login (Buildflow.Api) in 3514.5055ms
+2025-04-11 13:40:12.916 +05:30  INF  Executed endpoint 'Buildflow.Api.Controllers.Master.LoginController.Login (Buildflow.Api)'
+2025-04-11 13:40:12.924 +05:30  ERR  HTTP POST /api/Login/login responded 500 in 3928.2513 msSystem.InvalidOperationException: Unable to resolve service for type 'AutoMapper.IMapper' while attempting to activate 'Buildflow.Api.Controllers.Master.LoginController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method10(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+
+2025-04-11 13:40:13.211 +05:30  ERR  Error in Application : System.InvalidOperationException: Unable to resolve service for type 'AutoMapper.IMapper' while attempting to activate 'Buildflow.Api.Controllers.Master.LoginController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method10(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Buildflow.Api.Middlewares.ExceptionMiddleware.InvokeAsync(HttpContext httpContext) in C:\Users\muthu\source\repos\Buildflow.Api\Buildflow.Api\Middlewares\ExceptionMiddleware.cs:line 31
+2025-04-11 13:40:13.241 +05:30  INF  Request finished HTTP/2 POST https://localhost:7199/api/Login/login - 500 null application/json 4275.0964ms
+2025-04-11 14:40:39.851 +05:30  INF  User profile is available. Using 'C:\Users\muthu\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-04-11 14:40:40.458 +05:30  INF  Now listening on: https://localhost:7199
+2025-04-11 14:40:40.459 +05:30  INF  Now listening on: http://localhost:5033
+2025-04-11 14:40:40.561 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2025-04-11 14:40:40.562 +05:30  INF  Hosting environment: Development
+2025-04-11 14:40:40.562 +05:30  INF  Content root path: C:\Users\muthu\source\repos\Buildflow.Api\Buildflow.Api
+2025-04-11 14:40:42.854 +05:30  INF  Request starting HTTP/2 GET https://localhost:7199/_vs/browserLink - null null
+2025-04-11 14:40:42.854 +05:30  INF  Request starting HTTP/2 GET https://localhost:7199/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-11 14:40:42.905 +05:30  INF  Request finished HTTP/2 GET https://localhost:7199/_framework/aspnetcore-browser-refresh.js - 200 13762 application/javascript; charset=utf-8 61.7487ms
+2025-04-11 14:40:43.150 +05:30  INF  Request finished HTTP/2 GET https://localhost:7199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 307.7786ms
+2025-04-11 14:40:43.280 +05:30  INF  Request starting HTTP/2 GET https://localhost:7199/swagger/v1/swagger.json - null null
+2025-04-11 14:40:43.479 +05:30  INF  Request finished HTTP/2 GET https://localhost:7199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 199.2336ms
+2025-04-11 14:43:32.848 +05:30  INF  User profile is available. Using 'C:\Users\muthu\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-04-11 14:43:33.199 +05:30  INF  Now listening on: https://localhost:7199
+2025-04-11 14:43:33.200 +05:30  INF  Now listening on: http://localhost:5033
+2025-04-11 14:43:33.243 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2025-04-11 14:43:33.244 +05:30  INF  Hosting environment: Development
+2025-04-11 14:43:33.244 +05:30  INF  Content root path: C:\Users\muthu\source\repos\Buildflow.Api\Buildflow.Api
+2025-04-11 14:43:34.341 +05:30  INF  Request starting HTTP/2 GET https://localhost:7199/_vs/browserLink - null null
+2025-04-11 14:43:34.341 +05:30  INF  Request starting HTTP/2 GET https://localhost:7199/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-11 14:43:34.484 +05:30  INF  Request finished HTTP/2 GET https://localhost:7199/_framework/aspnetcore-browser-refresh.js - 200 13762 application/javascript; charset=utf-8 144.4516ms
+2025-04-11 14:43:34.565 +05:30  INF  Request finished HTTP/2 GET https://localhost:7199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 231.8189ms
+2025-04-11 14:43:34.624 +05:30  INF  Request starting HTTP/2 GET https://localhost:7199/swagger/v1/swagger.json - null null
+2025-04-11 14:43:34.847 +05:30  INF  Request finished HTTP/2 GET https://localhost:7199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 223.9387ms
+2025-04-11 14:43:46.885 +05:30  INF  Request starting HTTP/2 POST https://localhost:7199/api/Login/login - application/json 55
+2025-04-11 14:43:47.104 +05:30  INF  Executing endpoint 'Buildflow.Api.Controllers.Master.LoginController.Login (Buildflow.Api)'
+2025-04-11 14:43:47.162 +05:30  INF  Route matched with {action = "Login", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Buildflow.Utility.DTO.LoginRequest) on controller Buildflow.Api.Controllers.Master.LoginController (Buildflow.Api).
+2025-04-11 14:43:53.086 +05:30  INF  Executed DbCommand (358ms) [Parameters=[@__email_0='?', @__password_1='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT e.emp_id, e.address, e.alternative_phone, e.city, e.country, e.created_at, e.created_by, e.date_of_birth, e.email, e.employee_code, e.first_name, e.hire_date, e.image_url, e.is_active, e.last_name, e.middle_name, e.password, e.phone, e.postal_code, e.state, e.termination_date, e.updated_at, e.updated_by
+FROM employee.employee_details AS e
+WHERE e.email = @__email_0 AND e.password = @__password_1
+LIMIT 1
+2025-04-11 14:43:53.706 +05:30  INF  Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-04-11 14:43:53.721 +05:30  INF  Executed action Buildflow.Api.Controllers.Master.LoginController.Login (Buildflow.Api) in 6551.2753ms
+2025-04-11 14:43:53.722 +05:30  INF  Executed endpoint 'Buildflow.Api.Controllers.Master.LoginController.Login (Buildflow.Api)'
+2025-04-11 14:43:53.740 +05:30  INF  Request finished HTTP/2 POST https://localhost:7199/api/Login/login - 200 null application/json; charset=utf-8 6856.8417ms
+2025-04-11 14:46:35.508 +05:30  INF  User profile is available. Using 'C:\Users\muthu\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-04-11 14:46:35.814 +05:30  INF  Now listening on: https://localhost:7199
+2025-04-11 14:46:35.814 +05:30  INF  Now listening on: http://localhost:5033
+2025-04-11 14:46:35.853 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2025-04-11 14:46:35.853 +05:30  INF  Hosting environment: Development
+2025-04-11 14:46:35.853 +05:30  INF  Content root path: C:\Users\muthu\source\repos\Buildflow.Api\Buildflow.Api
+2025-04-11 14:46:36.795 +05:30  INF  Request starting HTTP/2 GET https://localhost:7199/_vs/browserLink - null null
+2025-04-11 14:46:36.795 +05:30  INF  Request starting HTTP/2 GET https://localhost:7199/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-11 14:46:36.853 +05:30  INF  Request finished HTTP/2 GET https://localhost:7199/_framework/aspnetcore-browser-refresh.js - 200 13762 application/javascript; charset=utf-8 68.1548ms
+2025-04-11 14:46:36.918 +05:30  INF  Request finished HTTP/2 GET https://localhost:7199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 136.3728ms
+2025-04-11 14:46:36.990 +05:30  INF  Request starting HTTP/2 GET https://localhost:7199/swagger/v1/swagger.json - null null
+2025-04-11 14:46:37.140 +05:30  INF  Request finished HTTP/2 GET https://localhost:7199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 150.728ms
+2025-04-11 14:46:54.605 +05:30  INF  Request starting HTTP/2 POST https://localhost:7199/api/Login/login - application/json 55
+2025-04-11 14:46:54.805 +05:30  INF  Executing endpoint 'Buildflow.Api.Controllers.Master.LoginController.Login (Buildflow.Api)'
+2025-04-11 14:46:54.871 +05:30  INF  Route matched with {action = "Login", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Buildflow.Utility.DTO.LoginRequest) on controller Buildflow.Api.Controllers.Master.LoginController (Buildflow.Api).
+2025-04-11 14:47:01.199 +05:30  INF  Executed DbCommand (339ms) [Parameters=[@__email_0='?', @__password_1='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT e.emp_id, e.address, e.alternative_phone, e.city, e.country, e.created_at, e.created_by, e.date_of_birth, e.email, e.employee_code, e.first_name, e.hire_date, e.image_url, e.is_active, e.last_name, e.middle_name, e.password, e.phone, e.postal_code, e.state, e.termination_date, e.updated_at, e.updated_by
+FROM employee.employee_details AS e
+WHERE e.email = @__email_0 AND e.password = @__password_1
+LIMIT 1
+2025-04-11 14:47:01.731 +05:30  INF  Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-04-11 14:47:01.750 +05:30  INF  Executed action Buildflow.Api.Controllers.Master.LoginController.Login (Buildflow.Api) in 6868.1098ms
+2025-04-11 14:47:01.752 +05:30  INF  Executed endpoint 'Buildflow.Api.Controllers.Master.LoginController.Login (Buildflow.Api)'
+2025-04-11 14:47:01.782 +05:30  INF  Request finished HTTP/2 POST https://localhost:7199/api/Login/login - 200 null application/json; charset=utf-8 7178.3929ms
+2025-04-11 15:04:15.423 +05:30  INF  User profile is available. Using 'C:\Users\muthu\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-04-11 15:04:15.759 +05:30  INF  Now listening on: https://localhost:7199
+2025-04-11 15:04:15.759 +05:30  INF  Now listening on: http://localhost:5033
+2025-04-11 15:04:15.812 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2025-04-11 15:04:15.812 +05:30  INF  Hosting environment: Development
+2025-04-11 15:04:15.812 +05:30  INF  Content root path: C:\Users\muthu\source\repos\Buildflow.Api\Buildflow.Api
+2025-04-11 15:04:17.055 +05:30  INF  Request starting HTTP/2 GET https://localhost:7199/_vs/browserLink - null null
+2025-04-11 15:04:17.055 +05:30  INF  Request starting HTTP/2 GET https://localhost:7199/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-11 15:04:17.208 +05:30  INF  Request finished HTTP/2 GET https://localhost:7199/_framework/aspnetcore-browser-refresh.js - 200 13762 application/javascript; charset=utf-8 162.2433ms
+2025-04-11 15:04:17.308 +05:30  INF  Request finished HTTP/2 GET https://localhost:7199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 265.0123ms
+2025-04-11 15:04:17.413 +05:30  INF  Request starting HTTP/2 GET https://localhost:7199/swagger/v1/swagger.json - null null
+2025-04-11 15:04:17.608 +05:30  INF  Request finished HTTP/2 GET https://localhost:7199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 196.3533ms
+2025-04-11 15:04:36.171 +05:30  INF  Request starting HTTP/2 POST https://localhost:7199/api/Login/login - application/json 55
+2025-04-11 15:04:36.442 +05:30  INF  Executing endpoint 'Buildflow.Api.Controllers.Master.LoginController.Login (Buildflow.Api)'
+2025-04-11 15:04:36.521 +05:30  INF  Route matched with {action = "Login", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Buildflow.Utility.DTO.LoginRequest) on controller Buildflow.Api.Controllers.Master.LoginController (Buildflow.Api).
+2025-04-11 15:04:42.080 +05:30  INF  Executed DbCommand (322ms) [Parameters=[@__email_0='?', @__password_1='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT e.emp_id, e.address, e.alternative_phone, e.city, e.country, e.created_at, e.created_by, e.date_of_birth, e.email, e.employee_code, e.first_name, e.hire_date, e.image_url, e.is_active, e.last_name, e.middle_name, e.password, e.phone, e.postal_code, e.state, e.termination_date, e.updated_at, e.updated_by
+FROM employee.employee_details AS e
+WHERE e.email = @__email_0 AND e.password = @__password_1
+LIMIT 1
+2025-04-11 15:04:42.622 +05:30  INF  Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-04-11 15:04:42.649 +05:30  INF  Executed action Buildflow.Api.Controllers.Master.LoginController.Login (Buildflow.Api) in 6116.1624ms
+2025-04-11 15:04:42.651 +05:30  INF  Executed endpoint 'Buildflow.Api.Controllers.Master.LoginController.Login (Buildflow.Api)'
+2025-04-11 15:04:42.678 +05:30  INF  Request finished HTTP/2 POST https://localhost:7199/api/Login/login - 200 null application/json; charset=utf-8 6508.3583ms
+2025-04-11 15:11:09.939 +05:30  INF  User profile is available. Using 'C:\Users\muthu\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-04-11 15:11:10.296 +05:30  INF  Now listening on: https://localhost:7199
+2025-04-11 15:11:10.296 +05:30  INF  Now listening on: http://localhost:5033
+2025-04-11 15:11:10.344 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2025-04-11 15:11:10.344 +05:30  INF  Hosting environment: Development
+2025-04-11 15:11:10.344 +05:30  INF  Content root path: C:\Users\muthu\source\repos\Buildflow.Api\Buildflow.Api
+2025-04-11 15:11:11.699 +05:30  INF  Request starting HTTP/2 GET https://localhost:7199/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-11 15:11:11.724 +05:30  INF  Request finished HTTP/2 GET https://localhost:7199/_framework/aspnetcore-browser-refresh.js - 200 13762 application/javascript; charset=utf-8 33.5404ms
+2025-04-11 15:11:11.759 +05:30  INF  Request starting HTTP/2 GET https://localhost:7199/_vs/browserLink - null null
+2025-04-11 15:11:12.029 +05:30  INF  Request finished HTTP/2 GET https://localhost:7199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 269.8792ms
+2025-04-11 15:11:12.510 +05:30  INF  Request starting HTTP/2 GET https://localhost:7199/swagger/v1/swagger.json - null null
+2025-04-11 15:11:12.875 +05:30  INF  Request finished HTTP/2 GET https://localhost:7199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 365.4232ms
+2025-04-11 15:11:45.137 +05:30  INF  Request starting HTTP/2 POST https://localhost:7199/api/Login/login - application/json 55
+2025-04-11 15:11:45.390 +05:30  INF  Executing endpoint 'Buildflow.Api.Controllers.Master.LoginController.Login (Buildflow.Api)'
+2025-04-11 15:11:45.446 +05:30  INF  Route matched with {action = "Login", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Buildflow.Utility.DTO.LoginRequest) on controller Buildflow.Api.Controllers.Master.LoginController (Buildflow.Api).
+2025-04-11 15:11:52.686 +05:30  INF  Executed DbCommand (345ms) [Parameters=[@__email_0='?', @__password_1='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT e.emp_id, e.address, e.alternative_phone, e.city, e.country, e.created_at, e.created_by, e.date_of_birth, e.email, e.employee_code, e.first_name, e.hire_date, e.image_url, e.is_active, e.last_name, e.middle_name, e.password, e.phone, e.postal_code, e.state, e.termination_date, e.updated_at, e.updated_by
+FROM employee.employee_details AS e
+WHERE e.email = @__email_0 AND e.password = @__password_1
+LIMIT 1
+2025-04-11 15:11:53.181 +05:30  INF  Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-04-11 15:11:53.207 +05:30  INF  Executed action Buildflow.Api.Controllers.Master.LoginController.Login (Buildflow.Api) in 7754.0743ms
+2025-04-11 15:11:53.209 +05:30  INF  Executed endpoint 'Buildflow.Api.Controllers.Master.LoginController.Login (Buildflow.Api)'
+2025-04-11 15:11:53.225 +05:30  INF  Request finished HTTP/2 POST https://localhost:7199/api/Login/login - 200 null application/json; charset=utf-8 8088.2158ms
+2025-04-11 15:12:12.324 +05:30  INF  Request starting HTTP/2 GET https://localhost:7199/api/Login/LoginUser - null null
+2025-04-11 15:12:12.352 +05:30  INF  Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-04-11 15:12:12.371 +05:30  INF  AuthenticationScheme: Bearer was challenged.
+2025-04-11 15:12:12.372 +05:30  INF  Request finished HTTP/2 GET https://localhost:7199/api/Login/LoginUser - 401 0 null 49.8437ms
+2025-04-11 15:13:24.878 +05:30  INF  User profile is available. Using 'C:\Users\muthu\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-04-11 15:13:25.299 +05:30  INF  Now listening on: https://localhost:7199
+2025-04-11 15:13:25.299 +05:30  INF  Now listening on: http://localhost:5033
+2025-04-11 15:13:25.337 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2025-04-11 15:13:25.338 +05:30  INF  Hosting environment: Development
+2025-04-11 15:13:25.338 +05:30  INF  Content root path: C:\Users\muthu\source\repos\Buildflow.Api\Buildflow.Api
+2025-04-11 15:13:26.404 +05:30  INF  Request starting HTTP/2 GET https://localhost:7199/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-11 15:13:26.404 +05:30  INF  Request starting HTTP/2 GET https://localhost:7199/_vs/browserLink - null null
+2025-04-11 15:13:26.463 +05:30  INF  Request finished HTTP/2 GET https://localhost:7199/_framework/aspnetcore-browser-refresh.js - 200 13762 application/javascript; charset=utf-8 64.1759ms
+2025-04-11 15:13:26.538 +05:30  INF  Request finished HTTP/2 GET https://localhost:7199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 141.2582ms
+2025-04-11 15:13:26.648 +05:30  INF  Request starting HTTP/2 GET https://localhost:7199/swagger/v1/swagger.json - null null
+2025-04-11 15:13:26.853 +05:30  INF  Request finished HTTP/2 GET https://localhost:7199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 204.9415ms
+2025-04-11 15:13:38.173 +05:30  INF  Request starting HTTP/2 POST https://localhost:7199/api/Login/login - application/json 55
+2025-04-11 15:13:38.409 +05:30  INF  Executing endpoint 'Buildflow.Api.Controllers.Master.LoginController.Login (Buildflow.Api)'
+2025-04-11 15:13:38.473 +05:30  INF  Route matched with {action = "Login", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Buildflow.Utility.DTO.LoginRequest) on controller Buildflow.Api.Controllers.Master.LoginController (Buildflow.Api).
+2025-04-11 15:13:45.113 +05:30  INF  Executed DbCommand (365ms) [Parameters=[@__email_0='?', @__password_1='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT e.emp_id, e.address, e.alternative_phone, e.city, e.country, e.created_at, e.created_by, e.date_of_birth, e.email, e.employee_code, e.first_name, e.hire_date, e.image_url, e.is_active, e.last_name, e.middle_name, e.password, e.phone, e.postal_code, e.state, e.termination_date, e.updated_at, e.updated_by
+FROM employee.employee_details AS e
+WHERE e.email = @__email_0 AND e.password = @__password_1
+LIMIT 1
+2025-04-11 15:13:45.611 +05:30  INF  Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-04-11 15:13:45.626 +05:30  INF  Executed action Buildflow.Api.Controllers.Master.LoginController.Login (Buildflow.Api) in 7145.5209ms
+2025-04-11 15:13:45.627 +05:30  INF  Executed endpoint 'Buildflow.Api.Controllers.Master.LoginController.Login (Buildflow.Api)'
+2025-04-11 15:13:45.644 +05:30  INF  Request finished HTTP/2 POST https://localhost:7199/api/Login/login - 200 null application/json; charset=utf-8 7471.2423ms
+2025-04-11 15:14:01.312 +05:30  INF  Request starting HTTP/2 GET https://localhost:7199/api/Login/LoginUser - null null
+2025-04-11 15:14:01.342 +05:30  INF  Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-04-11 15:14:01.365 +05:30  INF  AuthenticationScheme: Bearer was challenged.
+2025-04-11 15:14:01.366 +05:30  INF  Request finished HTTP/2 GET https://localhost:7199/api/Login/LoginUser - 401 0 null 59.0123ms
+2025-04-11 15:14:13.021 +05:30  INF  Request starting HTTP/2 GET https://localhost:7199/api/Login/LoginUser - null null
+2025-04-11 15:14:13.023 +05:30  INF  Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-04-11 15:14:13.024 +05:30  INF  AuthenticationScheme: Bearer was challenged.
+2025-04-11 15:14:13.024 +05:30  INF  Request finished HTTP/2 GET https://localhost:7199/api/Login/LoginUser - 401 0 null 3.7867ms
+2025-04-11 15:14:13.887 +05:30  INF  Request starting HTTP/2 GET https://localhost:7199/api/Login/LoginUser - null null
+2025-04-11 15:14:13.892 +05:30  INF  Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-04-11 15:14:13.894 +05:30  INF  AuthenticationScheme: Bearer was challenged.
+2025-04-11 15:14:13.895 +05:30  INF  Request finished HTTP/2 GET https://localhost:7199/api/Login/LoginUser - 401 0 null 7.7929ms
+2025-04-11 15:15:05.402 +05:30  INF  Request starting HTTP/2 POST https://localhost:7199/api/Login/login - application/json 55
+2025-04-11 15:15:05.404 +05:30  INF  Executing endpoint 'Buildflow.Api.Controllers.Master.LoginController.Login (Buildflow.Api)'
+2025-04-11 15:15:05.405 +05:30  INF  Route matched with {action = "Login", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Buildflow.Utility.DTO.LoginRequest) on controller Buildflow.Api.Controllers.Master.LoginController (Buildflow.Api).
+2025-04-11 15:15:05.675 +05:30  INF  Executed DbCommand (133ms) [Parameters=[@__email_0='?', @__password_1='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT e.emp_id, e.address, e.alternative_phone, e.city, e.country, e.created_at, e.created_by, e.date_of_birth, e.email, e.employee_code, e.first_name, e.hire_date, e.image_url, e.is_active, e.last_name, e.middle_name, e.password, e.phone, e.postal_code, e.state, e.termination_date, e.updated_at, e.updated_by
+FROM employee.employee_details AS e
+WHERE e.email = @__email_0 AND e.password = @__password_1
+LIMIT 1
+2025-04-11 15:15:05.680 +05:30  INF  Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-04-11 15:15:05.681 +05:30  INF  Executed action Buildflow.Api.Controllers.Master.LoginController.Login (Buildflow.Api) in 275.4043ms
+2025-04-11 15:15:05.681 +05:30  INF  Executed endpoint 'Buildflow.Api.Controllers.Master.LoginController.Login (Buildflow.Api)'
+2025-04-11 15:15:05.682 +05:30  INF  Request finished HTTP/2 POST https://localhost:7199/api/Login/login - 200 null application/json; charset=utf-8 279.4309ms
+2025-04-11 15:15:26.553 +05:30  INF  Request starting HTTP/2 GET https://localhost:7199/api/Login/LoginUser - null null
+2025-04-11 15:15:26.558 +05:30  INF  Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-04-11 15:15:26.558 +05:30  INF  AuthenticationScheme: Bearer was challenged.
+2025-04-11 15:15:26.559 +05:30  INF  Request finished HTTP/2 GET https://localhost:7199/api/Login/LoginUser - 401 0 null 20.802ms
+2025-04-11 15:16:45.381 +05:30  INF  Request starting HTTP/2 POST https://localhost:7199/api/Login/login - application/json 55
+2025-04-11 15:16:45.383 +05:30  INF  Executing endpoint 'Buildflow.Api.Controllers.Master.LoginController.Login (Buildflow.Api)'
+2025-04-11 15:16:45.384 +05:30  INF  Route matched with {action = "Login", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Buildflow.Utility.DTO.LoginRequest) on controller Buildflow.Api.Controllers.Master.LoginController (Buildflow.Api).
+2025-04-11 15:16:45.524 +05:30  INF  Executed DbCommand (110ms) [Parameters=[@__email_0='?', @__password_1='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT e.emp_id, e.address, e.alternative_phone, e.city, e.country, e.created_at, e.created_by, e.date_of_birth, e.email, e.employee_code, e.first_name, e.hire_date, e.image_url, e.is_active, e.last_name, e.middle_name, e.password, e.phone, e.postal_code, e.state, e.termination_date, e.updated_at, e.updated_by
+FROM employee.employee_details AS e
+WHERE e.email = @__email_0 AND e.password = @__password_1
+LIMIT 1
+2025-04-11 15:16:45.525 +05:30  INF  Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-04-11 15:16:45.525 +05:30  INF  Executed action Buildflow.Api.Controllers.Master.LoginController.Login (Buildflow.Api) in 141.6564ms
+2025-04-11 15:16:45.526 +05:30  INF  Executed endpoint 'Buildflow.Api.Controllers.Master.LoginController.Login (Buildflow.Api)'
+2025-04-11 15:16:45.526 +05:30  INF  Request finished HTTP/2 POST https://localhost:7199/api/Login/login - 200 null application/json; charset=utf-8 165.6772ms
+2025-04-11 15:17:09.865 +05:30  INF  Request starting HTTP/2 GET https://localhost:7199/api/Login/LoginUser - null null
+2025-04-11 15:17:09.873 +05:30  INF  Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-04-11 15:17:09.873 +05:30  INF  AuthenticationScheme: Bearer was challenged.
+2025-04-11 15:17:09.875 +05:30  INF  Request finished HTTP/2 GET https://localhost:7199/api/Login/LoginUser - 401 0 null 11.0246ms
+2025-04-11 15:20:57.720 +05:30  INF  User profile is available. Using 'C:\Users\muthu\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-04-11 15:20:58.052 +05:30  INF  Now listening on: https://localhost:7199
+2025-04-11 15:20:58.053 +05:30  INF  Now listening on: http://localhost:5033
+2025-04-11 15:20:58.091 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2025-04-11 15:20:58.092 +05:30  INF  Hosting environment: Development
+2025-04-11 15:20:58.092 +05:30  INF  Content root path: C:\Users\muthu\source\repos\Buildflow.Api\Buildflow.Api
+2025-04-11 15:20:59.286 +05:30  INF  Request starting HTTP/2 GET https://localhost:7199/_vs/browserLink - null null
+2025-04-11 15:20:59.286 +05:30  INF  Request starting HTTP/2 GET https://localhost:7199/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-11 15:20:59.341 +05:30  INF  Request finished HTTP/2 GET https://localhost:7199/_framework/aspnetcore-browser-refresh.js - 200 13762 application/javascript; charset=utf-8 60.7039ms
+2025-04-11 15:20:59.445 +05:30  INF  Request finished HTTP/2 GET https://localhost:7199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 169.0385ms
+2025-04-11 15:20:59.509 +05:30  INF  Request starting HTTP/2 GET https://localhost:7199/swagger/v1/swagger.json - null null
+2025-04-11 15:20:59.673 +05:30  INF  Request finished HTTP/2 GET https://localhost:7199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 164.2748ms
+2025-04-11 15:21:12.506 +05:30  INF  Request starting HTTP/2 POST https://localhost:7199/api/Login/login - application/json 55
+2025-04-11 15:21:12.720 +05:30  INF  Executing endpoint 'Buildflow.Api.Controllers.Master.LoginController.Login (Buildflow.Api)'
+2025-04-11 15:21:12.774 +05:30  INF  Route matched with {action = "Login", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Buildflow.Utility.DTO.LoginRequest) on controller Buildflow.Api.Controllers.Master.LoginController (Buildflow.Api).
+2025-04-11 15:21:19.117 +05:30  INF  Executed DbCommand (398ms) [Parameters=[@__email_0='?', @__password_1='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT e.emp_id, e.address, e.alternative_phone, e.city, e.country, e.created_at, e.created_by, e.date_of_birth, e.email, e.employee_code, e.first_name, e.hire_date, e.image_url, e.is_active, e.last_name, e.middle_name, e.password, e.phone, e.postal_code, e.state, e.termination_date, e.updated_at, e.updated_by
+FROM employee.employee_details AS e
+WHERE e.email = @__email_0 AND e.password = @__password_1
+LIMIT 1
+2025-04-11 15:21:19.608 +05:30  INF  Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-04-11 15:21:19.626 +05:30  INF  Executed action Buildflow.Api.Controllers.Master.LoginController.Login (Buildflow.Api) in 6842.6297ms
+2025-04-11 15:21:19.628 +05:30  INF  Executed endpoint 'Buildflow.Api.Controllers.Master.LoginController.Login (Buildflow.Api)'
+2025-04-11 15:21:19.649 +05:30  INF  Request finished HTTP/2 POST https://localhost:7199/api/Login/login - 200 null application/json; charset=utf-8 7144.2154ms
+2025-04-11 15:21:41.824 +05:30  INF  Request starting HTTP/2 GET https://localhost:7199/api/Login/LoginUser - null null
+2025-04-11 15:21:41.979 +05:30  INF  Failed to validate the token.Microsoft.IdentityModel.Tokens.SecurityTokenSignatureKeyNotFoundException: IDX10517: Signature validation failed. The token's kid is missing. Keys tried: 'Microsoft.IdentityModel.Tokens.SymmetricSecurityKey, KeyId: '', InternalId: 'noMEvie9hEixLVOHqSgpUfEWB4-cWIa0JveaIMqpHaM'. , KeyId: 
+'. Number of keys in TokenValidationParameters: '1'. 
+Number of keys in Configuration: '0'. 
+Exceptions caught:
+ '[PII of type 'System.String' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+token: '[PII of type 'Microsoft.IdentityModel.JsonWebTokens.JsonWebToken' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'. See https://aka.ms/IDX10503 for details.
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateSignature(JsonWebToken jwtToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateSignatureAndIssuerSecurityKey(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+
+2025-04-11 15:21:42.026 +05:30  INF  Bearer was not authenticated. Failure message: IDX10517: Signature validation failed. The token's kid is missing. Keys tried: 'Microsoft.IdentityModel.Tokens.SymmetricSecurityKey, KeyId: '', InternalId: 'noMEvie9hEixLVOHqSgpUfEWB4-cWIa0JveaIMqpHaM'. , KeyId: 
+'. Number of keys in TokenValidationParameters: '1'. 
+Number of keys in Configuration: '0'. 
+Exceptions caught:
+ '[PII of type 'System.String' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+token: '[PII of type 'Microsoft.IdentityModel.JsonWebTokens.JsonWebToken' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'. See https://aka.ms/IDX10503 for details.
+2025-04-11 15:21:42.042 +05:30  INF  Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-04-11 15:21:42.058 +05:30  INF  AuthenticationScheme: Bearer was challenged.
+2025-04-11 15:21:42.059 +05:30  INF  Request finished HTTP/2 GET https://localhost:7199/api/Login/LoginUser - 401 0 null 236.0526ms
+2025-04-11 15:21:45.529 +05:30  INF  Request starting HTTP/2 POST https://localhost:7199/api/Login/login - application/json 55
+2025-04-11 15:21:45.546 +05:30  INF  Failed to validate the token.Microsoft.IdentityModel.Tokens.SecurityTokenSignatureKeyNotFoundException: IDX10517: Signature validation failed. The token's kid is missing. Keys tried: 'Microsoft.IdentityModel.Tokens.SymmetricSecurityKey, KeyId: '', InternalId: 'noMEvie9hEixLVOHqSgpUfEWB4-cWIa0JveaIMqpHaM'. , KeyId: 
+'. Number of keys in TokenValidationParameters: '1'. 
+Number of keys in Configuration: '0'. 
+Exceptions caught:
+ '[PII of type 'System.String' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+token: '[PII of type 'Microsoft.IdentityModel.JsonWebTokens.JsonWebToken' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'. See https://aka.ms/IDX10503 for details.
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateSignature(JsonWebToken jwtToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateSignatureAndIssuerSecurityKey(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+
+2025-04-11 15:21:45.547 +05:30  INF  Bearer was not authenticated. Failure message: IDX10517: Signature validation failed. The token's kid is missing. Keys tried: 'Microsoft.IdentityModel.Tokens.SymmetricSecurityKey, KeyId: '', InternalId: 'noMEvie9hEixLVOHqSgpUfEWB4-cWIa0JveaIMqpHaM'. , KeyId: 
+'. Number of keys in TokenValidationParameters: '1'. 
+Number of keys in Configuration: '0'. 
+Exceptions caught:
+ '[PII of type 'System.String' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+token: '[PII of type 'Microsoft.IdentityModel.JsonWebTokens.JsonWebToken' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'. See https://aka.ms/IDX10503 for details.
+2025-04-11 15:21:45.548 +05:30  INF  Executing endpoint 'Buildflow.Api.Controllers.Master.LoginController.Login (Buildflow.Api)'
+2025-04-11 15:21:45.555 +05:30  INF  Route matched with {action = "Login", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Buildflow.Utility.DTO.LoginRequest) on controller Buildflow.Api.Controllers.Master.LoginController (Buildflow.Api).
+2025-04-11 15:21:45.857 +05:30  INF  Executed DbCommand (143ms) [Parameters=[@__email_0='?', @__password_1='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT e.emp_id, e.address, e.alternative_phone, e.city, e.country, e.created_at, e.created_by, e.date_of_birth, e.email, e.employee_code, e.first_name, e.hire_date, e.image_url, e.is_active, e.last_name, e.middle_name, e.password, e.phone, e.postal_code, e.state, e.termination_date, e.updated_at, e.updated_by
+FROM employee.employee_details AS e
+WHERE e.email = @__email_0 AND e.password = @__password_1
+LIMIT 1
+2025-04-11 15:21:45.862 +05:30  INF  Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-04-11 15:21:45.863 +05:30  INF  Executed action Buildflow.Api.Controllers.Master.LoginController.Login (Buildflow.Api) in 306.6318ms
+2025-04-11 15:21:45.863 +05:30  INF  Executed endpoint 'Buildflow.Api.Controllers.Master.LoginController.Login (Buildflow.Api)'
+2025-04-11 15:21:45.864 +05:30  INF  Request finished HTTP/2 POST https://localhost:7199/api/Login/login - 200 null application/json; charset=utf-8 337.1701ms
+2025-04-11 15:22:04.259 +05:30  INF  Request starting HTTP/2 GET https://localhost:7199/api/Login/LoginUser - null null
+2025-04-11 15:22:04.285 +05:30  INF  Failed to validate the token.System.ArgumentException: IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string.
+ ---> System.FormatException: IDX10400: Unable to decode: '[PII of type 'System.String' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64url encoded string.
+   at Microsoft.IdentityModel.Tokens.Base64UrlEncoder.Decode(ReadOnlySpan`1 strSpan, Span`1 output)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.CreateClaimSet(ReadOnlySpan`1 strSpan, Int32 startIndex, Int32 length, Boolean createHeaderClaimSet)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   --- End of inner exception stack trace ---
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken..ctor(String jwtEncodedString)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ReadToken(String token, TokenValidationParameters validationParameters)
+
+2025-04-11 15:22:04.288 +05:30  INF  Bearer was not authenticated. Failure message: IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string.
+2025-04-11 15:22:04.291 +05:30  INF  Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-04-11 15:22:04.292 +05:30  INF  AuthenticationScheme: Bearer was challenged.
+2025-04-11 15:22:04.293 +05:30  INF  Request finished HTTP/2 GET https://localhost:7199/api/Login/LoginUser - 401 0 null 33.9203ms
+2025-04-11 15:22:08.743 +05:30  INF  Request starting HTTP/2 POST https://localhost:7199/api/Login/login - application/json 55
+2025-04-11 15:22:08.749 +05:30  INF  Failed to validate the token.System.ArgumentException: IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string.
+ ---> System.FormatException: IDX10400: Unable to decode: '[PII of type 'System.String' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64url encoded string.
+   at Microsoft.IdentityModel.Tokens.Base64UrlEncoder.Decode(ReadOnlySpan`1 strSpan, Span`1 output)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.CreateClaimSet(ReadOnlySpan`1 strSpan, Int32 startIndex, Int32 length, Boolean createHeaderClaimSet)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   --- End of inner exception stack trace ---
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken..ctor(String jwtEncodedString)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ReadToken(String token, TokenValidationParameters validationParameters)
+
+2025-04-11 15:22:08.750 +05:30  INF  Bearer was not authenticated. Failure message: IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string.
+2025-04-11 15:22:08.752 +05:30  INF  Executing endpoint 'Buildflow.Api.Controllers.Master.LoginController.Login (Buildflow.Api)'
+2025-04-11 15:22:08.753 +05:30  INF  Route matched with {action = "Login", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Buildflow.Utility.DTO.LoginRequest) on controller Buildflow.Api.Controllers.Master.LoginController (Buildflow.Api).
+2025-04-11 15:22:08.999 +05:30  INF  Executed DbCommand (189ms) [Parameters=[@__email_0='?', @__password_1='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT e.emp_id, e.address, e.alternative_phone, e.city, e.country, e.created_at, e.created_by, e.date_of_birth, e.email, e.employee_code, e.first_name, e.hire_date, e.image_url, e.is_active, e.last_name, e.middle_name, e.password, e.phone, e.postal_code, e.state, e.termination_date, e.updated_at, e.updated_by
+FROM employee.employee_details AS e
+WHERE e.email = @__email_0 AND e.password = @__password_1
+LIMIT 1
+2025-04-11 15:22:09.001 +05:30  INF  Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-04-11 15:22:09.001 +05:30  INF  Executed action Buildflow.Api.Controllers.Master.LoginController.Login (Buildflow.Api) in 247.7465ms
+2025-04-11 15:22:09.001 +05:30  INF  Executed endpoint 'Buildflow.Api.Controllers.Master.LoginController.Login (Buildflow.Api)'
+2025-04-11 15:22:09.002 +05:30  INF  Request finished HTTP/2 POST https://localhost:7199/api/Login/login - 200 null application/json; charset=utf-8 259.2557ms
+2025-04-11 15:23:16.087 +05:30  INF  Request starting HTTP/2 GET https://localhost:7199/api/Login/LoginUser - null null
+2025-04-11 15:23:16.092 +05:30  INF  Failed to validate the token.System.ArgumentException: IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string.
+ ---> System.FormatException: IDX10400: Unable to decode: '[PII of type 'System.String' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64url encoded string.
+   at Microsoft.IdentityModel.Tokens.Base64UrlEncoder.Decode(ReadOnlySpan`1 strSpan, Span`1 output)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.CreateClaimSet(ReadOnlySpan`1 strSpan, Int32 startIndex, Int32 length, Boolean createHeaderClaimSet)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   --- End of inner exception stack trace ---
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken..ctor(String jwtEncodedString)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ReadToken(String token, TokenValidationParameters validationParameters)
+
+2025-04-11 15:23:16.093 +05:30  INF  Bearer was not authenticated. Failure message: IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string.
+2025-04-11 15:23:16.096 +05:30  INF  Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-04-11 15:23:16.097 +05:30  INF  AuthenticationScheme: Bearer was challenged.
+2025-04-11 15:23:16.097 +05:30  INF  Request finished HTTP/2 GET https://localhost:7199/api/Login/LoginUser - 401 0 null 15.0122ms
+2025-04-11 15:38:36.234 +05:30  INF  User profile is available. Using 'C:\Users\muthu\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-04-11 15:38:36.625 +05:30  INF  Now listening on: https://localhost:7199
+2025-04-11 15:38:36.626 +05:30  INF  Now listening on: http://localhost:5033
+2025-04-11 15:38:36.687 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2025-04-11 15:38:36.688 +05:30  INF  Hosting environment: Development
+2025-04-11 15:38:36.688 +05:30  INF  Content root path: C:\Users\muthu\source\repos\Buildflow.Api\Buildflow.Api
+2025-04-11 15:38:38.310 +05:30  INF  Request starting HTTP/2 GET https://localhost:7199/_vs/browserLink - null null
+2025-04-11 15:38:38.310 +05:30  INF  Request starting HTTP/2 GET https://localhost:7199/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-11 15:38:38.358 +05:30  INF  Request finished HTTP/2 GET https://localhost:7199/_framework/aspnetcore-browser-refresh.js - 200 13762 application/javascript; charset=utf-8 65.2099ms
+2025-04-11 15:38:38.447 +05:30  INF  Request finished HTTP/2 GET https://localhost:7199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 155.4958ms
+2025-04-11 15:38:38.506 +05:30  INF  Request starting HTTP/2 GET https://localhost:7199/swagger/v1/swagger.json - null null
+2025-04-11 15:38:38.811 +05:30  INF  Request finished HTTP/2 GET https://localhost:7199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 305.5749ms
+2025-04-11 15:38:56.608 +05:30  INF  Request starting HTTP/2 POST https://localhost:7199/api/Login/login - application/json 55
+2025-04-11 15:38:56.840 +05:30  INF  Executing endpoint 'Buildflow.Api.Controllers.Master.LoginController.Login (Buildflow.Api)'
+2025-04-11 15:38:56.894 +05:30  INF  Route matched with {action = "Login", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Buildflow.Utility.DTO.LoginRequest) on controller Buildflow.Api.Controllers.Master.LoginController (Buildflow.Api).
+2025-04-11 15:39:02.282 +05:30  INF  Executed DbCommand (275ms) [Parameters=[@__email_0='?', @__password_1='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT e.emp_id, e.address, e.alternative_phone, e.city, e.country, e.created_at, e.created_by, e.date_of_birth, e.email, e.employee_code, e.first_name, e.hire_date, e.image_url, e.is_active, e.last_name, e.middle_name, e.password, e.phone, e.postal_code, e.state, e.termination_date, e.updated_at, e.updated_by
+FROM employee.employee_details AS e
+WHERE e.email = @__email_0 AND e.password = @__password_1
+LIMIT 1
+2025-04-11 15:39:02.817 +05:30  INF  Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-04-11 15:39:02.838 +05:30  INF  Executed action Buildflow.Api.Controllers.Master.LoginController.Login (Buildflow.Api) in 5932.7848ms
+2025-04-11 15:39:02.839 +05:30  INF  Executed endpoint 'Buildflow.Api.Controllers.Master.LoginController.Login (Buildflow.Api)'
+2025-04-11 15:39:02.859 +05:30  INF  Request finished HTTP/2 POST https://localhost:7199/api/Login/login - 200 null application/json; charset=utf-8 6251.5576ms
+2025-04-11 15:39:21.490 +05:30  INF  Request starting HTTP/2 GET https://localhost:7199/api/Login/LoginUser - null null
+2025-04-11 15:39:21.620 +05:30  INF  Failed to validate the token.Microsoft.IdentityModel.Tokens.SecurityTokenSignatureKeyNotFoundException: IDX10517: Signature validation failed. The token's kid is missing. Keys tried: 'Microsoft.IdentityModel.Tokens.SymmetricSecurityKey, KeyId: '', InternalId: 'noMEvie9hEixLVOHqSgpUfEWB4-cWIa0JveaIMqpHaM'. , KeyId: 
+'. Number of keys in TokenValidationParameters: '1'. 
+Number of keys in Configuration: '0'. 
+Exceptions caught:
+ '[PII of type 'System.String' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+token: '[PII of type 'Microsoft.IdentityModel.JsonWebTokens.JsonWebToken' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'. See https://aka.ms/IDX10503 for details.
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateSignature(JsonWebToken jwtToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateSignatureAndIssuerSecurityKey(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+
+2025-04-11 15:39:21.661 +05:30  INF  Bearer was not authenticated. Failure message: IDX10517: Signature validation failed. The token's kid is missing. Keys tried: 'Microsoft.IdentityModel.Tokens.SymmetricSecurityKey, KeyId: '', InternalId: 'noMEvie9hEixLVOHqSgpUfEWB4-cWIa0JveaIMqpHaM'. , KeyId: 
+'. Number of keys in TokenValidationParameters: '1'. 
+Number of keys in Configuration: '0'. 
+Exceptions caught:
+ '[PII of type 'System.String' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+token: '[PII of type 'Microsoft.IdentityModel.JsonWebTokens.JsonWebToken' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'. See https://aka.ms/IDX10503 for details.
+2025-04-11 15:39:21.673 +05:30  INF  Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-04-11 15:39:21.685 +05:30  INF  AuthenticationScheme: Bearer was challenged.
+2025-04-11 15:39:21.686 +05:30  INF  Request finished HTTP/2 GET https://localhost:7199/api/Login/LoginUser - 401 0 null 196.6412ms
+2025-04-11 15:46:34.242 +05:30  INF  User profile is available. Using 'C:\Users\muthu\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-04-11 15:46:34.636 +05:30  INF  Now listening on: https://localhost:7199
+2025-04-11 15:46:34.636 +05:30  INF  Now listening on: http://localhost:5033
+2025-04-11 15:46:34.708 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2025-04-11 15:46:34.709 +05:30  INF  Hosting environment: Development
+2025-04-11 15:46:34.709 +05:30  INF  Content root path: C:\Users\muthu\source\repos\Buildflow.Api\Buildflow.Api
+2025-04-11 15:46:35.370 +05:30  INF  Request starting HTTP/2 GET https://localhost:7199/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-11 15:46:35.369 +05:30  INF  Request starting HTTP/2 GET https://localhost:7199/_vs/browserLink - null null
+2025-04-11 15:46:35.527 +05:30  INF  Request finished HTTP/2 GET https://localhost:7199/_framework/aspnetcore-browser-refresh.js - 200 13762 application/javascript; charset=utf-8 166.1938ms
+2025-04-11 15:46:35.622 +05:30  INF  Request finished HTTP/2 GET https://localhost:7199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 267.7758ms
+2025-04-11 15:46:35.718 +05:30  INF  Request starting HTTP/2 GET https://localhost:7199/swagger/v1/swagger.json - null null
+2025-04-11 15:46:36.553 +05:30  INF  Request finished HTTP/2 GET https://localhost:7199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 835.1977ms
+2025-04-11 15:46:53.830 +05:30  INF  Request starting HTTP/2 POST https://localhost:7199/api/Login/login - application/json 55
+2025-04-11 15:46:54.044 +05:30  INF  Executing endpoint 'Buildflow.Api.Controllers.Master.LoginController.Login (Buildflow.Api)'
+2025-04-11 15:46:54.140 +05:30  INF  Route matched with {action = "Login", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Buildflow.Utility.DTO.LoginRequest) on controller Buildflow.Api.Controllers.Master.LoginController (Buildflow.Api).
+2025-04-11 15:47:00.469 +05:30  INF  Executed DbCommand (248ms) [Parameters=[@__email_0='?', @__password_1='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT e.emp_id, e.address, e.alternative_phone, e.city, e.country, e.created_at, e.created_by, e.date_of_birth, e.email, e.employee_code, e.first_name, e.hire_date, e.image_url, e.is_active, e.last_name, e.middle_name, e.password, e.phone, e.postal_code, e.state, e.termination_date, e.updated_at, e.updated_by
+FROM employee.employee_details AS e
+WHERE e.email = @__email_0 AND e.password = @__password_1
+LIMIT 1
+2025-04-11 15:47:00.972 +05:30  INF  Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-04-11 15:47:00.992 +05:30  INF  Executed action Buildflow.Api.Controllers.Master.LoginController.Login (Buildflow.Api) in 6839.0115ms
+2025-04-11 15:47:00.994 +05:30  INF  Executed endpoint 'Buildflow.Api.Controllers.Master.LoginController.Login (Buildflow.Api)'
+2025-04-11 15:47:01.016 +05:30  INF  Request finished HTTP/2 POST https://localhost:7199/api/Login/login - 200 null application/json; charset=utf-8 7187.2792ms
+2025-04-11 15:47:25.778 +05:30  INF  Request starting HTTP/2 GET https://localhost:7199/api/Login/LoginUser - null null
+2025-04-11 15:47:25.932 +05:30  INF  Executing endpoint 'Buildflow.Api.Controllers.Master.LoginController.GetCurrentUser (Buildflow.Api)'
+2025-04-11 15:47:25.962 +05:30  INF  Route matched with {action = "GetCurrentUser", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCurrentUser() on controller Buildflow.Api.Controllers.Master.LoginController (Buildflow.Api).
+2025-04-11 15:47:45.974 +05:30  INF  User profile is available. Using 'C:\Users\muthu\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-04-11 15:47:46.295 +05:30  INF  Now listening on: https://localhost:7199
+2025-04-11 15:47:46.295 +05:30  INF  Now listening on: http://localhost:5033
+2025-04-11 15:47:46.328 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2025-04-11 15:47:46.329 +05:30  INF  Hosting environment: Development
+2025-04-11 15:47:46.329 +05:30  INF  Content root path: C:\Users\muthu\source\repos\Buildflow.Api\Buildflow.Api
+2025-04-11 15:47:48.027 +05:30  INF  Request starting HTTP/2 GET https://localhost:7199/_vs/browserLink - null null
+2025-04-11 15:47:48.027 +05:30  INF  Request starting HTTP/2 GET https://localhost:7199/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-11 15:47:48.060 +05:30  INF  Request finished HTTP/2 GET https://localhost:7199/_framework/aspnetcore-browser-refresh.js - 200 13762 application/javascript; charset=utf-8 35.0895ms
+2025-04-11 15:47:48.155 +05:30  INF  Request finished HTTP/2 GET https://localhost:7199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 130.9293ms
+2025-04-11 15:47:48.221 +05:30  INF  Request starting HTTP/2 GET https://localhost:7199/swagger/v1/swagger.json - null null
+2025-04-11 15:47:48.412 +05:30  INF  Request finished HTTP/2 GET https://localhost:7199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 191.4661ms
+2025-04-11 15:48:04.513 +05:30  INF  Request starting HTTP/2 POST https://localhost:7199/api/Login/login - application/json 55
+2025-04-11 15:48:04.689 +05:30  INF  Executing endpoint 'Buildflow.Api.Controllers.Master.LoginController.Login (Buildflow.Api)'
+2025-04-11 15:48:04.770 +05:30  INF  Route matched with {action = "Login", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Buildflow.Utility.DTO.LoginRequest) on controller Buildflow.Api.Controllers.Master.LoginController (Buildflow.Api).
+2025-04-11 15:48:10.461 +05:30  INF  Executed DbCommand (301ms) [Parameters=[@__email_0='?', @__password_1='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT e.emp_id, e.address, e.alternative_phone, e.city, e.country, e.created_at, e.created_by, e.date_of_birth, e.email, e.employee_code, e.first_name, e.hire_date, e.image_url, e.is_active, e.last_name, e.middle_name, e.password, e.phone, e.postal_code, e.state, e.termination_date, e.updated_at, e.updated_by
+FROM employee.employee_details AS e
+WHERE e.email = @__email_0 AND e.password = @__password_1
+LIMIT 1
+2025-04-11 15:48:11.016 +05:30  INF  Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-04-11 15:48:11.032 +05:30  INF  Executed action Buildflow.Api.Controllers.Master.LoginController.Login (Buildflow.Api) in 6253.6634ms
+2025-04-11 15:48:11.034 +05:30  INF  Executed endpoint 'Buildflow.Api.Controllers.Master.LoginController.Login (Buildflow.Api)'
+2025-04-11 15:48:11.056 +05:30  INF  Request finished HTTP/2 POST https://localhost:7199/api/Login/login - 200 null application/json; charset=utf-8 6543.8278ms
+2025-04-11 15:48:41.302 +05:30  INF  Request starting HTTP/2 GET https://localhost:7199/api/Login/LoginUser - null null
+2025-04-11 15:48:41.456 +05:30  INF  Executing endpoint 'Buildflow.Api.Controllers.Master.LoginController.GetCurrentUser (Buildflow.Api)'
+2025-04-11 15:48:41.461 +05:30  INF  Route matched with {action = "GetCurrentUser", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCurrentUser() on controller Buildflow.Api.Controllers.Master.LoginController (Buildflow.Api).
+2025-04-11 15:50:25.209 +05:30  INF  User profile is available. Using 'C:\Users\muthu\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-04-11 15:50:25.575 +05:30  INF  Now listening on: https://localhost:7199
+2025-04-11 15:50:25.575 +05:30  INF  Now listening on: http://localhost:5033
+2025-04-11 15:50:25.626 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2025-04-11 15:50:25.627 +05:30  INF  Hosting environment: Development
+2025-04-11 15:50:25.627 +05:30  INF  Content root path: C:\Users\muthu\source\repos\Buildflow.Api\Buildflow.Api
+2025-04-11 15:50:26.891 +05:30  INF  Request starting HTTP/2 GET https://localhost:7199/_vs/browserLink - null null
+2025-04-11 15:50:26.891 +05:30  INF  Request starting HTTP/2 GET https://localhost:7199/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-11 15:50:26.951 +05:30  INF  Request finished HTTP/2 GET https://localhost:7199/_framework/aspnetcore-browser-refresh.js - 200 13762 application/javascript; charset=utf-8 68.7186ms
+2025-04-11 15:50:27.052 +05:30  INF  Request finished HTTP/2 GET https://localhost:7199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 172.185ms
+2025-04-11 15:50:27.131 +05:30  INF  Request starting HTTP/2 GET https://localhost:7199/swagger/v1/swagger.json - null null
+2025-04-11 15:50:27.336 +05:30  INF  Request finished HTTP/2 GET https://localhost:7199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 204.7181ms
+2025-04-11 15:50:46.207 +05:30  INF  Request starting HTTP/2 POST https://localhost:7199/api/Login/login - application/json 55
+2025-04-11 15:50:46.410 +05:30  INF  Executing endpoint 'Buildflow.Api.Controllers.Master.LoginController.Login (Buildflow.Api)'
+2025-04-11 15:50:46.490 +05:30  INF  Route matched with {action = "Login", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Buildflow.Utility.DTO.LoginRequest) on controller Buildflow.Api.Controllers.Master.LoginController (Buildflow.Api).
+2025-04-11 15:53:36.414 +05:30  INF  User profile is available. Using 'C:\Users\muthu\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-04-11 15:53:36.705 +05:30  INF  Now listening on: https://localhost:7199
+2025-04-11 15:53:36.705 +05:30  INF  Now listening on: http://localhost:5033
+2025-04-11 15:53:36.737 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2025-04-11 15:53:36.737 +05:30  INF  Hosting environment: Development
+2025-04-11 15:53:36.737 +05:30  INF  Content root path: C:\Users\muthu\source\repos\Buildflow.Api\Buildflow.Api
+2025-04-11 15:53:37.703 +05:30  INF  Request starting HTTP/2 GET https://localhost:7199/_vs/browserLink - null null
+2025-04-11 15:53:37.703 +05:30  INF  Request starting HTTP/2 GET https://localhost:7199/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-11 15:53:37.755 +05:30  INF  Request finished HTTP/2 GET https://localhost:7199/_framework/aspnetcore-browser-refresh.js - 200 13762 application/javascript; charset=utf-8 60.9571ms
+2025-04-11 15:53:37.852 +05:30  INF  Request finished HTTP/2 GET https://localhost:7199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 159.247ms
+2025-04-11 15:53:37.964 +05:30  INF  Request starting HTTP/2 GET https://localhost:7199/swagger/v1/swagger.json - null null
+2025-04-11 15:53:38.182 +05:30  INF  Request finished HTTP/2 GET https://localhost:7199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 218.0452ms
+2025-04-11 15:53:48.987 +05:30  INF  Request starting HTTP/2 POST https://localhost:7199/api/Login/login - application/json 55
+2025-04-11 15:53:49.219 +05:30  INF  Executing endpoint 'Buildflow.Api.Controllers.Master.LoginController.Login (Buildflow.Api)'
+2025-04-11 15:53:49.276 +05:30  INF  Route matched with {action = "Login", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Buildflow.Utility.DTO.LoginRequest) on controller Buildflow.Api.Controllers.Master.LoginController (Buildflow.Api).
+2025-04-11 15:55:34.305 +05:30  INF  User profile is available. Using 'C:\Users\muthu\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-04-11 15:55:34.655 +05:30  INF  Now listening on: https://localhost:7199
+2025-04-11 15:55:34.655 +05:30  INF  Now listening on: http://localhost:5033
+2025-04-11 15:55:34.736 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2025-04-11 15:55:34.737 +05:30  INF  Hosting environment: Development
+2025-04-11 15:55:34.737 +05:30  INF  Content root path: C:\Users\muthu\source\repos\Buildflow.Api\Buildflow.Api
+2025-04-11 15:55:35.608 +05:30  INF  Request starting HTTP/2 GET https://localhost:7199/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-11 15:55:35.608 +05:30  INF  Request starting HTTP/2 GET https://localhost:7199/_vs/browserLink - null null
+2025-04-11 15:55:35.652 +05:30  INF  Request finished HTTP/2 GET https://localhost:7199/_framework/aspnetcore-browser-refresh.js - 200 13762 application/javascript; charset=utf-8 52.9015ms
+2025-04-11 15:55:35.737 +05:30  INF  Request finished HTTP/2 GET https://localhost:7199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 139.1944ms
+2025-04-11 15:55:35.826 +05:30  INF  Request starting HTTP/2 GET https://localhost:7199/swagger/v1/swagger.json - null null
+2025-04-11 15:55:36.027 +05:30  INF  Request finished HTTP/2 GET https://localhost:7199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 201.3086ms
+2025-04-11 15:55:55.091 +05:30  INF  Request starting HTTP/2 POST https://localhost:7199/api/Login/login - application/json 55
+2025-04-11 15:55:55.305 +05:30  INF  Executing endpoint 'Buildflow.Api.Controllers.Master.LoginController.Login (Buildflow.Api)'
+2025-04-11 15:55:55.370 +05:30  INF  Route matched with {action = "Login", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Buildflow.Utility.DTO.LoginRequest) on controller Buildflow.Api.Controllers.Master.LoginController (Buildflow.Api).
+2025-04-11 15:56:01.178 +05:30  INF  Executed DbCommand (349ms) [Parameters=[@__email_0='?', @__password_1='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT e.emp_id, e.address, e.alternative_phone, e.city, e.country, e.created_at, e.created_by, e.date_of_birth, e.email, e.employee_code, e.first_name, e.hire_date, e.image_url, e.is_active, e.last_name, e.middle_name, e.password, e.phone, e.postal_code, e.state, e.termination_date, e.updated_at, e.updated_by
+FROM employee.employee_details AS e
+WHERE e.email = @__email_0 AND e.password = @__password_1
+LIMIT 1
+2025-04-11 15:56:01.702 +05:30  INF  Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-04-11 15:56:01.728 +05:30  INF  Executed action Buildflow.Api.Controllers.Master.LoginController.Login (Buildflow.Api) in 6344.0947ms
+2025-04-11 15:56:01.730 +05:30  INF  Executed endpoint 'Buildflow.Api.Controllers.Master.LoginController.Login (Buildflow.Api)'
+2025-04-11 15:56:01.795 +05:30  INF  Request finished HTTP/2 POST https://localhost:7199/api/Login/login - 200 null application/json; charset=utf-8 6705.2531ms
+2025-04-11 15:56:17.812 +05:30  INF  Request starting HTTP/2 GET https://localhost:7199/api/Login/LoginUser - null null
+2025-04-11 15:56:18.018 +05:30  INF  Executing endpoint 'Buildflow.Api.Controllers.Master.LoginController.GetCurrentUser (Buildflow.Api)'
+2025-04-11 15:56:18.031 +05:30  INF  Route matched with {action = "GetCurrentUser", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCurrentUser() on controller Buildflow.Api.Controllers.Master.LoginController (Buildflow.Api).
+2025-04-11 15:56:20.368 +05:30  INF  Executed action Buildflow.Api.Controllers.Master.LoginController.GetCurrentUser (Buildflow.Api) in 2337.3319ms
+2025-04-11 15:56:20.370 +05:30  INF  Executed endpoint 'Buildflow.Api.Controllers.Master.LoginController.GetCurrentUser (Buildflow.Api)'
+2025-04-11 15:56:20.439 +05:30  ERR  Something went wrong: System.ArgumentException: The key value at position 0 of the call to 'DbSet<EmployeeDetail>.Find' was of type 'string', which does not match the property type of 'int'.
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.FindTracked(Object[] keyValues)
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.FindAsync(Object[] keyValues, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.FindAsync(Object[] keyValues)
+   at Buildflow.Library.Repository.GenericRepository`1.GetByIdAsync(Object id) in C:\Users\muthu\source\repos\Buildflow.Api\Buildflow.Library\Repository\GenericRepository.cs:line 24
+   at Buildflow.Api.Controllers.Master.LoginController.GetCurrentUser() in C:\Users\muthu\source\repos\Buildflow.Api\Buildflow.Api\Controllers\Master\LoginController.cs:line 82
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Buildflow.Api.Middlewares.ExceptionMiddleware.InvokeAsync(HttpContext httpContext) in C:\Users\muthu\source\repos\Buildflow.Api\Buildflow.Api\Middlewares\ExceptionMiddleware.cs:line 20
+2025-04-11 15:56:20.443 +05:30  INF  Request finished HTTP/2 GET https://localhost:7199/api/Login/LoginUser - 500 null null 2632.1818ms
+2025-04-11 15:56:26.591 +05:30  INF  Request starting HTTP/2 GET https://localhost:7199/api/Login/LoginUser - null null
+2025-04-11 15:56:26.600 +05:30  INF  Executing endpoint 'Buildflow.Api.Controllers.Master.LoginController.GetCurrentUser (Buildflow.Api)'
+2025-04-11 15:56:26.601 +05:30  INF  Route matched with {action = "GetCurrentUser", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCurrentUser() on controller Buildflow.Api.Controllers.Master.LoginController (Buildflow.Api).
+2025-04-11 15:56:32.354 +05:30  INF  Executed action Buildflow.Api.Controllers.Master.LoginController.GetCurrentUser (Buildflow.Api) in 5753.1205ms
+2025-04-11 15:56:32.360 +05:30  INF  Executed endpoint 'Buildflow.Api.Controllers.Master.LoginController.GetCurrentUser (Buildflow.Api)'
+2025-04-11 16:00:04.764 +05:30  INF  User profile is available. Using 'C:\Users\muthu\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-04-11 16:00:05.099 +05:30  INF  Now listening on: https://localhost:7199
+2025-04-11 16:00:05.099 +05:30  INF  Now listening on: http://localhost:5033
+2025-04-11 16:00:05.133 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2025-04-11 16:00:05.134 +05:30  INF  Hosting environment: Development
+2025-04-11 16:00:05.134 +05:30  INF  Content root path: C:\Users\muthu\source\repos\Buildflow.Api\Buildflow.Api
+2025-04-11 16:00:06.253 +05:30  INF  Request starting HTTP/2 GET https://localhost:7199/_vs/browserLink - null null
+2025-04-11 16:00:06.253 +05:30  INF  Request starting HTTP/2 GET https://localhost:7199/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-11 16:00:06.311 +05:30  INF  Request finished HTTP/2 GET https://localhost:7199/_framework/aspnetcore-browser-refresh.js - 200 13762 application/javascript; charset=utf-8 68.5301ms
+2025-04-11 16:00:06.385 +05:30  INF  Request finished HTTP/2 GET https://localhost:7199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 145.7693ms
+2025-04-11 16:00:06.476 +05:30  INF  Request starting HTTP/2 GET https://localhost:7199/swagger/v1/swagger.json - null null
+2025-04-11 16:00:06.693 +05:30  INF  Request finished HTTP/2 GET https://localhost:7199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 217.6474ms
+2025-04-11 16:00:24.036 +05:30  INF  Request starting HTTP/2 POST https://localhost:7199/api/Login/login - application/json 55
+2025-04-11 16:00:24.378 +05:30  INF  Executing endpoint 'Buildflow.Api.Controllers.Master.LoginController.Login (Buildflow.Api)'
+2025-04-11 16:00:24.444 +05:30  INF  Route matched with {action = "Login", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Buildflow.Utility.DTO.LoginRequest) on controller Buildflow.Api.Controllers.Master.LoginController (Buildflow.Api).
+2025-04-11 16:00:33.059 +05:30  INF  Executed DbCommand (360ms) [Parameters=[@__email_0='?', @__password_1='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT e.emp_id, e.address, e.alternative_phone, e.city, e.country, e.created_at, e.created_by, e.date_of_birth, e.email, e.employee_code, e.first_name, e.hire_date, e.image_url, e.is_active, e.last_name, e.middle_name, e.password, e.phone, e.postal_code, e.state, e.termination_date, e.updated_at, e.updated_by
+FROM employee.employee_details AS e
+WHERE e.email = @__email_0 AND e.password = @__password_1
+LIMIT 1
+2025-04-11 16:00:33.570 +05:30  INF  Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-04-11 16:00:33.588 +05:30  INF  Executed action Buildflow.Api.Controllers.Master.LoginController.Login (Buildflow.Api) in 9133.3754ms
+2025-04-11 16:00:33.590 +05:30  INF  Executed endpoint 'Buildflow.Api.Controllers.Master.LoginController.Login (Buildflow.Api)'
+2025-04-11 16:00:33.621 +05:30  INF  Request finished HTTP/2 POST https://localhost:7199/api/Login/login - 200 null application/json; charset=utf-8 9585.9417ms
+2025-04-11 16:00:48.472 +05:30  INF  Request starting HTTP/2 GET https://localhost:7199/api/Login/LoginUser - null null
+2025-04-11 16:00:48.605 +05:30  INF  Executing endpoint 'Buildflow.Api.Controllers.Master.LoginController.GetCurrentUser (Buildflow.Api)'
+2025-04-11 16:00:48.616 +05:30  INF  Route matched with {action = "GetCurrentUser", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCurrentUser() on controller Buildflow.Api.Controllers.Master.LoginController (Buildflow.Api).
+2025-04-11 16:00:53.818 +05:30  INF  Executed DbCommand (176ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT e.emp_id, e.address, e.alternative_phone, e.city, e.country, e.created_at, e.created_by, e.date_of_birth, e.email, e.employee_code, e.first_name, e.hire_date, e.image_url, e.is_active, e.last_name, e.middle_name, e.password, e.phone, e.postal_code, e.state, e.termination_date, e.updated_at, e.updated_by
+FROM employee.employee_details AS e
+WHERE e.emp_id = @__p_0
+LIMIT 1
+2025-04-11 16:00:53.822 +05:30  INF  Executing OkObjectResult, writing value of type 'Buildflow.Infrastructure.Entities.EmployeeDetail'.
+2025-04-11 16:00:53.933 +05:30  INF  Executed action Buildflow.Api.Controllers.Master.LoginController.GetCurrentUser (Buildflow.Api) in 5317.6052ms
+2025-04-11 16:00:53.934 +05:30  INF  Executed endpoint 'Buildflow.Api.Controllers.Master.LoginController.GetCurrentUser (Buildflow.Api)'
+2025-04-11 16:00:53.934 +05:30  INF  Request finished HTTP/2 GET https://localhost:7199/api/Login/LoginUser - 200 null application/json; charset=utf-8 5461.9894ms
+2025-04-11 16:03:28.118 +05:30  INF  User profile is available. Using 'C:\Users\muthu\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-04-11 16:03:28.542 +05:30  INF  Now listening on: https://localhost:7199
+2025-04-11 16:03:28.542 +05:30  INF  Now listening on: http://localhost:5033
+2025-04-11 16:03:28.600 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2025-04-11 16:03:28.601 +05:30  INF  Hosting environment: Development
+2025-04-11 16:03:28.601 +05:30  INF  Content root path: C:\Users\muthu\source\repos\Buildflow.Api\Buildflow.Api
+2025-04-11 16:03:29.909 +05:30  INF  Request starting HTTP/2 GET https://localhost:7199/_vs/browserLink - null null
+2025-04-11 16:03:29.909 +05:30  INF  Request starting HTTP/2 GET https://localhost:7199/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-11 16:03:29.963 +05:30  INF  Request finished HTTP/2 GET https://localhost:7199/_framework/aspnetcore-browser-refresh.js - 200 13762 application/javascript; charset=utf-8 65.4669ms
+2025-04-11 16:03:30.139 +05:30  INF  Request finished HTTP/2 GET https://localhost:7199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 242.4656ms
+2025-04-11 16:03:30.230 +05:30  INF  Request starting HTTP/2 GET https://localhost:7199/swagger/v1/swagger.json - null null
+2025-04-11 16:03:30.640 +05:30  INF  Request finished HTTP/2 GET https://localhost:7199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 410.2512ms
+2025-04-11 16:03:53.260 +05:30  INF  Request starting HTTP/2 POST https://localhost:7199/api/Login/login - application/json 55
+2025-04-11 16:03:53.478 +05:30  INF  Executing endpoint 'Buildflow.Api.Controllers.Master.LoginController.Login (Buildflow.Api)'
+2025-04-11 16:03:53.548 +05:30  INF  Route matched with {action = "Login", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Buildflow.Utility.DTO.LoginRequest) on controller Buildflow.Api.Controllers.Master.LoginController (Buildflow.Api).
+2025-04-11 16:04:01.887 +05:30  INF  Executed DbCommand (487ms) [Parameters=[@__email_0='?', @__password_1='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT e.emp_id, e.address, e.alternative_phone, e.city, e.country, e.created_at, e.created_by, e.date_of_birth, e.email, e.employee_code, e.first_name, e.hire_date, e.image_url, e.is_active, e.last_name, e.middle_name, e.password, e.phone, e.postal_code, e.state, e.termination_date, e.updated_at, e.updated_by
+FROM employee.employee_details AS e
+WHERE e.email = @__email_0 AND e.password = @__password_1
+LIMIT 1
+2025-04-11 16:04:02.370 +05:30  INF  Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-04-11 16:04:02.389 +05:30  INF  Executed action Buildflow.Api.Controllers.Master.LoginController.Login (Buildflow.Api) in 8830.949ms
+2025-04-11 16:04:02.390 +05:30  INF  Executed endpoint 'Buildflow.Api.Controllers.Master.LoginController.Login (Buildflow.Api)'
+2025-04-11 16:04:02.409 +05:30  INF  Request finished HTTP/2 POST https://localhost:7199/api/Login/login - 200 null application/json; charset=utf-8 9151.6727ms
+2025-04-11 16:04:16.397 +05:30  INF  Request starting HTTP/2 GET https://localhost:7199/api/Login/LoginUser - null null
+2025-04-11 16:04:16.549 +05:30  INF  Executing endpoint 'Buildflow.Api.Controllers.Master.LoginController.GetCurrentUser (Buildflow.Api)'
+2025-04-11 16:04:16.561 +05:30  INF  Route matched with {action = "GetCurrentUser", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCurrentUser() on controller Buildflow.Api.Controllers.Master.LoginController (Buildflow.Api).
+2025-04-11 16:04:18.616 +05:30  INF  Executed DbCommand (206ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT e.emp_id, e.address, e.alternative_phone, e.city, e.country, e.created_at, e.created_by, e.date_of_birth, e.email, e.employee_code, e.first_name, e.hire_date, e.image_url, e.is_active, e.last_name, e.middle_name, e.password, e.phone, e.postal_code, e.state, e.termination_date, e.updated_at, e.updated_by
+FROM employee.employee_details AS e
+WHERE e.emp_id = @__p_0
+LIMIT 1
+2025-04-11 16:04:18.619 +05:30  INF  Executing OkObjectResult, writing value of type 'Buildflow.Infrastructure.Entities.EmployeeDetail'.
+2025-04-11 16:04:18.738 +05:30  INF  Executed action Buildflow.Api.Controllers.Master.LoginController.GetCurrentUser (Buildflow.Api) in 2176.451ms
+2025-04-11 16:04:18.738 +05:30  INF  Executed endpoint 'Buildflow.Api.Controllers.Master.LoginController.GetCurrentUser (Buildflow.Api)'
+2025-04-11 16:04:18.739 +05:30  INF  Request finished HTTP/2 GET https://localhost:7199/api/Login/LoginUser - 200 null application/json; charset=utf-8 2343.3853ms

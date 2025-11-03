@@ -1,0 +1,33 @@
+2025-11-02 22:18:04.704 +05:30  INF  User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-11-02 22:18:07.325 +05:30  INF  Now listening on: http://localhost:5033
+2025-11-02 22:18:07.723 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2025-11-02 22:18:07.723 +05:30  INF  Hosting environment: Development
+2025-11-02 22:18:07.723 +05:30  INF  Content root path: C:\Users\User\OneDrive\Desktop\BulidFlow Project\BuildflowBackend\Buildflow.Api
+2025-11-02 22:18:18.044 +05:30  INF  Request starting HTTP/1.1 GET http://localhost:5033/swagger - null null
+2025-11-02 22:18:19.169 +05:30  WRN  Failed to determine the https port for redirect.
+2025-11-02 22:18:19.214 +05:30  INF  Request finished HTTP/1.1 GET http://localhost:5033/swagger - 301 0 null 1219.7727ms
+2025-11-02 22:18:19.243 +05:30  INF  Request starting HTTP/1.1 GET http://localhost:5033/swagger/index.html - null null
+2025-11-02 22:18:19.487 +05:30  INF  Request finished HTTP/1.1 GET http://localhost:5033/swagger/index.html - 200 null text/html;charset=utf-8 244.0623ms
+2025-11-02 22:18:19.692 +05:30  INF  Request starting HTTP/1.1 GET http://localhost:5033/swagger/index.css - null null
+2025-11-02 22:18:19.778 +05:30  INF  Request starting HTTP/1.1 GET http://localhost:5033/swagger/swagger-ui.css - null null
+2025-11-02 22:18:19.809 +05:30  INF  Request starting HTTP/1.1 GET http://localhost:5033/swagger/swagger-ui-standalone-preset.js - null null
+2025-11-02 22:18:19.811 +05:30  INF  Request starting HTTP/1.1 GET http://localhost:5033/swagger/swagger-ui-bundle.js - null null
+2025-11-02 22:18:19.812 +05:30  INF  Request starting HTTP/1.1 GET http://localhost:5033/swagger/index.js - null null
+2025-11-02 22:18:19.832 +05:30  INF  Request finished HTTP/1.1 GET http://localhost:5033/swagger/index.js - 200 null application/javascript;charset=utf-8 20.7001ms
+2025-11-02 22:18:19.834 +05:30  INF  Request starting HTTP/1.1 GET http://localhost:5033/_framework/aspnetcore-browser-refresh.js - null null
+2025-11-02 22:18:19.838 +05:30  INF  Request finished HTTP/1.1 GET http://localhost:5033/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript; charset=utf-8 4.5649ms
+2025-11-02 22:18:19.874 +05:30  INF  Request starting HTTP/1.1 GET http://localhost:5033/_vs/browserLink - null null
+2025-11-02 22:18:19.912 +05:30  INF  Sending file. Request path: '/index.css'. Physical path: 'N/A'
+2025-11-02 22:18:19.912 +05:30  INF  Request finished HTTP/1.1 GET http://localhost:5033/swagger/index.css - 200 202 text/css 220.4913ms
+2025-11-02 22:18:20.178 +05:30  INF  Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2025-11-02 22:18:20.180 +05:30  INF  Request finished HTTP/1.1 GET http://localhost:5033/swagger/swagger-ui.css - 200 154949 text/css 402.3396ms
+2025-11-02 22:18:20.265 +05:30  INF  Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2025-11-02 22:18:20.266 +05:30  INF  Request finished HTTP/1.1 GET http://localhost:5033/swagger/swagger-ui-standalone-preset.js - 200 229223 text/javascript 456.4369ms
+2025-11-02 22:18:20.702 +05:30  INF  Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2025-11-02 22:18:20.703 +05:30  INF  Request finished HTTP/1.1 GET http://localhost:5033/swagger/swagger-ui-bundle.js - 200 1466908 text/javascript 892.1507ms
+2025-11-02 22:18:20.917 +05:30  INF  Request finished HTTP/1.1 GET http://localhost:5033/_vs/browserLink - 200 null text/javascript; charset=UTF-8 1042.8793ms
+2025-11-02 22:18:21.293 +05:30  INF  Request starting HTTP/1.1 GET http://localhost:5033/swagger/v1/swagger.json - null null
+2025-11-02 22:18:21.346 +05:30  INF  Request starting HTTP/1.1 GET http://localhost:5033/swagger/favicon-32x32.png - null null
+2025-11-02 22:18:21.347 +05:30  INF  Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2025-11-02 22:18:21.348 +05:30  INF  Request finished HTTP/1.1 GET http://localhost:5033/swagger/favicon-32x32.png - 200 628 image/png 1.9415ms
+2025-11-02 22:18:21.456 +05:30  INF  Request finished HTTP/1.1 GET http://localhost:5033/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 163.6213ms

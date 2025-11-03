@@ -1,0 +1,87 @@
+2025-11-03 10:33:09.447 +05:30  INF  User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-11-03 10:33:12.336 +05:30  INF  Now listening on: http://localhost:5033
+2025-11-03 10:33:12.575 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2025-11-03 10:33:12.576 +05:30  INF  Hosting environment: Development
+2025-11-03 10:33:12.576 +05:30  INF  Content root path: C:\Users\User\OneDrive\Desktop\BulidFlow Project\BuildflowBackend\Buildflow.Api
+2025-11-03 10:33:23.027 +05:30  INF  Request starting HTTP/1.1 GET http://localhost:5033/_vs/browserLink - null null
+2025-11-03 10:33:23.026 +05:30  INF  Request starting HTTP/1.1 GET http://localhost:5033/_framework/aspnetcore-browser-refresh.js - null null
+2025-11-03 10:33:23.454 +05:30  INF  Request finished HTTP/1.1 GET http://localhost:5033/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript; charset=utf-8 573.5469ms
+2025-11-03 10:33:23.895 +05:30  INF  Request finished HTTP/1.1 GET http://localhost:5033/_vs/browserLink - 200 null text/javascript; charset=UTF-8 1052.5944ms
+2025-11-03 10:33:24.000 +05:30  INF  Request starting HTTP/1.1 GET http://localhost:5033/swagger/v1/swagger.json - null null
+2025-11-03 10:33:24.221 +05:30  WRN  Failed to determine the https port for redirect.
+2025-11-03 10:33:24.425 +05:30  INF  Request finished HTTP/1.1 GET http://localhost:5033/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 425.4679ms
+2025-11-03 12:18:34.128 +05:30  INF  User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-11-03 12:18:34.952 +05:30  INF  Now listening on: http://localhost:5033
+2025-11-03 12:18:35.043 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2025-11-03 12:18:35.044 +05:30  INF  Hosting environment: Development
+2025-11-03 12:18:35.044 +05:30  INF  Content root path: C:\Users\User\OneDrive\Desktop\BulidFlow Project\BuildflowBackend\Buildflow.Api
+2025-11-03 12:18:42.878 +05:30  INF  Request starting HTTP/1.1 GET http://localhost:5033/swagger - null null
+2025-11-03 12:18:44.965 +05:30  WRN  Failed to determine the https port for redirect.
+2025-11-03 12:18:45.049 +05:30  INF  Request finished HTTP/1.1 GET http://localhost:5033/swagger - 301 0 null 2187.0675ms
+2025-11-03 12:18:45.099 +05:30  INF  Request starting HTTP/1.1 GET http://localhost:5033/swagger/index.html - null null
+2025-11-03 12:18:45.845 +05:30  INF  Request finished HTTP/1.1 GET http://localhost:5033/swagger/index.html - 200 null text/html;charset=utf-8 745.8798ms
+2025-11-03 12:18:46.057 +05:30  INF  Request starting HTTP/1.1 GET http://localhost:5033/swagger/swagger-ui.css - null null
+2025-11-03 12:18:46.067 +05:30  INF  Request starting HTTP/1.1 GET http://localhost:5033/swagger/index.css - null null
+2025-11-03 12:18:46.071 +05:30  INF  Request starting HTTP/1.1 GET http://localhost:5033/swagger/swagger-ui-standalone-preset.js - null null
+2025-11-03 12:18:46.073 +05:30  INF  Request starting HTTP/1.1 GET http://localhost:5033/swagger/swagger-ui-bundle.js - null null
+2025-11-03 12:18:46.078 +05:30  INF  Request starting HTTP/1.1 GET http://localhost:5033/swagger/index.js - null null
+2025-11-03 12:18:46.082 +05:30  INF  Request finished HTTP/1.1 GET http://localhost:5033/swagger/index.js - 200 null application/javascript;charset=utf-8 4.5942ms
+2025-11-03 12:18:46.084 +05:30  INF  Request starting HTTP/1.1 GET http://localhost:5033/_framework/aspnetcore-browser-refresh.js - null null
+2025-11-03 12:18:46.086 +05:30  INF  Request finished HTTP/1.1 GET http://localhost:5033/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript; charset=utf-8 2.488ms
+2025-11-03 12:18:46.143 +05:30  INF  Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2025-11-03 12:18:46.488 +05:30  INF  Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2025-11-03 12:18:46.527 +05:30  INF  Sending file. Request path: '/index.css'. Physical path: 'N/A'
+2025-11-03 12:18:46.599 +05:30  INF  Request finished HTTP/1.1 GET http://localhost:5033/swagger/swagger-ui-standalone-preset.js - 200 229223 text/javascript 456.4012ms
+2025-11-03 12:18:46.599 +05:30  INF  Request finished HTTP/1.1 GET http://localhost:5033/swagger/index.css - 200 202 text/css 461.3659ms
+2025-11-03 12:18:46.600 +05:30  INF  Request starting HTTP/1.1 GET http://localhost:5033/_vs/browserLink - null null
+2025-11-03 12:18:46.855 +05:30  INF  Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2025-11-03 12:18:46.855 +05:30  INF  Request finished HTTP/1.1 GET http://localhost:5033/swagger/swagger-ui-bundle.js - 200 1466908 text/javascript 781.9867ms
+2025-11-03 12:18:46.913 +05:30  INF  Request finished HTTP/1.1 GET http://localhost:5033/swagger/swagger-ui.css - 200 154949 text/css 855.0787ms
+2025-11-03 12:18:47.257 +05:30  INF  Request finished HTTP/1.1 GET http://localhost:5033/_vs/browserLink - 200 null text/javascript; charset=UTF-8 657.0695ms
+2025-11-03 12:18:47.443 +05:30  INF  Request starting HTTP/1.1 GET http://localhost:5033/swagger/v1/swagger.json - null null
+2025-11-03 12:18:47.610 +05:30  INF  Request starting HTTP/1.1 GET http://localhost:5033/swagger/favicon-32x32.png - null null
+2025-11-03 12:18:47.618 +05:30  INF  Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2025-11-03 12:18:47.618 +05:30  INF  Request finished HTTP/1.1 GET http://localhost:5033/swagger/favicon-32x32.png - 200 628 image/png 8.2904ms
+2025-11-03 12:18:47.646 +05:30  INF  Request finished HTTP/1.1 GET http://localhost:5033/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 203.3541ms
+2025-11-03 13:12:27.347 +05:30  INF  User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-11-03 13:12:29.163 +05:30  INF  Now listening on: http://localhost:5033
+2025-11-03 13:12:29.341 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2025-11-03 13:12:29.341 +05:30  INF  Hosting environment: Development
+2025-11-03 13:12:29.341 +05:30  INF  Content root path: C:\Users\User\OneDrive\Desktop\BulidFlow Project\BuildflowBackend\Buildflow.Api
+2025-11-03 13:12:31.981 +05:30  INF  Request starting HTTP/1.1 GET http://localhost:5033/swagger - null null
+2025-11-03 13:12:32.728 +05:30  WRN  Failed to determine the https port for redirect.
+2025-11-03 13:12:33.136 +05:30  INF  Request finished HTTP/1.1 GET http://localhost:5033/swagger - 301 0 null 1197.3484ms
+2025-11-03 13:12:33.206 +05:30  INF  Request starting HTTP/1.1 GET http://localhost:5033/swagger/index.html - null null
+2025-11-03 13:12:33.990 +05:30  INF  Request finished HTTP/1.1 GET http://localhost:5033/swagger/index.html - 200 null text/html;charset=utf-8 784.6858ms
+2025-11-03 13:12:34.512 +05:30  INF  Request starting HTTP/1.1 GET http://localhost:5033/swagger/swagger-ui.css - null null
+2025-11-03 13:12:34.530 +05:30  INF  Request starting HTTP/1.1 GET http://localhost:5033/swagger/index.js - null null
+2025-11-03 13:12:34.531 +05:30  INF  Request starting HTTP/1.1 GET http://localhost:5033/swagger/swagger-ui-standalone-preset.js - null null
+2025-11-03 13:12:34.532 +05:30  INF  Request finished HTTP/1.1 GET http://localhost:5033/swagger/index.js - 200 null application/javascript;charset=utf-8 1.9299ms
+2025-11-03 13:12:34.533 +05:30  INF  Request starting HTTP/1.1 GET http://localhost:5033/_framework/aspnetcore-browser-refresh.js - null null
+2025-11-03 13:12:34.536 +05:30  INF  Request finished HTTP/1.1 GET http://localhost:5033/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript; charset=utf-8 2.8731ms
+2025-11-03 13:12:34.571 +05:30  INF  Request starting HTTP/1.1 GET http://localhost:5033/_vs/browserLink - null null
+2025-11-03 13:12:34.589 +05:30  INF  Request starting HTTP/1.1 GET http://localhost:5033/swagger/swagger-ui-bundle.js - null null
+2025-11-03 13:12:34.632 +05:30  INF  Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2025-11-03 13:12:34.632 +05:30  INF  Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2025-11-03 13:12:34.634 +05:30  INF  Request finished HTTP/1.1 GET http://localhost:5033/swagger/swagger-ui.css - 200 154949 text/css 121.9254ms
+2025-11-03 13:12:34.697 +05:30  INF  Request finished HTTP/1.1 GET http://localhost:5033/swagger/swagger-ui-standalone-preset.js - 200 229223 text/javascript 166.3638ms
+2025-11-03 13:12:34.719 +05:30  INF  Request starting HTTP/1.1 GET http://localhost:5033/swagger/index.css - null null
+2025-11-03 13:12:34.720 +05:30  INF  Sending file. Request path: '/index.css'. Physical path: 'N/A'
+2025-11-03 13:12:34.720 +05:30  INF  Request finished HTTP/1.1 GET http://localhost:5033/swagger/index.css - 200 202 text/css 5.6629ms
+2025-11-03 13:12:34.830 +05:30  INF  Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2025-11-03 13:12:34.830 +05:30  INF  Request finished HTTP/1.1 GET http://localhost:5033/swagger/swagger-ui-bundle.js - 200 1466908 text/javascript 242.0515ms
+2025-11-03 13:12:34.868 +05:30  INF  Request finished HTTP/1.1 GET http://localhost:5033/_vs/browserLink - 200 null text/javascript; charset=UTF-8 296.2422ms
+2025-11-03 13:12:35.253 +05:30  INF  Request starting HTTP/1.1 GET http://localhost:5033/swagger/v1/swagger.json - null null
+2025-11-03 13:12:35.422 +05:30  INF  Request finished HTTP/1.1 GET http://localhost:5033/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 169.0664ms
+2025-11-03 14:09:10.985 +05:30  INF  User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-11-03 14:09:11.527 +05:30  INF  Now listening on: http://localhost:5033
+2025-11-03 14:09:11.894 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2025-11-03 14:09:11.894 +05:30  INF  Hosting environment: Development
+2025-11-03 14:09:11.895 +05:30  INF  Content root path: C:\Users\User\OneDrive\Desktop\BulidFlow Project\BuildflowBackend\Buildflow.Api
+2025-11-03 14:09:16.342 +05:30  INF  Request starting HTTP/1.1 GET http://localhost:5033/_framework/aspnetcore-browser-refresh.js - null null
+2025-11-03 14:09:16.350 +05:30  INF  Request starting HTTP/1.1 GET http://localhost:5033/_vs/browserLink - null null
+2025-11-03 14:09:16.430 +05:30  INF  Request finished HTTP/1.1 GET http://localhost:5033/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript; charset=utf-8 110.0903ms
+2025-11-03 14:09:18.337 +05:30  INF  Request finished HTTP/1.1 GET http://localhost:5033/_vs/browserLink - 200 null text/javascript; charset=UTF-8 2023.6733ms
+2025-11-03 14:09:18.480 +05:30  INF  Request starting HTTP/1.1 GET http://localhost:5033/swagger/v1/swagger.json - null null
+2025-11-03 14:09:18.592 +05:30  WRN  Failed to determine the https port for redirect.
+2025-11-03 14:09:18.727 +05:30  INF  Request finished HTTP/1.1 GET http://localhost:5033/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 247.2872ms

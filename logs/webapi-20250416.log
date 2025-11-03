@@ -1,0 +1,189 @@
+2025-04-16 02:10:34.284 -07:00  INF  User profile is available. Using 'C:\Users\admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-04-16 02:10:34.627 -07:00  WRN  The ASP.NET Core developer certificate is not trusted. For information about trusting the ASP.NET Core developer certificate, see https://aka.ms/aspnet/https-trust-dev-cert.
+2025-04-16 02:10:34.671 -07:00  INF  Now listening on: https://localhost:7199
+2025-04-16 02:10:34.671 -07:00  INF  Now listening on: http://localhost:5033
+2025-04-16 02:10:34.912 -07:00  INF  Application started. Press Ctrl+C to shut down.
+2025-04-16 02:10:34.913 -07:00  INF  Hosting environment: Development
+2025-04-16 02:10:34.913 -07:00  INF  Content root path: D:\Project\Backend\Buildflow\Buildflow.Api\Buildflow.Api\Buildflow.Api
+2025-04-16 02:10:35.594 -07:00  INF  Request starting HTTP/2 GET https://localhost:7199/swagger - null null
+2025-04-16 02:10:35.880 -07:00  INF  Request finished HTTP/2 GET https://localhost:7199/swagger - 301 0 null 289.3932ms
+2025-04-16 02:10:35.888 -07:00  INF  Request starting HTTP/2 GET https://localhost:7199/swagger/index.html - null null
+2025-04-16 02:10:36.058 -07:00  INF  Request finished HTTP/2 GET https://localhost:7199/swagger/index.html - 200 null text/html;charset=utf-8 169.8918ms
+2025-04-16 02:10:36.071 -07:00  INF  Request starting HTTP/2 GET https://localhost:7199/swagger/swagger-ui.css - null null
+2025-04-16 02:10:36.071 -07:00  INF  Request starting HTTP/2 GET https://localhost:7199/swagger/index.css - null null
+2025-04-16 02:10:36.071 -07:00  INF  Request starting HTTP/2 GET https://localhost:7199/swagger/swagger-ui-standalone-preset.js - null null
+2025-04-16 02:10:36.071 -07:00  INF  Request starting HTTP/2 GET https://localhost:7199/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-16 02:10:36.072 -07:00  INF  Request starting HTTP/2 GET https://localhost:7199/swagger/index.js - null null
+2025-04-16 02:10:36.071 -07:00  INF  Request starting HTTP/2 GET https://localhost:7199/swagger/swagger-ui-bundle.js - null null
+2025-04-16 02:10:36.081 -07:00  INF  Request finished HTTP/2 GET https://localhost:7199/swagger/index.js - 200 null application/javascript;charset=utf-8 9.5659ms
+2025-04-16 02:10:36.117 -07:00  INF  Request finished HTTP/2 GET https://localhost:7199/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript; charset=utf-8 45.5227ms
+2025-04-16 02:10:36.119 -07:00  INF  Sending file. Request path: '/index.css'. Physical path: 'N/A'
+2025-04-16 02:10:36.119 -07:00  INF  Request finished HTTP/2 GET https://localhost:7199/swagger/index.css - 200 202 text/css 48.8039ms
+2025-04-16 02:10:36.141 -07:00  INF  Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2025-04-16 02:10:36.141 -07:00  INF  Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2025-04-16 02:10:36.145 -07:00  INF  Request finished HTTP/2 GET https://localhost:7199/swagger/swagger-ui.css - 200 154949 text/css 74.0481ms
+2025-04-16 02:10:36.145 -07:00  INF  Request finished HTTP/2 GET https://localhost:7199/swagger/swagger-ui-standalone-preset.js - 200 229223 text/javascript 73.6826ms
+2025-04-16 02:10:36.148 -07:00  INF  Request starting HTTP/2 GET https://localhost:7199/_vs/browserLink - null null
+2025-04-16 02:10:36.158 -07:00  INF  Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2025-04-16 02:10:36.158 -07:00  INF  Request finished HTTP/2 GET https://localhost:7199/swagger/swagger-ui-bundle.js - 200 1466908 text/javascript 87.2857ms
+2025-04-16 02:10:36.245 -07:00  INF  Request finished HTTP/2 GET https://localhost:7199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 96.8085ms
+2025-04-16 02:10:36.467 -07:00  INF  Request starting HTTP/2 GET https://localhost:7199/swagger/v1/swagger.json - null null
+2025-04-16 02:10:36.487 -07:00  INF  Request finished HTTP/2 GET https://localhost:7199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 20.1609ms
+2025-04-16 02:23:18.807 -07:00  INF  Request starting HTTP/2 GET https://localhost:7199/api/Project/getProjectTypesAndProjectSectors - null null
+2025-04-16 02:23:21.785 -07:00  INF  Executing endpoint 'Buildflow.Api.Controllers.Project.ProjectController.GetProjectTypeAndSector (Buildflow.Api)'
+2025-04-16 02:23:21.830 -07:00  INF  Route matched with {action = "GetProjectTypeAndSector", controller = "Project"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProjectTypeAndSector() on controller Buildflow.Api.Controllers.Project.ProjectController (Buildflow.Api).
+2025-04-16 02:23:21.845 -07:00  INF  Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-04-16 02:23:21.847 -07:00  INF  Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+2025-04-16 02:23:21.851 -07:00  INF  Executing ChallengeResult with authentication schemes ([]).
+2025-04-16 02:23:21.859 -07:00  INF  AuthenticationScheme: Bearer was challenged.
+2025-04-16 02:23:21.866 -07:00  INF  Executed action Buildflow.Api.Controllers.Project.ProjectController.GetProjectTypeAndSector (Buildflow.Api) in 28.7328ms
+2025-04-16 02:23:21.866 -07:00  INF  Executed endpoint 'Buildflow.Api.Controllers.Project.ProjectController.GetProjectTypeAndSector (Buildflow.Api)'
+2025-04-16 02:23:21.867 -07:00  INF  Request finished HTTP/2 GET https://localhost:7199/api/Project/getProjectTypesAndProjectSectors - 401 0 null 3060.0426ms
+2025-04-16 02:23:42.799 -07:00  INF  Request starting HTTP/2 POST https://localhost:7199/api/Login/login - application/json 55
+2025-04-16 02:23:42.813 -07:00  INF  CORS policy execution failed.
+2025-04-16 02:23:42.813 -07:00  INF  Request origin https://localhost:7199 does not have permission to access the resource.
+2025-04-16 02:23:42.821 -07:00  INF  Executing endpoint 'Buildflow.Api.Controllers.Master.LoginController.Login (Buildflow.Api)'
+2025-04-16 02:23:42.842 -07:00  INF  Route matched with {action = "Login", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Buildflow.Utility.DTO.LoginRequest) on controller Buildflow.Api.Controllers.Master.LoginController (Buildflow.Api).
+2025-04-16 02:23:49.209 -07:00  INF  Executed DbCommand (207ms) [Parameters=[@__email_0='?', @__password_1='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT e.emp_id, e.address, e.alternative_phone, e.city, e.country, e.created_at, e.created_by, e.date_of_birth, e.email, e.employee_code, e.first_name, e.hire_date, e.image_url, e.is_active, e.last_name, e.middle_name, e.password, e.phone, e.postal_code, e.state, e.termination_date, e.updated_at, e.updated_by
+FROM employee.employee_details AS e
+WHERE e.email = @__email_0 AND e.password = @__password_1
+LIMIT 1
+2025-04-16 02:23:50.094 -07:00  INF  Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-04-16 02:23:50.102 -07:00  INF  Executed action Buildflow.Api.Controllers.Master.LoginController.Login (Buildflow.Api) in 7260.4158ms
+2025-04-16 02:23:50.104 -07:00  INF  Executed endpoint 'Buildflow.Api.Controllers.Master.LoginController.Login (Buildflow.Api)'
+2025-04-16 02:23:50.115 -07:00  INF  Request finished HTTP/2 POST https://localhost:7199/api/Login/login - 200 null application/json; charset=utf-8 7316.4696ms
+2025-04-16 02:24:05.916 -07:00  INF  Request starting HTTP/2 GET https://localhost:7199/api/Project/getProjectTypesAndProjectSectors - null null
+2025-04-16 02:24:06.072 -07:00  INF  Executing endpoint 'Buildflow.Api.Controllers.Project.ProjectController.GetProjectTypeAndSector (Buildflow.Api)'
+2025-04-16 02:24:06.073 -07:00  INF  Route matched with {action = "GetProjectTypeAndSector", controller = "Project"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProjectTypeAndSector() on controller Buildflow.Api.Controllers.Project.ProjectController (Buildflow.Api).
+2025-04-16 02:24:06.335 -07:00  INF  Executed DbCommand (62ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT p.project_type_id AS "Id", p.project_type_name AS "ProjectTypeName"
+FROM master.project_types AS p
+2025-04-16 02:24:06.415 -07:00  INF  Executed DbCommand (67ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT p.project_sector_id AS "Id", p.project_sector_name AS "ProjectSectorName"
+FROM master.project_sector AS p
+2025-04-16 02:24:06.418 -07:00  INF  Executing OkObjectResult, writing value of type 'Buildflow.Utility.DTO.ProjectTypeAndSector'.
+2025-04-16 02:24:06.425 -07:00  INF  Executed action Buildflow.Api.Controllers.Project.ProjectController.GetProjectTypeAndSector (Buildflow.Api) in 352.3693ms
+2025-04-16 02:24:06.425 -07:00  INF  Executed endpoint 'Buildflow.Api.Controllers.Project.ProjectController.GetProjectTypeAndSector (Buildflow.Api)'
+2025-04-16 02:24:06.426 -07:00  INF  Request finished HTTP/2 GET https://localhost:7199/api/Project/getProjectTypesAndProjectSectors - 200 null application/json; charset=utf-8 509.229ms
+2025-04-16 02:29:42.482 -07:00  INF  User profile is available. Using 'C:\Users\admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-04-16 02:29:42.836 -07:00  WRN  The ASP.NET Core developer certificate is not trusted. For information about trusting the ASP.NET Core developer certificate, see https://aka.ms/aspnet/https-trust-dev-cert.
+2025-04-16 02:29:42.875 -07:00  INF  Now listening on: https://localhost:7199
+2025-04-16 02:29:42.876 -07:00  INF  Now listening on: http://localhost:5033
+2025-04-16 02:29:43.279 -07:00  INF  Application started. Press Ctrl+C to shut down.
+2025-04-16 02:29:43.280 -07:00  INF  Hosting environment: Development
+2025-04-16 02:29:43.280 -07:00  INF  Content root path: D:\Project\Backend\Buildflow\Buildflow.Api\Buildflow.Api\Buildflow.Api
+2025-04-16 02:29:43.474 -07:00  INF  Request starting HTTP/2 GET https://localhost:7199/swagger - null null
+2025-04-16 02:29:43.641 -07:00  INF  Request finished HTTP/2 GET https://localhost:7199/swagger - 301 0 null 168.9899ms
+2025-04-16 02:29:43.648 -07:00  INF  Request starting HTTP/2 GET https://localhost:7199/swagger/index.html - null null
+2025-04-16 02:29:43.760 -07:00  INF  Request finished HTTP/2 GET https://localhost:7199/swagger/index.html - 200 null text/html;charset=utf-8 111.4334ms
+2025-04-16 02:29:43.775 -07:00  INF  Request starting HTTP/2 GET https://localhost:7199/swagger/swagger-ui.css - null null
+2025-04-16 02:29:43.775 -07:00  INF  Request starting HTTP/2 GET https://localhost:7199/swagger/index.css - null null
+2025-04-16 02:29:43.775 -07:00  INF  Request starting HTTP/2 GET https://localhost:7199/swagger/index.js - null null
+2025-04-16 02:29:43.776 -07:00  INF  Request starting HTTP/2 GET https://localhost:7199/swagger/swagger-ui-standalone-preset.js - null null
+2025-04-16 02:29:43.776 -07:00  INF  Request starting HTTP/2 GET https://localhost:7199/swagger/swagger-ui-bundle.js - null null
+2025-04-16 02:29:43.778 -07:00  INF  Request starting HTTP/2 GET https://localhost:7199/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-16 02:29:43.785 -07:00  INF  Request finished HTTP/2 GET https://localhost:7199/swagger/index.js - 200 null application/javascript;charset=utf-8 10.0361ms
+2025-04-16 02:29:43.811 -07:00  INF  Sending file. Request path: '/index.css'. Physical path: 'N/A'
+2025-04-16 02:29:43.811 -07:00  INF  Request finished HTTP/2 GET https://localhost:7199/swagger/index.css - 200 202 text/css 36.386ms
+2025-04-16 02:29:43.812 -07:00  INF  Request finished HTTP/2 GET https://localhost:7199/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript; charset=utf-8 33.8435ms
+2025-04-16 02:29:43.836 -07:00  INF  Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2025-04-16 02:29:43.836 -07:00  INF  Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2025-04-16 02:29:43.841 -07:00  INF  Request finished HTTP/2 GET https://localhost:7199/swagger/swagger-ui.css - 200 154949 text/css 65.9247ms
+2025-04-16 02:29:43.841 -07:00  INF  Request finished HTTP/2 GET https://localhost:7199/swagger/swagger-ui-standalone-preset.js - 200 229223 text/javascript 64.8419ms
+2025-04-16 02:29:43.844 -07:00  INF  Request starting HTTP/2 GET https://localhost:7199/_vs/browserLink - null null
+2025-04-16 02:29:43.884 -07:00  INF  Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2025-04-16 02:29:43.884 -07:00  INF  Request finished HTTP/2 GET https://localhost:7199/swagger/swagger-ui-bundle.js - 200 1466908 text/javascript 107.8853ms
+2025-04-16 02:29:43.942 -07:00  INF  Request finished HTTP/2 GET https://localhost:7199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 97.7874ms
+2025-04-16 02:29:44.250 -07:00  INF  Request starting HTTP/2 GET https://localhost:7199/swagger/v1/swagger.json - null null
+2025-04-16 02:29:44.274 -07:00  INF  Request finished HTTP/2 GET https://localhost:7199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 24.2964ms
+2025-04-16 02:30:12.580 -07:00  INF  Request starting HTTP/2 POST https://localhost:7199/api/Login/login - application/json 55
+2025-04-16 02:30:12.597 -07:00  INF  CORS policy execution failed.
+2025-04-16 02:30:12.597 -07:00  INF  Request origin https://localhost:7199 does not have permission to access the resource.
+2025-04-16 02:30:12.716 -07:00  INF  Executing endpoint 'Buildflow.Api.Controllers.Master.LoginController.Login (Buildflow.Api)'
+2025-04-16 02:30:12.765 -07:00  INF  Route matched with {action = "Login", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Buildflow.Utility.DTO.LoginRequest) on controller Buildflow.Api.Controllers.Master.LoginController (Buildflow.Api).
+2025-04-16 02:30:17.905 -07:00  INF  Executed DbCommand (230ms) [Parameters=[@__email_0='?', @__password_1='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT e.emp_id, e.address, e.alternative_phone, e.city, e.country, e.created_at, e.created_by, e.date_of_birth, e.email, e.employee_code, e.first_name, e.hire_date, e.image_url, e.is_active, e.last_name, e.middle_name, e.password, e.phone, e.postal_code, e.state, e.termination_date, e.updated_at, e.updated_by
+FROM employee.employee_details AS e
+WHERE e.email = @__email_0 AND e.password = @__password_1
+LIMIT 1
+2025-04-16 02:30:18.407 -07:00  INF  Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-04-16 02:30:18.423 -07:00  INF  Executed action Buildflow.Api.Controllers.Master.LoginController.Login (Buildflow.Api) in 5649.1464ms
+2025-04-16 02:30:18.424 -07:00  INF  Executed endpoint 'Buildflow.Api.Controllers.Master.LoginController.Login (Buildflow.Api)'
+2025-04-16 02:30:18.436 -07:00  INF  Request finished HTTP/2 POST https://localhost:7199/api/Login/login - 200 null application/json; charset=utf-8 5855.3724ms
+2025-04-16 02:30:32.645 -07:00  INF  Request starting HTTP/2 GET https://localhost:7199/api/Login/LoginUserDetail - null null
+2025-04-16 02:30:32.807 -07:00  INF  Executing endpoint 'Buildflow.Api.Controllers.Master.LoginController.LoginUserDetail (Buildflow.Api)'
+2025-04-16 02:30:32.818 -07:00  INF  Route matched with {action = "LoginUserDetail", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] LoginUserDetail() on controller Buildflow.Api.Controllers.Master.LoginController (Buildflow.Api).
+2025-04-16 02:30:33.789 -07:00  INF  Executing OkObjectResult, writing value of type 'Buildflow.Utility.DTO.LoginEmployeeFullDetailDto'.
+2025-04-16 02:30:33.814 -07:00  INF  Executed action Buildflow.Api.Controllers.Master.LoginController.LoginUserDetail (Buildflow.Api) in 995.8746ms
+2025-04-16 02:30:33.815 -07:00  INF  Executed endpoint 'Buildflow.Api.Controllers.Master.LoginController.LoginUserDetail (Buildflow.Api)'
+2025-04-16 02:30:33.815 -07:00  INF  Request finished HTTP/2 GET https://localhost:7199/api/Login/LoginUserDetail - 200 null application/json; charset=utf-8 1169.7701ms
+2025-04-16 02:35:04.872 -07:00  INF  User profile is available. Using 'C:\Users\admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-04-16 02:35:05.132 -07:00  WRN  The ASP.NET Core developer certificate is not trusted. For information about trusting the ASP.NET Core developer certificate, see https://aka.ms/aspnet/https-trust-dev-cert.
+2025-04-16 02:35:05.170 -07:00  INF  Now listening on: https://localhost:7199
+2025-04-16 02:35:05.170 -07:00  INF  Now listening on: http://localhost:5033
+2025-04-16 02:35:05.227 -07:00  INF  Application started. Press Ctrl+C to shut down.
+2025-04-16 02:35:05.228 -07:00  INF  Hosting environment: Development
+2025-04-16 02:35:05.228 -07:00  INF  Content root path: D:\Project\Backend\Buildflow\Buildflow.Api\Buildflow.Api\Buildflow.Api
+2025-04-16 02:35:05.697 -07:00  INF  Request starting HTTP/2 GET https://localhost:7199/swagger - null null
+2025-04-16 02:35:05.853 -07:00  INF  Request finished HTTP/2 GET https://localhost:7199/swagger - 301 0 null 159.0995ms
+2025-04-16 02:35:05.861 -07:00  INF  Request starting HTTP/2 GET https://localhost:7199/swagger/index.html - null null
+2025-04-16 02:35:05.967 -07:00  INF  Request finished HTTP/2 GET https://localhost:7199/swagger/index.html - 200 null text/html;charset=utf-8 106.239ms
+2025-04-16 02:35:05.977 -07:00  INF  Request starting HTTP/2 GET https://localhost:7199/swagger/swagger-ui.css - null null
+2025-04-16 02:35:05.977 -07:00  INF  Request starting HTTP/2 GET https://localhost:7199/swagger/index.css - null null
+2025-04-16 02:35:05.977 -07:00  INF  Request starting HTTP/2 GET https://localhost:7199/swagger/swagger-ui-bundle.js - null null
+2025-04-16 02:35:05.978 -07:00  INF  Request starting HTTP/2 GET https://localhost:7199/swagger/swagger-ui-standalone-preset.js - null null
+2025-04-16 02:35:05.978 -07:00  INF  Request starting HTTP/2 GET https://localhost:7199/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-16 02:35:05.978 -07:00  INF  Request starting HTTP/2 GET https://localhost:7199/swagger/index.js - null null
+2025-04-16 02:35:05.989 -07:00  INF  Request finished HTTP/2 GET https://localhost:7199/swagger/index.js - 200 null application/javascript;charset=utf-8 10.7608ms
+2025-04-16 02:35:05.989 -07:00  INF  Request starting HTTP/2 GET https://localhost:7199/_vs/browserLink - null null
+2025-04-16 02:35:06.028 -07:00  INF  Sending file. Request path: '/index.css'. Physical path: 'N/A'
+2025-04-16 02:35:06.028 -07:00  INF  Request finished HTTP/2 GET https://localhost:7199/swagger/index.css - 200 202 text/css 51.3749ms
+2025-04-16 02:35:06.029 -07:00  INF  Request finished HTTP/2 GET https://localhost:7199/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript; charset=utf-8 50.769ms
+2025-04-16 02:35:06.056 -07:00  INF  Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2025-04-16 02:35:06.056 -07:00  INF  Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2025-04-16 02:35:06.060 -07:00  INF  Request finished HTTP/2 GET https://localhost:7199/swagger/swagger-ui.css - 200 154949 text/css 83.3786ms
+2025-04-16 02:35:06.060 -07:00  INF  Request finished HTTP/2 GET https://localhost:7199/swagger/swagger-ui-standalone-preset.js - 200 229223 text/javascript 82.3742ms
+2025-04-16 02:35:06.081 -07:00  INF  Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2025-04-16 02:35:06.081 -07:00  INF  Request finished HTTP/2 GET https://localhost:7199/swagger/swagger-ui-bundle.js - 200 1466908 text/javascript 104.1184ms
+2025-04-16 02:35:06.101 -07:00  INF  Request finished HTTP/2 GET https://localhost:7199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 112.156ms
+2025-04-16 02:35:06.384 -07:00  INF  Request starting HTTP/2 GET https://localhost:7199/swagger/v1/swagger.json - null null
+2025-04-16 02:35:06.408 -07:00  INF  Request finished HTTP/2 GET https://localhost:7199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 24.1176ms
+2025-04-16 02:35:24.867 -07:00  INF  Request starting HTTP/2 POST https://localhost:7199/api/Login/login - application/json 55
+2025-04-16 02:35:24.875 -07:00  INF  CORS policy execution failed.
+2025-04-16 02:35:24.875 -07:00  INF  Request origin https://localhost:7199 does not have permission to access the resource.
+2025-04-16 02:35:24.997 -07:00  INF  Executing endpoint 'Buildflow.Api.Controllers.Master.LoginController.Login (Buildflow.Api)'
+2025-04-16 02:35:25.046 -07:00  INF  Route matched with {action = "Login", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Buildflow.Utility.DTO.LoginRequest) on controller Buildflow.Api.Controllers.Master.LoginController (Buildflow.Api).
+2025-04-16 02:35:30.634 -07:00  INF  Executed DbCommand (193ms) [Parameters=[@__email_0='?', @__password_1='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT e.emp_id, e.address, e.alternative_phone, e.city, e.country, e.created_at, e.created_by, e.date_of_birth, e.email, e.employee_code, e.first_name, e.hire_date, e.image_url, e.is_active, e.last_name, e.middle_name, e.password, e.phone, e.postal_code, e.state, e.termination_date, e.updated_at, e.updated_by
+FROM employee.employee_details AS e
+WHERE e.email = @__email_0 AND e.password = @__password_1
+LIMIT 1
+2025-04-16 02:35:31.140 -07:00  INF  Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-04-16 02:35:31.153 -07:00  INF  Executed action Buildflow.Api.Controllers.Master.LoginController.Login (Buildflow.Api) in 6100.4469ms
+2025-04-16 02:35:31.154 -07:00  INF  Executed endpoint 'Buildflow.Api.Controllers.Master.LoginController.Login (Buildflow.Api)'
+2025-04-16 02:35:31.167 -07:00  INF  Request finished HTTP/2 POST https://localhost:7199/api/Login/login - 200 null application/json; charset=utf-8 6299.525ms
+2025-04-16 02:35:48.777 -07:00  INF  Request starting HTTP/2 GET https://localhost:7199/api/Login/LoginUserDetail - null null
+2025-04-16 02:35:48.914 -07:00  INF  Executing endpoint 'Buildflow.Api.Controllers.Master.LoginController.LoginUserDetail (Buildflow.Api)'
+2025-04-16 02:35:48.925 -07:00  INF  Route matched with {action = "LoginUserDetail", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] LoginUserDetail() on controller Buildflow.Api.Controllers.Master.LoginController (Buildflow.Api).
+2025-04-16 02:35:49.465 -07:00  INF  Executing OkObjectResult, writing value of type 'Buildflow.Utility.DTO.LoginEmployeeFullDetailDto'.
+2025-04-16 02:35:49.490 -07:00  INF  Executed action Buildflow.Api.Controllers.Master.LoginController.LoginUserDetail (Buildflow.Api) in 565.2544ms
+2025-04-16 02:35:49.491 -07:00  INF  Executed endpoint 'Buildflow.Api.Controllers.Master.LoginController.LoginUserDetail (Buildflow.Api)'
+2025-04-16 02:35:49.491 -07:00  INF  Request finished HTTP/2 GET https://localhost:7199/api/Login/LoginUserDetail - 200 null application/json; charset=utf-8 714.345ms
+2025-04-16 02:36:16.864 -07:00  INF  Request starting HTTP/2 POST https://localhost:7199/api/Project/createProject - application/json 208
+2025-04-16 02:36:16.874 -07:00  INF  CORS policy execution failed.
+2025-04-16 02:36:16.876 -07:00  INF  Request origin https://localhost:7199 does not have permission to access the resource.
+2025-04-16 02:36:16.892 -07:00  INF  Executing endpoint 'Buildflow.Api.Controllers.Project.ProjectController.AddProject (Buildflow.Api)'
+2025-04-16 02:36:16.898 -07:00  INF  Route matched with {action = "AddProject", controller = "Project"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddProject(Buildflow.Utility.DTO.ProjectInput) on controller Buildflow.Api.Controllers.Project.ProjectController (Buildflow.Api).
+2025-04-16 02:36:24.495 -07:00  INF  Executed DbCommand (157ms) [Parameters=[@p0='?', @p1='?' (DbType = DateTime), @p2='?' (DbType = Int32), @p3='?', @p4='?', @p5='?' (DbType = Date), @p6='?', @p7='?', @p8='?', @p9='?' (DbType = Int32), @p10='?' (DbType = Date), @p11='?', @p12='?' (DbType = Decimal), @p13='?' (DbType = Int32), @p14='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO project.project (client_name, created_at, created_by, project_code, project_description, project_end_date, project_location, project_name, project_priority, project_sector_id, project_start_date, project_status, project_total_budget, project_type_id, updated_by)
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14)
+RETURNING project_id, is_active, project_actual_cost, updated_at;
+2025-04-16 02:36:24.714 -07:00  INF  Executed DbCommand (113ms) [Parameters=[@p18='?' (DbType = Int32), @p0='?', @p1='?' (DbType = DateTime), @p2='?' (DbType = Int32), @p3='?' (DbType = Boolean), @p4='?' (DbType = Decimal), @p5='?', @p6='?', @p7='?' (DbType = Date), @p8='?', @p9='?', @p10='?', @p11='?' (DbType = Int32), @p12='?' (DbType = Date), @p13='?', @p14='?' (DbType = Decimal), @p15='?' (DbType = Int32), @p16='?' (DbType = DateTime), @p17='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+UPDATE project.project SET client_name = @p0, created_at = @p1, created_by = @p2, is_active = @p3, project_actual_cost = @p4, project_code = @p5, project_description = @p6, project_end_date = @p7, project_location = @p8, project_name = @p9, project_priority = @p10, project_sector_id = @p11, project_start_date = @p12, project_status = @p13, project_total_budget = @p14, project_type_id = @p15, updated_at = @p16, updated_by = @p17
+WHERE project_id = @p18;
+2025-04-16 02:36:26.524 -07:00  INF  Executing OkObjectResult, writing value of type 'Buildflow.Infrastructure.Entities.Project'.
+2025-04-16 02:36:26.633 -07:00  INF  Executed action Buildflow.Api.Controllers.Project.ProjectController.AddProject (Buildflow.Api) in 9734.9507ms
+2025-04-16 02:36:26.633 -07:00  INF  Executed endpoint 'Buildflow.Api.Controllers.Project.ProjectController.AddProject (Buildflow.Api)'
+2025-04-16 02:36:26.634 -07:00  INF  Request finished HTTP/2 POST https://localhost:7199/api/Project/createProject - 200 null application/json; charset=utf-8 9769.9418ms
