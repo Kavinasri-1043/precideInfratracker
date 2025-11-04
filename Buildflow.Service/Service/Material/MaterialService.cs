@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Buildflow.Service.Service.Material
+namespace Buildflow.Library.Services.Interfaces
 {
 
 
@@ -13,8 +13,9 @@ namespace Buildflow.Service.Service.Material
         public interface IMaterialService
         {
             Task<IEnumerable<MaterialDto>> GetMaterialsByProjectAsync(int projectId);
-            // Add Create, Update, Delete methods later if needed
-        }
+            Task<IEnumerable<MaterialDto>> GetLowStockAlertsAsync(int projectId);
+        // Add Create, Update, Delete methods later if needed
+    }
 }
   public class MaterialService : IMaterialService
     {
@@ -28,9 +29,18 @@ namespace Buildflow.Service.Service.Material
         public async Task<IEnumerable<MaterialDto>> GetMaterialsByProjectAsync(int projectId)
         {
             // Simply call the repository and return data
-            var materials = await _materialRepository.GetMaterialsByProjectIdAsync(projectId);
+            var materials = await _materialRepository.GetMaterialsByProjectAsync(projectId);
             return materials;
         }
+    public async Task<IEnumerable<MaterialDto>> GetLowStockAlertsAsync(int projectId)
+    {
+        var materials = await _materialRepository.GetLowStockAlertsAsync(projectId);
+        return materials.Select(m =>
+        {
+            m.Level = "Urgent";
+            return m;
+        });
     }
+}
 
 

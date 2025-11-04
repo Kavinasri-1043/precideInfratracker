@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Buildflow.Library.Services.Interfaces;
 
 namespace Buildflow.Api.Controllers.MaterialController
 {
@@ -23,6 +24,12 @@ namespace Buildflow.Api.Controllers.MaterialController
                 return NotFound(new { message = "No materials found for this project." });
 
             return Ok(materials);
+        }
+          [HttpGet("project/{projectId}/alerts")]
+        public async Task<IActionResult> GetLowStockAlerts(int projectId)
+        {
+            var alerts = await _service.GetLowStockAlertsAsync(projectId);
+            return Ok(alerts);
         }
 
     }
