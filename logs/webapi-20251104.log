@@ -1,0 +1,11 @@
+2025-11-04 11:23:09.514 +05:30  INF  User profile is available. Using 'C:\Users\91934\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-11-04 11:23:09.870 +05:30  WRN  The WebRootPath was not found: C:\Users\91934\Source\Repos\precideInfratracker\Buildflow.Api\wwwroot. Static files may be unavailable.
+2025-11-04 11:23:10.051 +05:30  INF  Now listening on: https://localhost:7199
+2025-11-04 11:23:10.051 +05:30  INF  Now listening on: http://localhost:5033
+2025-11-04 11:23:10.109 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2025-11-04 11:23:10.109 +05:30  INF  Hosting environment: Development
+2025-11-04 11:23:10.109 +05:30  INF  Content root path: C:\Users\91934\Source\Repos\precideInfratracker\Buildflow.Api
+2025-11-04 11:23:12.299 +05:30  INF  Request starting HTTP/2 GET https://localhost:7199/_framework/aspnetcore-browser-refresh.js - null null
+2025-11-04 11:23:12.338 +05:30  INF  Request finished HTTP/2 GET https://localhost:7199/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript; charset=utf-8 60.4155ms
+2025-11-04 11:23:12.519 +05:30  INF  Request starting HTTP/2 GET https://localhost:7199/swagger/v1/swagger.json - null null
+2025-11-04 11:23:12.778 +05:30  INF  Request finished HTTP/2 GET https://localhost:7199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 259.7315ms

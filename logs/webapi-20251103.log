@@ -164,9 +164,176 @@ DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
 2025-11-03 21:41:29.172 +05:30  INF  Route matched with {action = "GetMaterialsByProjectId", controller = "Material"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetMaterialsByProjectId(Int32) on controller Buildflow.Api.Controllers.MaterialController.MaterialController (Buildflow.Api).
 2025-11-03 21:41:29.178 +05:30  INF  Authorization failed. These requirements were not met:
 DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+<<<<<<< Updated upstream
 2025-11-03 21:41:29.179 +05:30  INF  Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
 2025-11-03 21:41:29.179 +05:30  INF  Executing ChallengeResult with authentication schemes ([]).
 2025-11-03 21:41:29.180 +05:30  INF  AuthenticationScheme: Bearer was challenged.
 2025-11-03 21:41:29.180 +05:30  INF  Executed action Buildflow.Api.Controllers.MaterialController.MaterialController.GetMaterialsByProjectId (Buildflow.Api) in 7.3512ms
 2025-11-03 21:41:29.180 +05:30  INF  Executed endpoint 'Buildflow.Api.Controllers.MaterialController.MaterialController.GetMaterialsByProjectId (Buildflow.Api)'
 2025-11-03 21:41:29.180 +05:30  INF  Request finished HTTP/2 GET https://localhost:7199/api/Material/project/1 - 401 0 null 34.3183ms
+=======
+2025-11-03 18:13:56.611 +05:30  INF  Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+2025-11-03 18:13:56.615 +05:30  INF  Executing ChallengeResult with authentication schemes ([]).
+2025-11-03 18:13:56.622 +05:30  INF  AuthenticationScheme: Bearer was challenged.
+2025-11-03 18:13:56.628 +05:30  INF  Executed action Buildflow.Api.Controllers.Project.ProjectController.GetAllProjects (Buildflow.Api) in 26.53ms
+2025-11-03 18:13:56.628 +05:30  INF  Executed endpoint 'Buildflow.Api.Controllers.Project.ProjectController.GetAllProjects (Buildflow.Api)'
+2025-11-03 18:13:56.629 +05:30  INF  Request finished HTTP/1.1 GET http://localhost:5033/api/Project/getAllProjects - 401 0 null 400.0667ms
+2025-11-03 18:14:43.907 +05:30  INF  Request starting HTTP/1.1 POST http://localhost:5033/api/Login/login - application/json 55
+2025-11-03 18:14:43.913 +05:30  INF  CORS policy execution successful.
+2025-11-03 18:14:43.921 +05:30  INF  Executing endpoint 'Buildflow.Api.Controllers.Master.LoginController.Login (Buildflow.Api)'
+2025-11-03 18:14:43.946 +05:30  INF  Route matched with {action = "Login", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Buildflow.Utility.DTO.LoginRequest) on controller Buildflow.Api.Controllers.Master.LoginController (Buildflow.Api).
+2025-11-03 18:14:50.497 +05:30  INF  Executed DbCommand (230ms) [Parameters=[@__email_0='?', @__password_1='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT e.emp_id, e.address, e.alternative_phone, e.city, e.country, e.created_at, e.created_by, e.date_of_birth, e.email, e.employee_code, e.first_name, e.gender, e.hire_date, e.image_url, e.is_active, e.is_allocated, e.last_name, e.middle_name, e.password, e.phone, e.postal_code, e.state, e.termination_date, e.updated_at, e.updated_by
+FROM employee.employee_details AS e
+WHERE e.email = @__email_0 AND e.password = @__password_1
+LIMIT 1
+2025-11-03 18:14:51.579 +05:30  INF  Executed DbCommand (21ms) [Parameters=[@p0='?', @p1='?' (DbType = DateTime2), @p2='?' (DbType = Boolean), @p3='?'], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO employee.refreshtoken (email, expirydate, isrevoked, token)
+VALUES (@p0, @p1, @p2, @p3)
+RETURNING id;
+2025-11-03 18:14:51.666 +05:30  INF  Executing OkObjectResult, writing value of type '<>f__AnonymousType1`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-03 18:14:51.678 +05:30  INF  Executed action Buildflow.Api.Controllers.Master.LoginController.Login (Buildflow.Api) in 7730.895ms
+2025-11-03 18:14:51.679 +05:30  INF  Executed endpoint 'Buildflow.Api.Controllers.Master.LoginController.Login (Buildflow.Api)'
+2025-11-03 18:14:51.693 +05:30  INF  Request finished HTTP/1.1 POST http://localhost:5033/api/Login/login - 200 null application/json; charset=utf-8 7786.9678ms
+2025-11-03 18:16:08.734 +05:30  INF  Request starting HTTP/1.1 POST http://localhost:5033/api/Project/upsertProject - application/json 236
+2025-11-03 18:16:08.746 +05:30  INF  CORS policy execution successful.
+2025-11-03 18:16:08.912 +05:30  INF  Executing endpoint 'Buildflow.Api.Controllers.Project.ProjectController.AddOrUpdateProject (Buildflow.Api)'
+2025-11-03 18:16:08.920 +05:30  INF  Route matched with {action = "AddOrUpdateProject", controller = "Project"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddOrUpdateProject(Buildflow.Utility.DTO.ProjectInput) on controller Buildflow.Api.Controllers.Project.ProjectController (Buildflow.Api).
+2025-11-03 18:16:09.330 +05:30  INF  Executed DbCommand (23ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT p.project_id, p.client_name, p.created_at, p.created_by, p.is_active, p.project_actual_cost, p.project_code, p.project_description, p.project_end_date, p.project_location, p.project_name, p.project_priority, p.project_sector_id, p.project_start_date, p.project_status, p.project_total_budget, p.project_type_id, p.updated_at, p.updated_by
+FROM project.project AS p
+WHERE p.project_id = @__p_0
+LIMIT 1
+2025-11-03 18:16:09.334 +05:30  INF  Executing OkObjectResult, writing value of type 'Buildflow.Utility.DTO.BaseResponse'.
+2025-11-03 18:16:09.350 +05:30  INF  Executed action Buildflow.Api.Controllers.Project.ProjectController.AddOrUpdateProject (Buildflow.Api) in 429.2556ms
+2025-11-03 18:16:09.350 +05:30  INF  Executed endpoint 'Buildflow.Api.Controllers.Project.ProjectController.AddOrUpdateProject (Buildflow.Api)'
+2025-11-03 18:16:09.351 +05:30  INF  Request finished HTTP/1.1 POST http://localhost:5033/api/Project/upsertProject - 200 null application/json; charset=utf-8 617.4072ms
+2025-11-03 18:16:58.341 +05:30  INF  Request starting HTTP/1.1 POST http://localhost:5033/api/Project/upsertProjectTeam - application/json 330
+2025-11-03 18:16:58.344 +05:30  INF  CORS policy execution successful.
+2025-11-03 18:16:58.351 +05:30  INF  Executing endpoint 'Buildflow.Api.Controllers.Project.ProjectController.UpsertProjectTeam (Buildflow.Api)'
+2025-11-03 18:16:58.363 +05:30  INF  Route matched with {action = "UpsertProjectTeam", controller = "Project"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpsertProjectTeam(Buildflow.Utility.DTO.ProjectTeamUpsertDto) on controller Buildflow.Api.Controllers.Project.ProjectController (Buildflow.Api).
+2025-11-03 18:16:58.707 +05:30  INF  Executing BadRequestObjectResult, writing value of type '<>f__AnonymousType6`2[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-03 18:16:58.713 +05:30  INF  Executed action Buildflow.Api.Controllers.Project.ProjectController.UpsertProjectTeam (Buildflow.Api) in 350.6336ms
+2025-11-03 18:16:58.714 +05:30  INF  Executed endpoint 'Buildflow.Api.Controllers.Project.ProjectController.UpsertProjectTeam (Buildflow.Api)'
+2025-11-03 18:16:58.714 +05:30  INF  Request finished HTTP/1.1 POST http://localhost:5033/api/Project/upsertProjectTeam - 400 null application/json; charset=utf-8 379.9029ms
+2025-11-03 18:17:23.462 +05:30  INF  Request starting HTTP/1.1 POST http://localhost:5033/api/Project/upsertProjectTeam - application/json 331
+2025-11-03 18:17:23.462 +05:30  INF  CORS policy execution successful.
+2025-11-03 18:17:23.463 +05:30  INF  Executing endpoint 'Buildflow.Api.Controllers.Project.ProjectController.UpsertProjectTeam (Buildflow.Api)'
+2025-11-03 18:17:23.474 +05:30  INF  Route matched with {action = "UpsertProjectTeam", controller = "Project"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpsertProjectTeam(Buildflow.Utility.DTO.ProjectTeamUpsertDto) on controller Buildflow.Api.Controllers.Project.ProjectController (Buildflow.Api).
+2025-11-03 18:17:23.652 +05:30  INF  Executing BadRequestObjectResult, writing value of type '<>f__AnonymousType6`2[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-03 18:17:23.654 +05:30  INF  Executed action Buildflow.Api.Controllers.Project.ProjectController.UpsertProjectTeam (Buildflow.Api) in 179.9107ms
+2025-11-03 18:17:23.655 +05:30  INF  Executed endpoint 'Buildflow.Api.Controllers.Project.ProjectController.UpsertProjectTeam (Buildflow.Api)'
+2025-11-03 18:17:23.655 +05:30  INF  Request finished HTTP/1.1 POST http://localhost:5033/api/Project/upsertProjectTeam - 400 null application/json; charset=utf-8 193.3183ms
+2025-11-03 18:17:50.333 +05:30  INF  Request starting HTTP/1.1 GET http://localhost:5033/api/Login/getVendorsAndSubcontractors - null null
+2025-11-03 18:17:50.352 +05:30  INF  Executing endpoint 'Buildflow.Api.Controllers.Master.LoginController.GetVendorsAndSubcontractors (Buildflow.Api)'
+2025-11-03 18:17:50.363 +05:30  INF  Route matched with {action = "GetVendorsAndSubcontractors", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetVendorsAndSubcontractors() on controller Buildflow.Api.Controllers.Master.LoginController (Buildflow.Api).
+2025-11-03 18:17:50.480 +05:30  INF  Executed DbCommand (44ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT v.vendor_id AS "Id", v.vendor_name AS "VendorName"
+FROM vendor.vendor AS v
+2025-11-03 18:17:50.530 +05:30  INF  Executed DbCommand (32ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT s.subcontractor_id AS "Id", s.subcontractor_name AS "SubcontractorName"
+FROM subcontractor.subcontractor AS s
+2025-11-03 18:17:50.534 +05:30  INF  Executing OkObjectResult, writing value of type 'Buildflow.Utility.DTO.VendorAndSubcontractor'.
+2025-11-03 18:17:50.548 +05:30  INF  Executed action Buildflow.Api.Controllers.Master.LoginController.GetVendorsAndSubcontractors (Buildflow.Api) in 184.1839ms
+2025-11-03 18:17:50.548 +05:30  INF  Executed endpoint 'Buildflow.Api.Controllers.Master.LoginController.GetVendorsAndSubcontractors (Buildflow.Api)'
+2025-11-03 18:17:50.549 +05:30  INF  Request finished HTTP/1.1 GET http://localhost:5033/api/Login/getVendorsAndSubcontractors - 200 null application/json; charset=utf-8 216.2391ms
+2025-11-03 18:18:08.753 +05:30  INF  Request starting HTTP/1.1 POST http://localhost:5033/api/Project/upsertProjectTeam - application/json 331
+2025-11-03 18:18:08.754 +05:30  INF  CORS policy execution successful.
+2025-11-03 18:18:08.754 +05:30  INF  Executing endpoint 'Buildflow.Api.Controllers.Project.ProjectController.UpsertProjectTeam (Buildflow.Api)'
+2025-11-03 18:18:08.754 +05:30  INF  Route matched with {action = "UpsertProjectTeam", controller = "Project"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpsertProjectTeam(Buildflow.Utility.DTO.ProjectTeamUpsertDto) on controller Buildflow.Api.Controllers.Project.ProjectController (Buildflow.Api).
+2025-11-03 18:18:08.821 +05:30  INF  Executing BadRequestObjectResult, writing value of type '<>f__AnonymousType6`2[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-03 18:18:08.823 +05:30  INF  Executed action Buildflow.Api.Controllers.Project.ProjectController.UpsertProjectTeam (Buildflow.Api) in 68.2526ms
+2025-11-03 18:18:08.823 +05:30  INF  Executed endpoint 'Buildflow.Api.Controllers.Project.ProjectController.UpsertProjectTeam (Buildflow.Api)'
+2025-11-03 18:18:08.823 +05:30  INF  Request finished HTTP/1.1 POST http://localhost:5033/api/Project/upsertProjectTeam - 400 null application/json; charset=utf-8 69.7158ms
+2025-11-03 18:21:49.483 +05:30  INF  Request starting HTTP/1.1 POST http://localhost:5033/api/Project/upsertProjectBudget - application/json 195
+2025-11-03 18:21:49.493 +05:30  INF  CORS policy execution successful.
+2025-11-03 18:21:49.508 +05:30  INF  Executing endpoint 'Buildflow.Api.Controllers.Project.ProjectController.AddBudget (Buildflow.Api)'
+2025-11-03 18:21:49.547 +05:30  INF  Route matched with {action = "AddBudget", controller = "Project"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] AddBudget(Buildflow.Utility.DTO.ProjectBudgetInputDto) on controller Buildflow.Api.Controllers.Project.ProjectController (Buildflow.Api).
+2025-11-03 18:21:52.643 +05:30  ERR  Error inserting project budget details: 3D000: database "buildflow_devlop_db" does not exist
+2025-11-03 18:21:52.645 +05:30  INF  Executing OkObjectResult, writing value of type 'Buildflow.Utility.DTO.BaseResponse'.
+2025-11-03 18:21:52.663 +05:30  INF  Executed action Buildflow.Api.Controllers.Project.ProjectController.AddBudget (Buildflow.Api) in 3115.0669ms
+2025-11-03 18:21:52.663 +05:30  INF  Executed endpoint 'Buildflow.Api.Controllers.Project.ProjectController.AddBudget (Buildflow.Api)'
+2025-11-03 18:21:52.664 +05:30  INF  Request finished HTTP/1.1 POST http://localhost:5033/api/Project/upsertProjectBudget - 200 null application/json; charset=utf-8 3186.253ms
+2025-11-03 18:22:03.209 +05:30  INF  Request starting HTTP/1.1 POST http://localhost:5033/api/Project/upsertProjectTeam - application/json 331
+2025-11-03 18:22:03.209 +05:30  INF  CORS policy execution successful.
+2025-11-03 18:22:03.211 +05:30  INF  Executing endpoint 'Buildflow.Api.Controllers.Project.ProjectController.UpsertProjectTeam (Buildflow.Api)'
+2025-11-03 18:22:03.211 +05:30  INF  Route matched with {action = "UpsertProjectTeam", controller = "Project"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpsertProjectTeam(Buildflow.Utility.DTO.ProjectTeamUpsertDto) on controller Buildflow.Api.Controllers.Project.ProjectController (Buildflow.Api).
+2025-11-03 18:22:03.459 +05:30  INF  Executing BadRequestObjectResult, writing value of type '<>f__AnonymousType6`2[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-03 18:22:03.462 +05:30  INF  Executed action Buildflow.Api.Controllers.Project.ProjectController.UpsertProjectTeam (Buildflow.Api) in 250.4343ms
+2025-11-03 18:22:03.462 +05:30  INF  Executed endpoint 'Buildflow.Api.Controllers.Project.ProjectController.UpsertProjectTeam (Buildflow.Api)'
+2025-11-03 18:22:03.463 +05:30  INF  Request finished HTTP/1.1 POST http://localhost:5033/api/Project/upsertProjectTeam - 400 null application/json; charset=utf-8 254.5428ms
+2025-11-03 18:23:35.840 +05:30  INF  Request starting HTTP/1.1 POST http://localhost:5033/api/Project/upsertProjectTeam - application/json 331
+2025-11-03 18:23:35.844 +05:30  INF  CORS policy execution successful.
+2025-11-03 18:23:35.845 +05:30  INF  Executing endpoint 'Buildflow.Api.Controllers.Project.ProjectController.UpsertProjectTeam (Buildflow.Api)'
+2025-11-03 18:23:35.845 +05:30  INF  Route matched with {action = "UpsertProjectTeam", controller = "Project"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpsertProjectTeam(Buildflow.Utility.DTO.ProjectTeamUpsertDto) on controller Buildflow.Api.Controllers.Project.ProjectController (Buildflow.Api).
+2025-11-03 18:23:35.902 +05:30  INF  Executing BadRequestObjectResult, writing value of type '<>f__AnonymousType6`2[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-03 18:23:35.902 +05:30  INF  Executed action Buildflow.Api.Controllers.Project.ProjectController.UpsertProjectTeam (Buildflow.Api) in 56.8898ms
+2025-11-03 18:23:35.902 +05:30  INF  Executed endpoint 'Buildflow.Api.Controllers.Project.ProjectController.UpsertProjectTeam (Buildflow.Api)'
+2025-11-03 18:23:35.903 +05:30  INF  Request finished HTTP/1.1 POST http://localhost:5033/api/Project/upsertProjectTeam - 400 null application/json; charset=utf-8 64.6083ms
+2025-11-03 21:54:05.656 +05:30  INF  User profile is available. Using 'C:\Users\91934\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-11-03 21:54:05.980 +05:30  WRN  The WebRootPath was not found: C:\Users\91934\Source\Repos\precideInfratracker\Buildflow.Api\wwwroot. Static files may be unavailable.
+2025-11-03 21:54:06.282 +05:30  INF  Now listening on: https://localhost:7199
+2025-11-03 21:54:06.282 +05:30  INF  Now listening on: http://localhost:5033
+2025-11-03 21:54:06.438 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2025-11-03 21:54:06.438 +05:30  INF  Hosting environment: Development
+2025-11-03 21:54:06.438 +05:30  INF  Content root path: C:\Users\91934\Source\Repos\precideInfratracker\Buildflow.Api
+2025-11-03 21:54:07.323 +05:30  INF  Request starting HTTP/2 GET https://localhost:7199/_framework/aspnetcore-browser-refresh.js - null null
+2025-11-03 21:54:07.372 +05:30  INF  Request finished HTTP/2 GET https://localhost:7199/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript; charset=utf-8 64.1532ms
+2025-11-03 21:54:07.574 +05:30  INF  Request starting HTTP/2 GET https://localhost:7199/swagger/v1/swagger.json - null null
+2025-11-03 21:54:07.788 +05:30  INF  Request finished HTTP/2 GET https://localhost:7199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 214.6658ms
+2025-11-03 21:59:56.529 +05:30  INF  User profile is available. Using 'C:\Users\91934\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-11-03 21:59:56.860 +05:30  WRN  The WebRootPath was not found: C:\Users\91934\Source\Repos\precideInfratracker\Buildflow.Api\wwwroot. Static files may be unavailable.
+2025-11-03 21:59:57.117 +05:30  INF  Now listening on: https://localhost:7199
+2025-11-03 21:59:57.118 +05:30  INF  Now listening on: http://localhost:5033
+2025-11-03 21:59:57.243 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2025-11-03 21:59:57.244 +05:30  INF  Hosting environment: Development
+2025-11-03 21:59:57.244 +05:30  INF  Content root path: C:\Users\91934\Source\Repos\precideInfratracker\Buildflow.Api
+2025-11-03 21:59:58.200 +05:30  INF  Request starting HTTP/2 GET https://localhost:7199/_framework/aspnetcore-browser-refresh.js - null null
+2025-11-03 21:59:58.232 +05:30  INF  Request finished HTTP/2 GET https://localhost:7199/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript; charset=utf-8 47.0766ms
+2025-11-03 21:59:58.303 +05:30  INF  Request starting HTTP/2 GET https://localhost:7199/swagger/v1/swagger.json - null null
+2025-11-03 21:59:58.532 +05:30  INF  Request finished HTTP/2 GET https://localhost:7199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 229.5996ms
+2025-11-03 22:00:24.102 +05:30  INF  User profile is available. Using 'C:\Users\91934\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-11-03 22:00:24.376 +05:30  WRN  The WebRootPath was not found: C:\Users\91934\Source\Repos\precideInfratracker\Buildflow.Api\wwwroot. Static files may be unavailable.
+2025-11-03 22:00:24.613 +05:30  INF  Now listening on: https://localhost:7199
+2025-11-03 22:00:24.613 +05:30  INF  Now listening on: http://localhost:5033
+2025-11-03 22:00:24.711 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2025-11-03 22:00:24.712 +05:30  INF  Hosting environment: Development
+2025-11-03 22:00:24.712 +05:30  INF  Content root path: C:\Users\91934\Source\Repos\precideInfratracker\Buildflow.Api
+2025-11-03 22:00:25.611 +05:30  INF  Request starting HTTP/2 GET https://localhost:7199/_framework/aspnetcore-browser-refresh.js - null null
+2025-11-03 22:00:25.648 +05:30  INF  Request finished HTTP/2 GET https://localhost:7199/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript; charset=utf-8 40.9202ms
+2025-11-03 22:00:25.692 +05:30  INF  Request starting HTTP/2 GET https://localhost:7199/swagger/v1/swagger.json - null null
+2025-11-03 22:00:25.889 +05:30  INF  Request finished HTTP/2 GET https://localhost:7199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 196.3538ms
+>>>>>>> Stashed changes
+2025-11-03 22:11:10.354 +05:30  INF  User profile is available. Using 'C:\Users\91934\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-11-03 22:11:10.717 +05:30  WRN  The WebRootPath was not found: C:\Users\91934\Source\Repos\precideInfratracker\Buildflow.Api\wwwroot. Static files may be unavailable.
+2025-11-03 22:11:10.983 +05:30  INF  Now listening on: https://localhost:7199
+2025-11-03 22:11:10.983 +05:30  INF  Now listening on: http://localhost:5033
+2025-11-03 22:11:11.090 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2025-11-03 22:11:11.091 +05:30  INF  Hosting environment: Development
+2025-11-03 22:11:11.091 +05:30  INF  Content root path: C:\Users\91934\Source\Repos\precideInfratracker\Buildflow.Api
+2025-11-03 22:11:12.412 +05:30  INF  Request starting HTTP/2 GET https://localhost:7199/_framework/aspnetcore-browser-refresh.js - null null
+2025-11-03 22:11:12.459 +05:30  INF  Request finished HTTP/2 GET https://localhost:7199/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript; charset=utf-8 60.2812ms
+2025-11-03 22:11:12.583 +05:30  INF  Request starting HTTP/2 GET https://localhost:7199/swagger/v1/swagger.json - null null
+2025-11-03 22:11:12.799 +05:30  INF  Request finished HTTP/2 GET https://localhost:7199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 216.2333ms
+2025-11-03 22:11:31.185 +05:30  INF  Request starting HTTP/2 GET https://localhost:7199/api/Material/project/74 - null null
+2025-11-03 22:11:31.391 +05:30  INF  Executing endpoint 'Buildflow.Api.Controllers.MaterialController.MaterialController.GetMaterialsByProjectId (Buildflow.Api)'
+2025-11-03 22:11:31.453 +05:30  INF  Route matched with {action = "GetMaterialsByProjectId", controller = "Material"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetMaterialsByProjectId(Int32) on controller Buildflow.Api.Controllers.MaterialController.MaterialController (Buildflow.Api).
+2025-11-03 22:11:31.464 +05:30  INF  Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-11-03 22:11:31.465 +05:30  INF  Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+2025-11-03 22:11:31.468 +05:30  INF  Executing ChallengeResult with authentication schemes ([]).
+2025-11-03 22:11:31.475 +05:30  INF  AuthenticationScheme: Bearer was challenged.
+2025-11-03 22:11:31.481 +05:30  INF  Executed action Buildflow.Api.Controllers.MaterialController.MaterialController.GetMaterialsByProjectId (Buildflow.Api) in 21.1443ms
+2025-11-03 22:11:31.481 +05:30  INF  Executed endpoint 'Buildflow.Api.Controllers.MaterialController.MaterialController.GetMaterialsByProjectId (Buildflow.Api)'
+2025-11-03 22:11:31.481 +05:30  INF  Request finished HTTP/2 GET https://localhost:7199/api/Material/project/74 - 401 0 null 296.696ms
+2025-11-03 22:11:39.841 +05:30  INF  Request starting HTTP/2 GET https://localhost:7199/api/Material/project/73 - null null
+2025-11-03 22:11:39.857 +05:30  INF  Executing endpoint 'Buildflow.Api.Controllers.MaterialController.MaterialController.GetMaterialsByProjectId (Buildflow.Api)'
+2025-11-03 22:11:39.857 +05:30  INF  Route matched with {action = "GetMaterialsByProjectId", controller = "Material"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetMaterialsByProjectId(Int32) on controller Buildflow.Api.Controllers.MaterialController.MaterialController (Buildflow.Api).
+2025-11-03 22:11:39.859 +05:30  INF  Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-11-03 22:11:39.859 +05:30  INF  Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+2025-11-03 22:11:39.859 +05:30  INF  Executing ChallengeResult with authentication schemes ([]).
+2025-11-03 22:11:39.860 +05:30  INF  AuthenticationScheme: Bearer was challenged.
+2025-11-03 22:11:39.860 +05:30  INF  Executed action Buildflow.Api.Controllers.MaterialController.MaterialController.GetMaterialsByProjectId (Buildflow.Api) in 2.6438ms
+2025-11-03 22:11:39.860 +05:30  INF  Executed endpoint 'Buildflow.Api.Controllers.MaterialController.MaterialController.GetMaterialsByProjectId (Buildflow.Api)'
+2025-11-03 22:11:39.860 +05:30  INF  Request finished HTTP/2 GET https://localhost:7199/api/Material/project/73 - 401 0 null 19.075ms
