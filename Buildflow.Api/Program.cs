@@ -5,6 +5,7 @@ using Buildflow.Api.Middlewares;
 using Buildflow.Infrastructure.DatabaseContext;
 using Buildflow.Library.Repository;
 using Buildflow.Library.Repository.Interfaces;
+using Buildflow.Library.Services.Interfaces;
 using Buildflow.Library.UOW;
 using Buildflow.Service.Service.Employee;
 using Buildflow.Service.Service.Inventory;
@@ -89,22 +90,17 @@ builder.Services.AddScoped<IVendorRepository, VendorRepository>();
 builder.Services.AddScoped<IRoleRepository, RoleRepository>();
 builder.Services.AddScoped<INotificationRepository, NotificationRepository>();
 builder.Services.AddScoped<IDepartmentRepository, DepartmentRepository>();
-
 builder.Services.AddScoped<IEmployeeRepository, EmployeeRepository>();
 builder.Services.AddScoped<IInventoryRepository, InventoryRepository>();
-
 builder.Services.AddScoped<IMaterialRepository, MaterialRepository>();
 builder.Services.AddScoped<IInventoryService, InventoryService>();
-
 builder.Services.AddScoped<RegisterService>();
 builder.Services.AddScoped<ReportService>();
 builder.Services.AddScoped<ProjectService>();
 builder.Services.AddScoped<RoleService>();
 builder.Services.AddScoped<DepartmentService>();
 builder.Services.AddScoped<NotificationService>();
-builder.Services.AddScoped<MaterialService, MaterialService>();
-
-
+builder.Services.AddScoped<IMaterialService, MaterialService>();
 builder.Services.AddScoped<EmployeeService>();
 builder.Services.AddScoped<VendorService>();
 builder.Services.AddHttpContextAccessor();

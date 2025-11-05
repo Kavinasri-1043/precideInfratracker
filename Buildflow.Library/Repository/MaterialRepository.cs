@@ -1,7 +1,9 @@
 ﻿using Buildflow.Infrastructure.DatabaseContext;
+using Buildflow.Library.Services.Interfaces;
 using Buildflow.Utility.DTO;
 using Microsoft.EntityFrameworkCore;
 using System;
+
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -45,6 +47,26 @@ namespace Buildflow.Library.Repository
                                    }).ToListAsync();
 
             return materials;
+        }
+        /// <summary>
+        /// Get materials where stock is less than 1/3 of required quantity
+        /// (used for dashboard stock alerts)
+        /// </summary>
+        public async Task<IEnumerable<MaterialDto>> GetLowStockAlertsAsync(int projectId)
+        {
+            var materials = await GetMaterialsByProjectIdAsync(projectId);
+
+            var lowStock = materials
+                .Where(m => m.RequiredQuantity > 0 &&
+                            m.InStockQuantity < (m.RequiredQuantity / 3))
+                .ToList();
+
+            return lowStock;
+        }
+
+        public Task<IEnumerable<MaterialDto>> GetMaterialsByProjectAsync(int projectId)
+        {
+            throw new NotImplementedException();
         }
     }
 }

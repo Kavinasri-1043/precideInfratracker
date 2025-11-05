@@ -13,5 +13,6 @@ namespace Buildflow.Utility.DTO
         public int RequiredQuantity { get; set; }
         public string Level { get; set; } = string.Empty;//Derived field (calculated)
         public string RequestStatus { get; set; } = string.Empty;
+        public string Status { get; set; } = string.Empty;
     }
 }
